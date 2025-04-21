@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  Azalea: a compositor agnostic desktop shell for Wayland
+</h1>
+<ul>
+  <li><b>Author</b>: Enzo Hideo Kobayashi</li>
+  <li><b>Advisors</b>: Alfredo Goldman and Nelson Posse Lago (awaiting confirmation)</li>
+</ul>
+<h2>
+  Introduction
+</h2>
+<p>
+Desktop shells, also called graphical shells, are a set of widgets and
+graphical interfaces that allow an user to interact with their Operational
+System, similar to a command-line shell but graphically, hence the name. A few
+examples of graphical shell components are taskbars, app launchers, wallpaper
+selectors, settings menu, systray, notification menu, etc. The graphical shell
+is also what gives a Desktop Environment its "looks", allowing users to
+recognize a Desktop Environment, like KDE or GNOME, just by looking at its
+widgets. However, this coupling between Desktop Environments and graphical
+shells is also problem.
+</p>
+
+<p>
+Take GNOME for example, their graphical shell, GNOME Shell, is closely tied to
+the window manager, Mutter, to the point that it's not possible to use GNOME
+Shell on other desktop environments without extreme effort and refactoring.
+This presents a problem for users that like how GNOME "looks", but want to
+change desktop environments or wayland compositors.
+</p>
+
+<h2>
+  Objectives
+</h2>
+
+<p>
+The main objective is to make a desktop shell for wayland that isn't tied to
+any specific wayland compositor. That's made possible by a recent wayland
+protocol extension called 
+<a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1">layer shell</a>.
+, which despite being a
+<a href="https://gitlab.freedesktop.org/wlroots/wlr-protocols">wlroots extension</a>
+and not part of the main 
+<a href="https://gitlab.freedesktop.org/wayland/wayland-protocols">wayland protocols</a>
+, it's already
+<a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#compositor-support">supported
+on multiple modern compositors</a>. Any wayland compositor based on wlroots
+or smithay should have layer shell support.
+</p>
+
+<p>
+The layer shell protocol allows applications to create surface layers and
+anchor it to a corner of the screen. For example, a simple taskbar could be
+created with a surface at the "top" layer anchored to the "bottom" corner with
+an 
+<a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#zwlr_layer_surface_v1:request:set_exclusive_zone">exclusive zone</a>,
+which tells the compositor to reserve it some space to avoid it obstructing
+with the other surfaces and windows.
+</p>
+
+<p>
+The desktop shell will be called Azalea and, as part of the project, a core
+library will be developed to auxiliate the creation of widgets. This core
+library will be open source to allow other developers to create their own
+desktop shells as well.
+</p>
+
+<h2>
+  Work plan
+</h2>
+
+<p>
+</p>
+{% endblock content %}
