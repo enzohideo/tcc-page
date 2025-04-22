@@ -11,24 +11,57 @@
 <h2>
   Introduction
 </h2>
+
 <p>
 Desktop shells, also called graphical shells, are a set of widgets and
-graphical interfaces that allow an user to interact with their Operational
-System, similar to a command-line shell but graphically, hence the name. A few
-examples of graphical shell components are taskbars, app launchers, wallpaper
-selectors, settings menu, systray, notification menu, etc. The graphical shell
-is also what gives a Desktop Environment its "looks", allowing users to
-recognize a Desktop Environment, like KDE or GNOME, just by looking at its
-widgets. However, this coupling between Desktop Environments and graphical
-shells is also problem.
+graphical interfaces that allow an user to interact with an Operating System,
+similar to a command-line shell but graphically, hence the name. A few examples
+of graphical shell components include: taskbars, app launchers, wallpaper
+selectors, systray, notification menu, etc.
 </p>
 
 <p>
-Take GNOME for example, their graphical shell, GNOME Shell, is closely tied to
-the window manager, Mutter, to the point that it's not possible to use GNOME
-Shell on other desktop environments without extreme effort and refactoring.
-This presents a problem for users that like how GNOME "looks", but want to
-change desktop environments or wayland compositors.
+The most popular graphical shells on Linux are oftentimes tied to a desktop
+environment, like KDE's plasmashell and GNOME Shell. However, there's also a
+niche community of users that prefer using window managers (X11) or wayland
+compositors directly without a full-fledged graphical shell, like i3,
+AwesomeWM, Sway, Hyprland, etc. Among those users, some enjoy to create their
+own widgets instead, which is part of a hobby informally referred to as 
+<a href="https://wiki.installgentoo.com/index.php/GNU/Linux_ricing">"ricing"</a>.
+</p>
+
+<p>
+In the latter context of users developing their own widgets, it's common the
+usage of libraries to create specific graphical shell components, like <a
+href="https://github.com/Alexays/Waybar">waybar</a> and 
+<a href="https://github.com/polybar/polybar">polybar</a> 
+to create a basic status bar, and libraries that offer a bit more freedom, like
+<a href="https://github.com/elkowar/eww">eww</a> and 
+<a href="https://github.com/Aylur/astal">astal</a> to create complex widgets.
+</p>
+
+<p>
+Nowadays, many these graphical shells libraries are made for Wayland instead of
+X11 because of the recent
+<a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1">layer shell</a>
+protocol, which allows the creation of graphical shell components that work on
+any Wayland compositor that implements it.
+And, despite it being a
+<a href="https://gitlab.freedesktop.org/wlroots/wlr-protocols">wlroots extension</a>
+and not part of the main 
+<a href="https://gitlab.freedesktop.org/wayland/wayland-protocols">wayland protocols</a>,
+it's already
+<a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#compositor-support">supported
+on multiple modern compositors</a>, since any wayland compositor based on
+wlroots or smithay should have layer shell support. This allows the creation of
+widgets that work on multiple compositors.
+</p>
+
+<p>
+To the best of my knowledge, there are not any big organizations or
+corporations, like KDE and GNOME, working on the creation of such compositor
+agnostic graphical shells, the space still seems dominated by a niche community
+of programmers.
 </p>
 
 <h2>
@@ -36,40 +69,51 @@ change desktop environments or wayland compositors.
 </h2>
 
 <p>
-The main objective is to make a desktop shell for wayland that isn't tied to
-any specific wayland compositor. That's made possible by a recent wayland
-protocol extension called 
-<a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1">layer shell</a>.
-, which despite being a
-<a href="https://gitlab.freedesktop.org/wlroots/wlr-protocols">wlroots extension</a>
-and not part of the main 
-<a href="https://gitlab.freedesktop.org/wayland/wayland-protocols">wayland protocols</a>
-, it's already
-<a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#compositor-support">supported
-on multiple modern compositors</a>. Any wayland compositor based on wlroots
-or smithay should have layer shell support.
+Therefore, the main objective is to develop a compositor agnostic desktop shell
+for wayland while exploring the limits of the layer shell protocol. It's
+expected to find widgets that are hard, or impossible, to make without breaking
+the compositor agnostic rule, so a part of the project is also to find ways to
+work around it.
 </p>
 
 <p>
-The layer shell protocol allows applications to create surface layers and
-anchor it to a corner of the screen. For example, a simple taskbar could be
-created with a surface at the "top" layer anchored to the "bottom" corner with
-an 
-<a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#zwlr_layer_surface_v1:request:set_exclusive_zone">exclusive zone</a>,
-which tells the compositor to reserve it some space to avoid it obstructing
-with the other surfaces and windows.
+The desktop shell will be called Azalea and none of the libraries mentioned
+above will be used to create it, I intend to create a new library and use it to
+develop Azalea. This core library will be open source to allow other developers
+to create their own desktop shells as well. And since the main target audience
+of Azalea are developers, not general users, all the settings and
+configurations will be done through dotfiles, which are better for versioning
+and easy to share.
 </p>
 
 <p>
-The desktop shell will be called Azalea and, as part of the project, a core
-library will be developed to auxiliate the creation of widgets. This core
-library will be open source to allow other developers to create their own
-desktop shells as well.
+As a personal goal, I'll also use this project to explore how well does 
+<a href="https://nixos.org/">Nix</a>
+perform as a tool for reproducible development, building, and packaging. As
+well as creating a reproducible NixOS virtual machine to run the project under
+multiple wayland compositors, since it's supposed to be compositor agnostic.
+</p>
+
+<p>
+As extra objectives I also hope to develop a basic greeter using 
+<a href="https://git.sr.ht/~kennylevinsen/greetd">greetd</a> and a
+lock screen using the <a
+href="https://wayland.app/protocols/ext-session-lock-v1">session lock</a>
+protocol.
 </p>
 
 <h2>
   Work plan
 </h2>
+
+<h2>
+  References
+</h2>
+
+<ul>
+  <li>Drew DeVault's blog post about layer shell; <a
+      href="https://drewdevault.com/2018/07/29/Wayland-shells.html">https://drewdevault.com/2018/07/29/Wayland-shells.html</a></li>
+</ul>
 
 <p>
 </p>
