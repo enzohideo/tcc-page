@@ -9,11 +9,59 @@
     td {
       text-align: center;
     }
+    nav {
+      background-color: var(--fg)
+    }
+    nav > :first-child {
+      color: var(--text) !important;
+      background-color: var(--bg);
+    }
+    .tab {
+      border: none;
+      border-radius: 0;
+      color: var(--accent);
+      background-color: var(--disabled);
+      margin: 0;
+    }
+    .tab:hover:enabled {
+      color: var(--bg);
+      background-color: var(--accent) !important;
+    }
+    .tab:disabled {
+      color: var(--text);
+      background-color: var(--bg);
+    }
+    #stack {
+      padding: 0 32px 32px 32px;
+      background-color: var(--bg);
+    }
+    body {
+      margin: 32px 0;
+      background-color: var(--disabled);
+    }
   </style>
 </head>
 
 <body>
-<section>
+
+<nav>
+  <button onclick="
+    stack.view('proposal');
+    this.parentNode.prepend(this);
+  " class="tab">Proposal</button>
+  <button onclick="
+    stack.view('progress');
+    this.parentNode.prepend(this);
+  " class="tab">Progress</button>
+  <button onclick="
+    stack.view('monograph')
+    this.parentNode.prepend(this);
+  " class="tab">Monograph</button>
+</nav>
+
+<div id="stack">
+
+<div id="proposal">
 <h1>
   Azalea
 </h1>
@@ -288,7 +336,20 @@ protocol.
   <li>Drew DeVault's blog post about layer shell; <a
       href="https://drewdevault.com/2018/07/29/Wayland-shells.html">https://drewdevault.com/2018/07/29/Wayland-shells.html</a></li>
 </ul>
-</section>
+</div>
+
+<div id="progress">
+<h1>WIP</h1>
+</div>
+
+<div id="monograph">
+<h1>WIP</h1>
+</div>
+
+</div>
+
+<script src="./stack.js" defer></script>
+
 </body>
 
 </html>
