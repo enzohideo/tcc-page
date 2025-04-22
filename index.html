@@ -7,11 +7,14 @@
 </head>
 
 <body>
-<section class="section">
-<div class="container">
-<h1 class="title">
-  Azalea: a compositor agnostic desktop shell for Wayland
+<section>
+<div>
+<h1>
+  Azalea
 </h1>
+<h4>
+  Compositor agnostic desktop shell for Wayland
+</h4>
 <ul>
   <li><b>Author</b>: Enzo Hideo Kobayashi</li>
   <li><b>Advisors</b>: Alfredo Goldman and Nelson Posse Lago (awaiting confirmation)</li>
@@ -40,58 +43,58 @@ own widgets instead, which is part of a hobby informally referred to as
 
 <p>
 In the latter context of users developing their own widgets, it's common the
-usage of libraries to create specific graphical shell components, like <a
+usage of libraries to create <b>specific</b> graphical shell components, like <a
 href="https://github.com/Alexays/Waybar">waybar</a> and 
 <a href="https://github.com/polybar/polybar">polybar</a> 
 to create a basic status bar, and libraries that offer a bit more freedom, like
 <a href="https://github.com/elkowar/eww">eww</a> and 
-<a href="https://github.com/Aylur/astal">astal</a> to create complex widgets.
+<a href="https://github.com/Aylur/astal">astal</a> to create <b>generic and complex</b> widgets.
 </p>
 
 <p>
-Nowadays, many these graphical shells libraries are made for Wayland instead of
+Nowadays, many of these graphical shells libraries are made for Wayland instead of
 X11 because of the recent
 <a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1">layer shell</a>
 protocol, which allows the creation of graphical shell components that work on
 any Wayland compositor that implements it.
-And, despite it being a
+And even though it's a
 <a href="https://gitlab.freedesktop.org/wlroots/wlr-protocols">wlroots extension</a>
 and not part of the main 
 <a href="https://gitlab.freedesktop.org/wayland/wayland-protocols">wayland protocols</a>,
 it's already
 <a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#compositor-support">supported
-on multiple modern compositors</a>, since any wayland compositor based on
+on many modern compositors</a>, since any wayland compositor based on
 wlroots or smithay should have layer shell support. This allows the creation of
 widgets that work on multiple compositors.
 </p>
 
-<p>
-To the best of my knowledge, there are not any big organizations or
-corporations, like KDE and GNOME, working on the creation of such compositor
-agnostic graphical shells, the space still seems dominated by a niche community
-of programmers.
-</p>
+<!-- <p> -->
+<!-- To the best of my knowledge, there aren't any big organizations or corporations -->
+<!-- working on the creation of such compositor agnostic graphical shells, -->
+<!-- the space still seems dominated by a niche community of programmers. -->
+<!-- </p> -->
 
 <h2>
   Objectives
 </h2>
 
 <p>
-Therefore, the main objective is to develop a compositor agnostic desktop shell
-for wayland while exploring the limits of the layer shell protocol. It's
-expected to find widgets that are hard, or impossible, to make without breaking
-the compositor agnostic rule, so a part of the project is also to find ways to
-work around it.
+The main objective is to develop a compositor agnostic desktop shell for
+          wayland while exploring the limits of the layer shell protocol. It's
+          expected to find widgets that are difficult to develop without
+          breaking the compositor agnostic rule, so a part of the project is
+          also to find ways to work around it.
 </p>
 
 <p>
-The desktop shell will be called Azalea and none of the libraries mentioned
-above will be used to create it, I intend to create a new library and use it to
-develop Azalea. This core library will be open source to allow other developers
-to create their own desktop shells as well. And since the main target audience
-of Azalea are developers, not general users, all the settings and
-configurations will be done through dotfiles, which are better for versioning
-and easy to share.
+The name of the desktop shell is Azalea and I intend to use <a
+            href="https://www.rust-lang.org/">Rust</a> as main programming
+          language. The core library developed will be based on gtk4 and is be
+          open source to allow other developers to create their own desktop
+          shells as well. And since the main target audience of Azalea are
+          developers, not general users, all the settings and configurations
+          will be done through dotfiles, which are better for versioning and
+          easier to share.
 </p>
 
 <p>
@@ -105,7 +108,7 @@ multiple wayland compositors, since it's supposed to be compositor agnostic.
 <p>
 As extra objectives I also hope to develop a basic greeter using 
 <a href="https://git.sr.ht/~kennylevinsen/greetd">greetd</a> and a
-lock screen using the <a
+lock screen using the wayland <a
 href="https://wayland.app/protocols/ext-session-lock-v1">session lock</a>
 protocol.
 </p>
