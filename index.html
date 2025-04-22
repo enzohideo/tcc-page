@@ -5,6 +5,11 @@
   <meta charset="utf-8">
   <title>Azalea Desktop Shell - TCC</title>
   <link rel="stylesheet" href="./simple.min.css">
+  <style>
+    td {
+      text-align: center;
+    }
+  </style>
 </head>
 
 <body>
@@ -14,7 +19,7 @@
   Azalea
 </h1>
 <h4>
-  Compositor agnostic desktop shell for Wayland
+  A compositor agnostic desktop shell for Wayland
 </h4>
 <ul>
   <li><b>Author</b>: Enzo Hideo Kobayashi</li>
@@ -53,27 +58,19 @@ to create a basic status bar, and libraries that offer a bit more freedom, like
 </p>
 
 <p>
-Nowadays, many of these graphical shells libraries are made for Wayland instead of
-X11 because of the recent
-<a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1">layer shell</a>
-protocol, which allows the creation of graphical shell components that work on
-any Wayland compositor that implements it.
-And even though it's a
-<a href="https://gitlab.freedesktop.org/wlroots/wlr-protocols">wlroots extension</a>
-and not part of the main 
-<a href="https://gitlab.freedesktop.org/wayland/wayland-protocols">wayland protocols</a>,
-it's already
-<a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#compositor-support">supported
-on many modern compositors</a>, since any wayland compositor based on
-wlroots or smithay should have layer shell support. This allows the creation of
-widgets that work on multiple compositors.
+Nowadays, many of these graphical shells libraries are made for Wayland instead
+          of X11 because of the recent 
+          <a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1">layer
+            shell
+          </a> protocol, which allows the creation of graphical shell
+          components that work on any Wayland compositor that implements it.
+          And despite being a 
+          <a href="https://gitlab.freedesktop.org/wlroots/wlr-protocols">wlroots
+            extension</a>, it's already 
+          <a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#compositor-support">
+            supported on many compositors.
+          </a>
 </p>
-
-<!-- <p> -->
-<!-- To the best of my knowledge, there aren't any big organizations or corporations -->
-<!-- working on the creation of such compositor agnostic graphical shells, -->
-<!-- the space still seems dominated by a niche community of programmers. -->
-<!-- </p> -->
 
 <h2>
   Objectives
@@ -82,7 +79,7 @@ widgets that work on multiple compositors.
 <p>
 The main objective is to develop a compositor agnostic desktop shell for
           wayland while exploring the limits of the layer shell protocol. It's
-          expected to find widgets that are difficult to develop without
+          expected to find a few widgets that are difficult to develop without
           breaking the compositor agnostic rule, so a part of the project is
           also to find ways to work around it.
 </p>
@@ -115,8 +112,164 @@ protocol.
 </p>
 
 <h2>
-  Work plan
+  Schedule
 </h2>
+
+<table>
+  <tr>
+    <th>Task</th>
+    <th>May</th>
+    <th>June</th>
+    <th>July</th>
+    <th>August</th>
+    <th>September</th>
+    <th>October</th>
+  </tr>
+  <tr>
+    <th>Core library</th>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <th>Clock, Date, Calendar<br>(taskbar)</th>
+    <td>x</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>MPRIS<br>(DBus, taskbar)</th>
+    <td>x</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Network<br>(taskbar + menu)</th>
+    <td>x</td>
+    <td>x</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Bluetooth<br>(taskbar + menu)</th>
+    <td>x</td>
+    <td>x</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>NixOS VM</th>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>System tray<br>(DBus, taskbar)</th>
+    <td></td>
+    <td>x</td>
+    <td>x</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Wallpaper selector</th>
+    <td></td>
+    <td>x</td>
+    <td>x</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Dynamic theme based on wallpaper</th>
+    <td></td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>App launcher</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>x</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Notifications<br>(DBus, taskbar + menu)</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>x</td>
+    <td>x</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Workspace selector</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>x</td>
+    <td>x</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>Audio visualizer</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <th>Greeter (extra)</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <th>Session lock (extra)</th>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+  <tr>
+    <th>Monograph</th>
+    <td></td>
+    <td></td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+    <td>x</td>
+  </tr>
+</table> 
 
 <h2>
   References
