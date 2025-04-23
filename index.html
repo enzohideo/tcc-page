@@ -12,12 +12,6 @@
     nav {
       background-color: var(--fg)
     }
-    nav > :first-child {
-      animation: show 600ms 100ms cubic-bezier(0.38, 0.97, 0.56, 0.76) forwards;
-      opacity: 0;
-      color: var(--text) !important;
-      background-color: var(--bg);
-    }
     .tab {
       border: none;
       border-radius: 0;
@@ -27,11 +21,19 @@
     }
     .tab:hover:enabled {
       color: var(--bg);
-      background-color: var(--accent) !important;
+      background-color: var(--accent);
     }
     .tab:disabled {
       color: var(--text);
       background-color: var(--bg);
+    }
+    .tab-selected {
+      color: var(--text);
+      background-color: var(--bg);
+    }
+    .tab-selected:hover {
+      color: var(--text) !important;
+      background-color: var(--bg) !important;
     }
     #stack {
       padding: 0 32px 32px 32px;
@@ -41,10 +43,6 @@
       margin: 32px 0;
       background-color: var(--disabled);
     }
-
-    @keyframes show {
-      100% { opacity: 1; }
-    }
   </style>
 </head>
 
@@ -53,16 +51,16 @@
 <nav>
   <button onclick="
     stack.view('proposal');
-    this.parentNode.prepend(this);
-  " class="tab">Proposal</button>
+    selector.select('tab-proposal');
+  " id="tab-proposal" class="tab">Proposal</button>
   <button onclick="
     stack.view('progress');
-    this.parentNode.prepend(this);
-  " class="tab">Progress</button>
+    selector.select('tab-progress');
+  " id="tab-progress" class="tab">Progress</button>
   <button onclick="
     stack.view('monograph')
-    this.parentNode.prepend(this);
-  " class="tab">Monograph</button>
+    selector.select('tab-monograph');
+  " id="tab-monograph" class="tab">Monograph</button>
 </nav>
 
 <div id="stack">
