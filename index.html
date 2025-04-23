@@ -89,38 +89,39 @@ selectors, systray, notification menu, etc.
 </p>
 
 <p>
-The most popular graphical shells on Linux are oftentimes tied to a desktop
-environment, like KDE's plasmashell and GNOME Shell. However, there's also a
-niche community of users that prefer using window managers (X11) or wayland
-compositors directly without a full-fledged graphical shell, like i3,
-AwesomeWM, Sway, Hyprland, etc. Among those users, some enjoy to create their
-own widgets instead, which is part of a hobby informally referred to as 
-<a href="https://wiki.installgentoo.com/index.php/GNU/Linux_ricing">"ricing"</a>.
+On Linux, the most popular graphical shells are oftentimes tied to a desktop
+          environment, like KDE's plasmashell and GNOME Shell. However, it's
+          also possible to use window managers (X11) or wayland compositors
+          directly without a full-fledged graphical shell, like i3, AwesomeWM,
+          Sway, Hyprland, etc. In the latter case, the user has more freedom to
+          choose or create their own widgets, or "graphical shell components",
+          which is part of a hobby informally referred to as <a
+            href="https://wiki.installgentoo.com/index.php/GNU/Linux_ricing">"ricing"</a>.
 </p>
 
 <p>
-In the latter context of users developing their own widgets, it's common the
-usage of libraries to create <b>specific</b> graphical shell components, like <a
-href="https://github.com/Alexays/Waybar">waybar</a> and 
-<a href="https://github.com/polybar/polybar">polybar</a> 
-to create a basic status bar, and libraries that offer a bit more freedom, like
-<a href="https://github.com/elkowar/eww">eww</a> and 
-<a href="https://github.com/Aylur/astal">astal</a> to create <b>generic and complex</b> widgets.
+In that context of developing graphical shell components, it's common the usage
+          of libraries to create <b>specific</b> widgets, like <a
+            href="https://github.com/Alexays/Waybar">waybar</a> and <a
+            href="https://github.com/polybar/polybar">polybar</a> to create a
+          basic status bar, and libraries that offer a bit more freedom, like
+          <a href="https://github.com/elkowar/eww">eww</a> and <a
+            href="https://github.com/Aylur/astal">astal</a> to create
+          <b>generic and complex</b> widgets.
 </p>
 
-<p>
-Nowadays, many of these graphical shells libraries are made for Wayland instead
-          of X11 because of the recent 
-          <a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1">layer
-            shell
-          </a> protocol, which allows the creation of graphical shell
+<p> Recently, many of these graphical shells libraries are made for Wayland
+          instead of X11 because of the recent <a
+            href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1">layer
+            shell </a> protocol, which allows the creation of graphical shell
           components that work on any Wayland compositor that implements it.
-          And despite being a 
-          <a href="https://gitlab.freedesktop.org/wlroots/wlr-protocols">wlroots
-            extension</a>, it's already 
-          <a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#compositor-support">
-            supported on many compositors.
-          </a>
+          And despite being a <a
+            href="https://gitlab.freedesktop.org/wlroots/wlr-protocols">wlroots
+            extension</a>, it's already <a
+            href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#compositor-support">
+            supported on many compositors. </a> This allows the creation of
+          desktop shells that are not tied to a specific wayland compositor or
+          desktop environment.
 </p>
 
 <h2>
