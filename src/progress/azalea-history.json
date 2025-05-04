@@ -1,0 +1,1849 @@
+[
+  {
+    "commit": "3b55327f5b89a9643ae945d8dce684a62f127960",
+    "author": "enzohideo",
+    "date": "Sat May 3 23:23:48 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 2,
+      "deletions": 0,
+      "files": ["flake.nix"],
+      "file_stats": [
+        {
+          "name": "flake.nix",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "nix: Add cloc to devshell",
+    "epoch": 1746325428,
+    "epoch_utc": null
+  },
+  {
+    "commit": "6df0f7df75ab71e1aad9ec0472e3dc43cb7b014c",
+    "author": "enzohideo",
+    "date": "Sat May 3 23:05:02 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 1,
+      "files": ["azalea-core/src/app.rs"],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-core: Rename APP_ID to 'br.usp.ime.Azalea'",
+    "epoch": 1746324302,
+    "epoch_utc": null
+  },
+  {
+    "commit": "9cc1f486c57c8b0935f281e27f2178ef7ddb3723",
+    "author": "enzohideo",
+    "date": "Sat May 3 22:56:04 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 26,
+      "deletions": 5,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs",
+        "azalea-core/src/config.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 14
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 8
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 8
+        }
+      ]
+    },
+    "message": "azalea-core: Add cli::WindowCommand::Toggle to toggle windows remotely",
+    "epoch": 1746323764,
+    "epoch_utc": null
+  },
+  {
+    "commit": "abe1f5e0eee2aabdbb8de6a82cd3fb3ae732bd79",
+    "author": "enzohideo",
+    "date": "Sat May 3 22:39:18 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 22,
+      "deletions": 8,
+      "files": ["azalea-core/src/app.rs", "azalea-core/src/cli.rs"],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 24
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 6
+        }
+      ]
+    },
+    "message": "azalea-core: Write cli::Response to remote instances",
+    "epoch": 1746322758,
+    "epoch_utc": null
+  },
+  {
+    "commit": "35755473840c70451a3baebdaed9086e3e947383",
+    "author": "enzohideo",
+    "date": "Sat May 3 22:23:04 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 0,
+      "files": ["azalea-core/src/config.rs"],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-core: Add #[group(skip)] to fix clap",
+    "epoch": 1746321784,
+    "epoch_utc": null
+  },
+  {
+    "commit": "6c56d26084673b2609549749d87ea1346aad8270",
+    "author": "enzohideo",
+    "date": "Sat May 3 22:17:01 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 69,
+      "deletions": 16,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/lib.rs",
+        "azalea-core/src/log.rs",
+        "azalea-core/src/socket.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 28
+        },
+        {
+          "name": "azalea-core/src/lib.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-core/src/log.rs",
+          "lines_changed": 46
+        },
+        {
+          "name": "azalea-core/src/socket.rs",
+          "lines_changed": 10
+        }
+      ]
+    },
+    "message": "azalea-core: Add log module",
+    "epoch": 1746321421,
+    "epoch_utc": null
+  },
+  {
+    "commit": "a5e18f7b893c76996971d920183b305cf35cb560",
+    "author": "enzohideo",
+    "date": "Sat May 3 21:48:20 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 44,
+      "deletions": 30,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/config.rs",
+        "azalea-window/src/lib.rs",
+        "azalea-window/src/taskbar/mod.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 18
+        },
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 12
+        },
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 8
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 8
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 28
+        }
+      ]
+    },
+    "message": "refactor: Rename InitWrapper to ConfigWrapper",
+    "epoch": 1746319700,
+    "epoch_utc": null
+  },
+  {
+    "commit": "2017e7a0c47af7fbd47bf65c4adec0e427c331f8",
+    "author": "enzohideo",
+    "date": "Sat May 3 21:02:39 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 11,
+      "deletions": 2,
+      "files": ["azalea-service/src/lib.rs"],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 13
+        }
+      ]
+    },
+    "message": "azalea-service: Add Service<Model>::new to create service",
+    "epoch": 1746316959,
+    "epoch_utc": null
+  },
+  {
+    "commit": "76900abb14c6a38053c8445a6881d5cd1191c2cf",
+    "author": "enzohideo",
+    "date": "Sat May 3 20:31:58 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 3,
+      "deletions": 5,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/config.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-core: config: Set Layer as obligatory",
+    "epoch": 1746315118,
+    "epoch_utc": null
+  },
+  {
+    "commit": "1e6545748745a0055ce59ff6d8e8587ddd79935c",
+    "author": "enzohideo",
+    "date": "Sat May 3 20:20:22 2025 -0300",
+    "stats": {
+      "files_changed": 7,
+      "insertions": 106,
+      "deletions": 108,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs",
+        "azalea-core/src/config.rs",
+        "azalea-core/src/lib.rs",
+        "azalea-core/src/model.rs",
+        "azalea-window/src/taskbar/mod.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 7
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 82
+        },
+        {
+          "name": "azalea-core/src/lib.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-core/src/model.rs",
+          "lines_changed": 79
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 37
+        }
+      ]
+    },
+    "message": "azalea-core: Merge config and model modules",
+    "epoch": 1746314422,
+    "epoch_utc": null
+  },
+  {
+    "commit": "5f43cee41997eb0b6238ee3e38a2b29d28cc15ab",
+    "author": "enzohideo",
+    "date": "Sat May 3 20:07:48 2025 -0300",
+    "stats": {
+      "files_changed": 7,
+      "insertions": 166,
+      "deletions": 48,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-window/Cargo.toml",
+        "azalea-window/src/taskbar/mod.rs",
+        "azalea-window/src/taskbar/widget/mod.rs",
+        "azalea-window/src/taskbar/widget/time.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 1
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-window/Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 62
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/mod.rs",
+          "lines_changed": 35
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/time.rs",
+          "lines_changed": 80
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 34
+        }
+      ]
+    },
+    "message": "azalea-window: Use Command to get time instead of Service",
+    "epoch": 1746313668,
+    "epoch_utc": null
+  },
+  {
+    "commit": "b6b1112354dcf2909dda3d1e336bbe72639813eb",
+    "author": "enzohideo",
+    "date": "Sat May 3 19:00:05 2025 -0300",
+    "stats": {
+      "files_changed": 10,
+      "insertions": 331,
+      "deletions": 14,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-service/Cargo.toml",
+        "azalea-service/src/lib.rs",
+        "azalea-service/src/time.rs",
+        "azalea-window/Cargo.toml",
+        "azalea-window/src/taskbar/mod.rs",
+        "azalea/Cargo.toml",
+        "azalea/src/lib.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 165
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 10
+        },
+        {
+          "name": "azalea-service/Cargo.toml",
+          "lines_changed": 21
+        },
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 48
+        },
+        {
+          "name": "azalea-service/src/time.rs",
+          "lines_changed": 25
+        },
+        {
+          "name": "azalea-window/Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 37
+        },
+        {
+          "name": "azalea/Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea/src/lib.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 33
+        }
+      ]
+    },
+    "message": "azalea-service: Init with simple time service",
+    "epoch": 1746309605,
+    "epoch_utc": null
+  },
+  {
+    "commit": "8cf26d3e43d11ff1c444c4d493bce43ec96cdfc0",
+    "author": "enzohideo",
+    "date": "Wed Apr 30 13:03:43 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 54,
+      "deletions": 4,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/model.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 18
+        },
+        {
+          "name": "azalea-core/src/model.rs",
+          "lines_changed": 31
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 9
+        }
+      ]
+    },
+    "message": "azalea: Apply layer shell options",
+    "epoch": 1746029023,
+    "epoch_utc": null
+  },
+  {
+    "commit": "f91f386cf760ec7907d663fab126582df766e6fa",
+    "author": "enzohideo",
+    "date": "Wed Apr 30 12:41:02 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 0,
+      "files": ["azalea-core/src/app.rs"],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea: Add missing call to store_window",
+    "epoch": 1746027662,
+    "epoch_utc": null
+  },
+  {
+    "commit": "5d0b3bbe5c481968bc86729fe388d5fd050dd6cc",
+    "author": "enzohideo",
+    "date": "Wed Apr 30 12:11:40 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 31,
+      "deletions": 22,
+      "files": ["azalea-core/src/app.rs", "azalea/src/main.rs"],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 24
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 29
+        }
+      ]
+    },
+    "message": "azalea: Add Application::unwrap_window()",
+    "epoch": 1746025900,
+    "epoch_utc": null
+  },
+  {
+    "commit": "f81e8662fcc1dafb44f3752afac3b85fcf59bc76",
+    "author": "enzohideo",
+    "date": "Wed Apr 30 08:36:17 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 3,
+      "deletions": 1,
+      "files": ["azalea/src/main.rs"],
+      "file_stats": [
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea: Add window to ControllerWrapper::Default",
+    "epoch": 1746012977,
+    "epoch_utc": null
+  },
+  {
+    "commit": "d6d5523a9e24042ee0bc8a8e54ea7dbe7f6ab55e",
+    "author": "enzohideo",
+    "date": "Tue Apr 29 17:13:41 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 12,
+      "deletions": 11,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs",
+        "azalea-core/src/config.rs",
+        "azalea-core/src/model.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 15
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-core/src/model.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "refactor: Rename InitData to InitDTO",
+    "epoch": 1745957621,
+    "epoch_utc": null
+  },
+  {
+    "commit": "f7adb164628f47d9e77d921479f7ebe598829ece",
+    "author": "enzohideo",
+    "date": "Tue Apr 29 17:12:30 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 17,
+      "deletions": 14,
+      "files": ["azalea-core/src/app.rs", "azalea/src/main.rs"],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 25
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 6
+        }
+      ]
+    },
+    "message": "azalea-core: Add Application::create_window_from_model()",
+    "epoch": 1745957550,
+    "epoch_utc": null
+  },
+  {
+    "commit": "98b7828a80afdc27b300d9919f4386314fde604a",
+    "author": "enzohideo",
+    "date": "Tue Apr 29 17:01:34 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 0,
+      "deletions": 2,
+      "files": ["Cargo.lock", "azalea-core/Cargo.toml"],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-core/Cargo.toml",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-core: chore: Remove relm4 dependency",
+    "epoch": 1745956894,
+    "epoch_utc": null
+  },
+  {
+    "commit": "595bdd3a7eabb913b602104eb2c21e53fc8fecce",
+    "author": "enzohideo",
+    "date": "Tue Apr 29 16:59:27 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 63,
+      "deletions": 38,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs",
+        "azalea-core/src/config.rs",
+        "azalea-core/src/model.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 43
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-core/src/model.rs",
+          "lines_changed": 10
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 44
+        }
+      ]
+    },
+    "message": "azalea: Impl create_window by matching Init, and save Connectors",
+    "epoch": 1745956767,
+    "epoch_utc": null
+  },
+  {
+    "commit": "5d8631570bcdaf4686ebc78c70eda026da6b4c72",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 23:45:58 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 16,
+      "deletions": 9,
+      "files": ["azalea-core/src/app.rs", "azalea/src/main.rs"],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 21
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea-core: Allow Application to store state",
+    "epoch": 1745894758,
+    "epoch_utc": null
+  },
+  {
+    "commit": "2388fe18bed02ef35e110a90d860efd8e8ca75e9",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 23:25:16 2025 -0300",
+    "stats": {
+      "files_changed": 7,
+      "insertions": 17,
+      "deletions": 5,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-window/Cargo.toml",
+        "azalea-window/src/taskbar/mod.rs",
+        "azalea/Cargo.toml",
+        "azalea/src/lib.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 4
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-window/Cargo.toml",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea/Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea/src/lib.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 7
+        }
+      ]
+    },
+    "message": "azalea: Re-export azalea-window",
+    "epoch": 1745893516,
+    "epoch_utc": null
+  },
+  {
+    "commit": "7ffc90601c1cbdd545619c8f4f761c772cb51913",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 23:18:00 2025 -0300",
+    "stats": {
+      "files_changed": 10,
+      "insertions": 36,
+      "deletions": 77,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-core/Cargo.toml",
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs",
+        "azalea-core/src/config.rs",
+        "azalea-core/src/model.rs",
+        "azalea-core/src/socket.rs",
+        "azalea/Cargo.toml",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 36
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-core/Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 15
+        },
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-core/src/model.rs",
+          "lines_changed": 13
+        },
+        {
+          "name": "azalea-core/src/socket.rs",
+          "lines_changed": 36
+        },
+        {
+          "name": "azalea/Cargo.toml",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "refactor: Replace bincode with serde_json",
+    "epoch": 1745893080,
+    "epoch_utc": null
+  },
+  {
+    "commit": "286e25fb7e6848eb2b22d87c8624af37a573924f",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 22:40:31 2025 -0300",
+    "stats": {
+      "files_changed": 12,
+      "insertions": 55,
+      "deletions": 11,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-core/Cargo.toml",
+        "{azalea/src/lib => azalea-core/src}/app.rs",
+        "{azalea/src/lib => azalea-core/src}/cli.rs",
+        "{azalea/src/lib => azalea-core/src}/config.rs",
+        "azalea/src/lib/mod.rs => azalea-core/src/lib.rs",
+        "{azalea/src/lib => azalea-core/src}/model.rs",
+        "{azalea/src/lib => azalea-core/src}/socket.rs",
+        "azalea/Cargo.toml",
+        "azalea/src/lib.rs",
+        "azalea/src/{main/mod.rs => main.rs}"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 12
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 13
+        },
+        {
+          "name": "azalea-core/Cargo.toml",
+          "lines_changed": 22
+        },
+        {
+          "name": "{azalea/src/lib => azalea-core/src}/app.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea/src/lib => azalea-core/src}/cli.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea/src/lib => azalea-core/src}/config.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea/src/lib/mod.rs => azalea-core/src/lib.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea/src/lib => azalea-core/src}/model.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea/src/lib => azalea-core/src}/socket.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea/Cargo.toml",
+          "lines_changed": 14
+        },
+        {
+          "name": "azalea/src/lib.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea/src/{main/mod.rs => main.rs}",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "chore: Separate azalea and azalea-core",
+    "epoch": 1745890831,
+    "epoch_utc": null
+  },
+  {
+    "commit": "4d38c7d215a8a2032a323b9167d1ee84ffdb1c59",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 22:31:34 2025 -0300",
+    "stats": {
+      "files_changed": 7,
+      "insertions": 88,
+      "deletions": 7,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-window/Cargo.toml",
+        "azalea-window/src/lib.rs",
+        "azalea-window/src/taskbar/mod.rs",
+        "azalea/Cargo.toml",
+        "azalea/src/main/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 11
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 7
+        },
+        {
+          "name": "azalea-window/Cargo.toml",
+          "lines_changed": 13
+        },
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 49
+        },
+        {
+          "name": "azalea/Cargo.toml",
+          "lines_changed": 11
+        },
+        {
+          "name": "azalea/src/main/mod.rs",
+          "lines_changed": 3
+        }
+      ]
+    },
+    "message": "azalea-window: Add barebones taskbar",
+    "epoch": 1745890294,
+    "epoch_utc": null
+  },
+  {
+    "commit": "6f72df6b1b2cb0c3e429c10c6bf41e384647f9f0",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 22:17:51 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 154,
+      "deletions": 115,
+      "files": [
+        "azalea/src/lib/app.rs",
+        "azalea/src/lib/cli.rs",
+        "azalea/src/lib/config.rs",
+        "azalea/src/lib/model.rs",
+        "azalea/src/main/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea/src/lib/app.rs",
+          "lines_changed": 209
+        },
+        {
+          "name": "azalea/src/lib/cli.rs",
+          "lines_changed": 21
+        },
+        {
+          "name": "azalea/src/lib/config.rs",
+          "lines_changed": 7
+        },
+        {
+          "name": "azalea/src/lib/model.rs",
+          "lines_changed": 10
+        },
+        {
+          "name": "azalea/src/main/mod.rs",
+          "lines_changed": 22
+        }
+      ]
+    },
+    "message": "model: Add generic InitData to window::Init",
+    "epoch": 1745889471,
+    "epoch_utc": null
+  },
+  {
+    "commit": "25bbe30c454fe13ea31998996e358a3b1f1bed21",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 21:55:38 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 47,
+      "deletions": 10,
+      "files": [
+        "azalea/src/lib/cli.rs",
+        "azalea/src/lib/config.rs",
+        "azalea/src/lib/model.rs",
+        "azalea/src/main/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea/src/lib/cli.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea/src/lib/config.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea/src/lib/model.rs",
+          "lines_changed": 50
+        },
+        {
+          "name": "azalea/src/main/mod.rs",
+          "lines_changed": 3
+        }
+      ]
+    },
+    "message": "model: Separate window and layer_shell namespaces",
+    "epoch": 1745888138,
+    "epoch_utc": null
+  },
+  {
+    "commit": "99a2a7b60ffd24aed286a015f2f8707d68443bde",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 21:24:37 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 16,
+      "deletions": 7,
+      "files": [
+        "azalea/src/lib/app.rs",
+        "azalea/src/lib/model.rs",
+        "azalea/src/main/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea/src/lib/app.rs",
+          "lines_changed": 6
+        },
+        {
+          "name": "azalea/src/lib/model.rs",
+          "lines_changed": 15
+        },
+        {
+          "name": "azalea/src/main/mod.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "model: Separate namespace and id",
+    "epoch": 1745886277,
+    "epoch_utc": null
+  },
+  {
+    "commit": "447646dde6b8baeb80646bdfa182146bcfb6586f",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 18:15:21 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 11,
+      "deletions": 6,
+      "files": [
+        "azalea/src/lib/app.rs",
+        "azalea/src/lib/model.rs",
+        "azalea/src/main/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea/src/lib/app.rs",
+          "lines_changed": 13
+        },
+        {
+          "name": "azalea/src/lib/model.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea/src/main/mod.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "app: Init layer shell and set namespace",
+    "epoch": 1745874921,
+    "epoch_utc": null
+  },
+  {
+    "commit": "cd19537b6502c2752c94116275df29e3482f44eb",
+    "author": "enzohideo",
+    "date": "Sat Apr 26 18:24:01 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 0,
+      "files": ["flake.nix"],
+      "file_stats": [
+        {
+          "name": "flake.nix",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "nix: Add rust-analyzer to devshell",
+    "epoch": 1745702641,
+    "epoch_utc": null
+  },
+  {
+    "commit": "d7d1bf0ec774ce262239ecddc7e34e519af28c42",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 11:42:49 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 393,
+      "deletions": 2,
+      "files": ["Cargo.lock", "azalea/Cargo.toml"],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 384
+        },
+        {
+          "name": "azalea/Cargo.toml",
+          "lines_changed": 11
+        }
+      ]
+    },
+    "message": "chore: Add gtk4-layer-shell, relm4, and serde",
+    "epoch": 1745851369,
+    "epoch_utc": null
+  },
+  {
+    "commit": "1ac17d0efe8b417ea9055ddb57ba9c1d4fc741d0",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 11:40:53 2025 -0300",
+    "stats": {
+      "files_changed": 6,
+      "insertions": 49,
+      "deletions": 8,
+      "files": [
+        "azalea/src/lib/app.rs",
+        "azalea/src/lib/cli.rs",
+        "azalea/src/lib/config.rs",
+        "azalea/src/lib/mod.rs",
+        "azalea/src/lib/model.rs",
+        "azalea/src/main/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea/src/lib/app.rs",
+          "lines_changed": 29
+        },
+        {
+          "name": "azalea/src/lib/cli.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea/src/lib/config.rs",
+          "lines_changed": 5
+        },
+        {
+          "name": "azalea/src/lib/mod.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea/src/lib/model.rs",
+          "lines_changed": 8
+        },
+        {
+          "name": "azalea/src/main/mod.rs",
+          "lines_changed": 9
+        }
+      ]
+    },
+    "message": "lib: Add basic model::Window and config::Config",
+    "epoch": 1745851253,
+    "epoch_utc": null
+  },
+  {
+    "commit": "eafb863aa41d1c9dd95dff14d730c31b11cf7cd6",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 10:49:30 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 5,
+      "deletions": 3,
+      "files": ["azalea/src/lib/app.rs"],
+      "file_stats": [
+        {
+          "name": "azalea/src/lib/app.rs",
+          "lines_changed": 8
+        }
+      ]
+    },
+    "message": "app: Send false to remote if it fails to parse cmd",
+    "epoch": 1745848170,
+    "epoch_utc": null
+  },
+  {
+    "commit": "0257da6aba2b6f20f5b6bab416e995b2fcc719fe",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 10:40:29 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 22,
+      "deletions": 12,
+      "files": ["azalea/src/lib/app.rs", "azalea/src/lib/cli.rs"],
+      "file_stats": [
+        {
+          "name": "azalea/src/lib/app.rs",
+          "lines_changed": 18
+        },
+        {
+          "name": "azalea/src/lib/cli.rs",
+          "lines_changed": 16
+        }
+      ]
+    },
+    "message": "cli: Separate Daemon and Window commands",
+    "epoch": 1745847629,
+    "epoch_utc": null
+  },
+  {
+    "commit": "5bd1c045804b9152f33175cf9f82da5e62ee76c0",
+    "author": "enzohideo",
+    "date": "Mon Apr 28 10:26:04 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 21,
+      "deletions": 23,
+      "files": ["azalea/src/lib/app.rs"],
+      "file_stats": [
+        {
+          "name": "azalea/src/lib/app.rs",
+          "lines_changed": 44
+        }
+      ]
+    },
+    "message": "app: Do not read stream inside handle_command",
+    "epoch": 1745846764,
+    "epoch_utc": null
+  },
+  {
+    "commit": "bdd5a9d647444c28c135a943c318a46f1a5a46af",
+    "author": "enzohideo",
+    "date": "Thu Apr 24 14:53:30 2025 -0300",
+    "stats": {
+      "files_changed": 8,
+      "insertions": 58,
+      "deletions": 50,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea/Cargo.toml",
+        "{src => azalea/src}/lib/app.rs",
+        "{src => azalea/src}/lib/cli.rs",
+        "{src => azalea/src}/lib/mod.rs",
+        "{src => azalea/src}/lib/socket.rs",
+        "{src => azalea/src}/main/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 62
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 25
+        },
+        {
+          "name": "azalea/Cargo.toml",
+          "lines_changed": 19
+        },
+        {
+          "name": "{src => azalea/src}/lib/app.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{src => azalea/src}/lib/cli.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{src => azalea/src}/lib/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{src => azalea/src}/lib/socket.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{src => azalea/src}/main/mod.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "chore: Add workspace to root",
+    "epoch": 1745517210,
+    "epoch_utc": null
+  },
+  {
+    "commit": "727d66a892afa1864a8d23e17f90439d0ce8d636",
+    "author": "enzohideo",
+    "date": "Mon Apr 21 16:12:50 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 10,
+      "deletions": 10,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "flake.nix",
+        "src/lib/app.rs",
+        "src/main/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 2
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 6
+        },
+        {
+          "name": "flake.nix",
+          "lines_changed": 4
+        },
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 6
+        },
+        {
+          "name": "src/main/mod.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "chore: Rename Lily to Azalea",
+    "epoch": 1745262770,
+    "epoch_utc": null
+  },
+  {
+    "commit": "38c30d7a252e451a98cc59d3d941b09e6f4aea15",
+    "author": "enzohideo",
+    "date": "Thu Mar 20 00:33:28 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 12,
+      "deletions": 3,
+      "files": ["src/lib/app.rs", "src/lib/socket.rs"],
+      "file_stats": [
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 5
+        },
+        {
+          "name": "src/lib/socket.rs",
+          "lines_changed": 10
+        }
+      ]
+    },
+    "message": "socket: Add connect to UnixStreamWrapper",
+    "epoch": 1742441608,
+    "epoch_utc": null
+  },
+  {
+    "commit": "7aa5090bba460da50bd723f35cc888f79f05778a",
+    "author": "enzohideo",
+    "date": "Thu Mar 20 00:23:04 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 3,
+      "deletions": 4,
+      "files": ["src/lib/app.rs", "src/lib/socket.rs"],
+      "file_stats": [
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "src/lib/socket.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "socket: Remove return value from loop_accept",
+    "epoch": 1742440984,
+    "epoch_utc": null
+  },
+  {
+    "commit": "39d59d65e2fd911f8ccca6b7c614860ae35a2d7d",
+    "author": "enzohideo",
+    "date": "Thu Mar 20 00:09:13 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 31,
+      "deletions": 34,
+      "files": ["src/lib/app.rs", "src/lib/socket.rs"],
+      "file_stats": [
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 52
+        },
+        {
+          "name": "src/lib/socket.rs",
+          "lines_changed": 13
+        }
+      ]
+    },
+    "message": "app: Separate handle_command()",
+    "epoch": 1742440153,
+    "epoch_utc": null
+  },
+  {
+    "commit": "927a0e02ca95fd366870313632b17f85005cedf8",
+    "author": "enzohideo",
+    "date": "Wed Mar 19 23:43:48 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 5,
+      "deletions": 9,
+      "files": ["src/lib/app.rs"],
+      "file_stats": [
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 14
+        }
+      ]
+    },
+    "message": "app: Use match instead of and_then",
+    "epoch": 1742438628,
+    "epoch_utc": null
+  },
+  {
+    "commit": "36655dc7458b193235889cd1109e4e3d340aeb79",
+    "author": "enzohideo",
+    "date": "Wed Mar 19 17:57:43 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 424,
+      "deletions": 92,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "src/lib/app.rs",
+        "src/lib/socket.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 224
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 76
+        },
+        {
+          "name": "src/lib/socket.rs",
+          "lines_changed": 214
+        }
+      ]
+    },
+    "message": "fix: socket: Use futures_lite and async_net",
+    "epoch": 1742417863,
+    "epoch_utc": null
+  },
+  {
+    "commit": "5a5a8da0d1b55268ace0670f43d0dc03827a7f2d",
+    "author": "enzohideo",
+    "date": "Wed Mar 19 16:17:36 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 26,
+      "deletions": 9,
+      "files": ["src/lib/app.rs", "src/lib/cli.rs", "src/lib/socket.rs"],
+      "file_stats": [
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 26
+        },
+        {
+          "name": "src/lib/cli.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "src/lib/socket.rs",
+          "lines_changed": 8
+        }
+      ]
+    },
+    "message": "lib: Attempt to create window",
+    "epoch": 1742411856,
+    "epoch_utc": null
+  },
+  {
+    "commit": "1ce682063bc92c679a99f0b281780fff903e32f2",
+    "author": "enzohideo",
+    "date": "Wed Mar 19 12:54:52 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 24,
+      "deletions": 18,
+      "files": ["src/lib/app.rs"],
+      "file_stats": [
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 42
+        }
+      ]
+    },
+    "message": "app: Handle remote commands in separate function",
+    "epoch": 1742399692,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e768982e1d2d0012005c23b9716a5917491c2cda",
+    "author": "enzohideo",
+    "date": "Wed Mar 19 12:41:54 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 60,
+      "deletions": 36,
+      "files": ["src/lib/app.rs", "src/lib/socket.rs"],
+      "file_stats": [
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 53
+        },
+        {
+          "name": "src/lib/socket.rs",
+          "lines_changed": 43
+        }
+      ]
+    },
+    "message": "socket: Add UnixListenerWrapper",
+    "epoch": 1742398914,
+    "epoch_utc": null
+  },
+  {
+    "commit": "7a5a48c01b1e89ef7dc99956f1866c0486c9328a",
+    "author": "enzohideo",
+    "date": "Wed Mar 19 12:19:53 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 70,
+      "deletions": 43,
+      "files": ["src/lib/app.rs", "src/lib/mod.rs", "src/lib/socket.rs"],
+      "file_stats": [
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 63
+        },
+        {
+          "name": "src/lib/mod.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "src/lib/socket.rs",
+          "lines_changed": 49
+        }
+      ]
+    },
+    "message": "socket: Add UnixStreamWrapper",
+    "epoch": 1742397593,
+    "epoch_utc": null
+  },
+  {
+    "commit": "020bde0447ed9ea786a69ca3466021f2d96b0752",
+    "author": "enzohideo",
+    "date": "Wed Mar 19 11:46:32 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 26,
+      "deletions": 1,
+      "files": ["src/lib/app.rs"],
+      "file_stats": [
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 27
+        }
+      ]
+    },
+    "message": "app: Return value from daemon to remote",
+    "epoch": 1742395592,
+    "epoch_utc": null
+  },
+  {
+    "commit": "9bd40aef661e8b4e00e170112421193cc0835fea",
+    "author": "enzohideo",
+    "date": "Wed Mar 19 11:31:04 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 62,
+      "deletions": 67,
+      "files": ["src/lib/app.rs", "src/lib/cli.rs"],
+      "file_stats": [
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 117
+        },
+        {
+          "name": "src/lib/cli.rs",
+          "lines_changed": 12
+        }
+      ]
+    },
+    "message": "cli: app: Separate Daemon and Remote commands",
+    "epoch": 1742394664,
+    "epoch_utc": null
+  },
+  {
+    "commit": "962d487b13cfcdba02632bba0baed606deb1666e",
+    "author": "enzohideo",
+    "date": "Wed Mar 19 11:03:28 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 59,
+      "deletions": 10,
+      "files": ["Cargo.lock", "Cargo.toml", "src/lib/app.rs", "src/lib/cli.rs"],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 33
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 27
+        },
+        {
+          "name": "src/lib/cli.rs",
+          "lines_changed": 8
+        }
+      ]
+    },
+    "message": "app: Serialize command with bincode",
+    "epoch": 1742393008,
+    "epoch_utc": null
+  },
+  {
+    "commit": "ef14eded5eebe627cec9887de480fae55090935f",
+    "author": "enzohideo",
+    "date": "Wed Mar 19 10:27:00 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 68,
+      "deletions": 19,
+      "files": ["src/lib/app.rs"],
+      "file_stats": [
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 87
+        }
+      ]
+    },
+    "message": "app: Handle Daemon::Quit command",
+    "epoch": 1742390820,
+    "epoch_utc": null
+  },
+  {
+    "commit": "69825bdfeec3de7ef78418e37f51288b5bfb59ee",
+    "author": "enzohideo",
+    "date": "Mon Mar 17 12:01:09 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 23,
+      "deletions": 5,
+      "files": ["src/lib/app.rs", "src/lib/cli.rs"],
+      "file_stats": [
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 13
+        },
+        {
+          "name": "src/lib/cli.rs",
+          "lines_changed": 15
+        }
+      ]
+    },
+    "message": "lib: cli: Add daemon subcommands",
+    "epoch": 1742223669,
+    "epoch_utc": null
+  },
+  {
+    "commit": "32805c20d5c759841504374788a949693c62d4a7",
+    "author": "enzohideo",
+    "date": "Mon Mar 17 11:56:05 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 142,
+      "deletions": 3,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "src/lib/app.rs",
+        "src/lib/cli.rs",
+        "src/lib/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 121
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 13
+        },
+        {
+          "name": "src/lib/cli.rs",
+          "lines_changed": 9
+        },
+        {
+          "name": "src/lib/mod.rs",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "lib: Add basic clap commands",
+    "epoch": 1742223365,
+    "epoch_utc": null
+  },
+  {
+    "commit": "eaec7f551abdc3b52008247ee213fcdf6a2defa9",
+    "author": "enzohideo",
+    "date": "Mon Mar 17 10:09:16 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 741,
+      "deletions": 2,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "src/lib/app.rs",
+        "src/lib/mod.rs",
+        "src/main/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 704
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "src/lib/app.rs",
+          "lines_changed": 32
+        },
+        {
+          "name": "src/lib/mod.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "src/main/mod.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "lib: Add main gtk loop",
+    "epoch": 1742216956,
+    "epoch_utc": null
+  },
+  {
+    "commit": "8bb46e0be694d82a8c5787e6b47449236596d737",
+    "author": "enzohideo",
+    "date": "Mon Mar 17 00:18:51 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 19,
+      "deletions": 3,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "src/lib/mod.rs",
+        "src/main.rs",
+        "src/main/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 7
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 8
+        },
+        {
+          "name": "src/lib/mod.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "src/main.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "src/main/mod.rs",
+          "lines_changed": 3
+        }
+      ]
+    },
+    "message": "chore: Separate lib/ and main/",
+    "epoch": 1742181531,
+    "epoch_utc": null
+  },
+  {
+    "commit": "ffc3bbe3b6b02cd0daaba02f3530f3cb4f246a6f",
+    "author": "enzohideo",
+    "date": "Mon Mar 17 00:10:48 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 10,
+      "deletions": 0,
+      "files": [".gitignore", "Cargo.toml", "src/main.rs"],
+      "file_stats": [
+        {
+          "name": ".gitignore",
+          "lines_changed": 1
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 6
+        },
+        {
+          "name": "src/main.rs",
+          "lines_changed": 3
+        }
+      ]
+    },
+    "message": "chore: Init cargo",
+    "epoch": 1742181048,
+    "epoch_utc": null
+  },
+  {
+    "commit": "62ceddaba16903c8a89950b70ea4b02b2ea7fee3",
+    "author": "enzohideo",
+    "date": "Sun Mar 16 23:59:01 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 81,
+      "deletions": 0,
+      "files": ["flake.lock", "flake.nix"],
+      "file_stats": [
+        {
+          "name": "flake.lock",
+          "lines_changed": 42
+        },
+        {
+          "name": "flake.nix",
+          "lines_changed": 39
+        }
+      ]
+    },
+    "message": "initial commit",
+    "epoch": 1742180341,
+    "epoch_utc": null
+  }
+]

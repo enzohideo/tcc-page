@@ -1,0 +1,64 @@
+import history from "./azalea-history.json" with { type: "json" };
+
+const monthOrder = [
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Oct",
+  "Nov",
+  "Dec",
+].reverse();
+
+(() => {
+  const history_per_month = Object.groupBy(history, ({ date }) =>
+    date.slice(4, 7),
+  );
+
+  let history_html = "";
+
+  for (const month of monthOrder) {
+    if (!(month in history_per_month)) {
+      continue;
+    }
+
+    const history = history_per_month[month];
+
+    history_html = `${history_html}
+      <h3>${month}</h3>
+      <div style="font-size: 0.75em;">
+        ${history
+          .map(
+            (log) => `
+          ${log.commit.slice(0, 7)}:
+          [
+            <span style="color: green;">+${log.stats.insertions}</span>
+            <span style="color:red;">-${log.stats.deletions}</span>
+          ]:
+          ${log.message}
+          <div style="color: gray; padding-bottom: 10px;">
+            ${log.stats.file_stats
+              .map(
+                (stat) => `
+                <div>└ ${stat.name}: ~${stat.lines_changed}</div>
+              `,
+              )
+              .join("")}
+          </div>
+        `,
+          )
+          .join("")}
+      </div>
+    `;
+  }
+
+  const element = document.getElementById("azalea-history");
+  if (element && 'innerHTML' in element) {
+    element.innerHTML = history_html;
+  }
+})();
