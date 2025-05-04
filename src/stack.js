@@ -39,11 +39,15 @@ class Selector {
 
   select(id) {
     this.map[this.selected_id].classList.remove(this.className);
-    this.map[id].classList.add(this.className);;
+    this.map[id].classList.add(this.className);
     this.selected_id = id;
   }
 }
 
 // TODO: Remove stack in favour of Selector
 const stack = new Stack(document.getElementById("stack"), "proposal");
-const selector = new Selector(document.querySelectorAll('nav > button'), "tab-proposal", "tab-selected");
+const selector = new Selector(
+  document.querySelectorAll("nav > button"),
+  "tab-proposal",
+  "tab-selected",
+);

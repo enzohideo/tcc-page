@@ -1,360 +1,373 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Azalea Desktop Shell - TCC</title>
+    <link rel="stylesheet" href="./simple.min.css" />
+    <style>
+      td {
+        text-align: center;
+      }
+      nav {
+        background-color: var(--fg);
+      }
+      .tab {
+        border: none;
+        border-radius: 0;
+        color: var(--accent);
+        background-color: var(--disabled);
+        margin: 0;
+      }
+      .tab:hover:enabled {
+        color: var(--bg);
+        background-color: var(--accent);
+      }
+      .tab:disabled {
+        color: var(--text);
+        background-color: var(--bg);
+      }
+      .tab-selected {
+        color: var(--text);
+        background-color: var(--bg);
+      }
+      .tab-selected:hover {
+        color: var(--text) !important;
+        background-color: var(--bg) !important;
+      }
+      #stack {
+        padding: 0 32px 32px 32px;
+        background-color: var(--bg);
+      }
+      body {
+        margin: 32px 0;
+        background-color: var(--disabled);
+      }
+    </style>
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <title>Azalea Desktop Shell - TCC</title>
-  <link rel="stylesheet" href="./simple.min.css">
-  <style>
-    td {
-      text-align: center;
-    }
-    nav {
-      background-color: var(--fg)
-    }
-    .tab {
-      border: none;
-      border-radius: 0;
-      color: var(--accent);
-      background-color: var(--disabled);
-      margin: 0;
-    }
-    .tab:hover:enabled {
-      color: var(--bg);
-      background-color: var(--accent);
-    }
-    .tab:disabled {
-      color: var(--text);
-      background-color: var(--bg);
-    }
-    .tab-selected {
-      color: var(--text);
-      background-color: var(--bg);
-    }
-    .tab-selected:hover {
-      color: var(--text) !important;
-      background-color: var(--bg) !important;
-    }
-    #stack {
-      padding: 0 32px 32px 32px;
-      background-color: var(--bg);
-    }
-    body {
-      margin: 32px 0;
-      background-color: var(--disabled);
-    }
-  </style>
-</head>
-
-<body>
-
-<nav>
-  <button onclick="
+  <body>
+    <nav>
+      <button
+        onclick="
     stack.view('proposal');
     selector.select('tab-proposal');
-  " id="tab-proposal" class="tab">Proposal</button>
-  <button onclick="
+  "
+        id="tab-proposal"
+        class="tab"
+      >
+        Proposal
+      </button>
+      <button
+        onclick="
     stack.view('progress');
     selector.select('tab-progress');
-  " id="tab-progress" class="tab">Progress</button>
-  <button onclick="
+  "
+        id="tab-progress"
+        class="tab"
+      >
+        Progress
+      </button>
+      <button
+        onclick="
     stack.view('monograph')
     selector.select('tab-monograph');
-  " id="tab-monograph" class="tab">Monograph</button>
-</nav>
+  "
+        id="tab-monograph"
+        class="tab"
+      >
+        Monograph
+      </button>
+    </nav>
 
-<div id="stack">
+    <div id="stack">
+      <div id="proposal">
+        <h1>Azalea</h1>
+        <h4>A compositor agnostic desktop shell for Wayland</h4>
+        <ul>
+          <li><b>Author</b>: Enzo Hideo Kobayashi</li>
+          <li><b>Advisors</b>: Alfredo Goldman and Nelson Posse Lago</li>
+        </ul>
+        <h2>Introduction</h2>
 
-<div id="proposal">
-<h1>
-  Azalea
-</h1>
-<h4>
-  A compositor agnostic desktop shell for Wayland
-</h4>
-<ul>
-  <li><b>Author</b>: Enzo Hideo Kobayashi</li>
-  <li><b>Advisors</b>: Alfredo Goldman and Nelson Posse Lago</li>
-</ul>
-<h2>
-  Introduction
-</h2>
+        <p>
+          Desktop shells, also called graphical shells, are a set of widgets and
+          graphical interfaces that allow an user to interact with an Operating
+          System, similar to a command-line shell but graphically, hence the
+          name. A few examples of graphical shell components include: taskbars,
+          app launchers, wallpaper selectors, systray, notification menu, etc.
+        </p>
 
-<p>
-Desktop shells, also called graphical shells, are a set of widgets and
-graphical interfaces that allow an user to interact with an Operating System,
-similar to a command-line shell but graphically, hence the name. A few examples
-of graphical shell components include: taskbars, app launchers, wallpaper
-selectors, systray, notification menu, etc.
-</p>
-
-<p>
-On Linux, the most popular graphical shells are oftentimes tied to a desktop
-          environment, like KDE's plasmashell and GNOME Shell. However, it's
-          also possible to use window managers (X11) or wayland compositors
+        <p>
+          On Linux, the most popular graphical shells are oftentimes tied to a
+          desktop environment, like KDE's plasmashell and GNOME Shell. However,
+          it's also possible to use window managers (X11) or wayland compositors
           directly without a full-fledged graphical shell, like i3, AwesomeWM,
           Sway, Hyprland, etc. In the latter case, the user has more freedom to
           choose or create their own widgets, or "graphical shell components",
-          which is part of a hobby informally referred to as <a
-            href="https://wiki.installgentoo.com/index.php/GNU/Linux_ricing">"ricing"</a>.
-</p>
+          which is part of a hobby informally referred to as
+          <a href="https://wiki.installgentoo.com/index.php/GNU/Linux_ricing"
+            >"ricing"</a
+          >.
+        </p>
 
-<p>
-In that context of developing graphical shell components, it's common the usage
-          of libraries to create <b>specific</b> widgets, like <a
-            href="https://github.com/Alexays/Waybar">waybar</a> and <a
-            href="https://github.com/polybar/polybar">polybar</a> to create a
+        <p>
+          In that context of developing graphical shell components, it's common
+          the usage of libraries to create <b>specific</b> widgets, like
+          <a href="https://github.com/Alexays/Waybar">waybar</a> and
+          <a href="https://github.com/polybar/polybar">polybar</a> to create a
           basic status bar, and libraries that offer a bit more freedom, like
-          <a href="https://github.com/elkowar/eww">eww</a> and <a
-            href="https://github.com/Aylur/astal">astal</a> to create
+          <a href="https://github.com/elkowar/eww">eww</a> and
+          <a href="https://github.com/Aylur/astal">astal</a> to create
           <b>generic and complex</b> widgets.
-</p>
+        </p>
 
-<p> Recently, many of these graphical shells libraries are made for Wayland
-          instead of X11 because of the recent <a
-            href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1">layer
-            shell </a> protocol, which allows the creation of graphical shell
-          components that work on any Wayland compositor that implements it.
-          And despite being a <a
-            href="https://gitlab.freedesktop.org/wlroots/wlr-protocols">wlroots
-            extension</a>, it's already <a
-            href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#compositor-support">
-            supported on many compositors. </a> This allows the creation of
-          desktop shells that are not tied to a specific wayland compositor or
-          desktop environment.
-</p>
+        <p>
+          Recently, many of these graphical shells libraries are made for
+          Wayland instead of X11 because of the recent
+          <a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1"
+            >layer shell
+          </a>
+          protocol, which allows the creation of graphical shell components that
+          work on any Wayland compositor that implements it. And despite being a
+          <a href="https://gitlab.freedesktop.org/wlroots/wlr-protocols"
+            >wlroots extension</a
+          >, it's already
+          <a
+            href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#compositor-support"
+          >
+            supported on many compositors.
+          </a>
+          This allows the creation of desktop shells that are not tied to a
+          specific wayland compositor or desktop environment.
+        </p>
 
-<h2>
-  Objectives
-</h2>
+        <h2>Objectives</h2>
 
-<p>
-The main objective is to develop a compositor agnostic desktop shell for
-          wayland while exploring the limits of the layer shell protocol. It's
-          expected to find a few widgets that are difficult to develop without
-          breaking the compositor agnostic rule, so a part of the project is
-          also to find ways to work around it.
-</p>
+        <p>
+          The main objective is to develop a compositor agnostic desktop shell
+          for wayland while exploring the limits of the layer shell protocol.
+          It's expected to find a few widgets that are difficult to develop
+          without breaking the compositor agnostic rule, so a part of the
+          project is also to find ways to work around it.
+        </p>
 
-<p>
-The name of the desktop shell is Azalea and I intend to use <a
-            href="https://www.rust-lang.org/">Rust</a> as main programming
-          language. The core library developed will be based on <a
-          href="https://gtk-rs.org/">gtk4</a> and will be open source to
-        allow other developers to create their own desktop shells as
-        well. And since the main target audience of Azalea are
-        developers, not general users, all the settings and
-        configurations will be done through dotfiles, which are better
-        for versioning and easier to share.
-</p>
+        <p>
+          The name of the desktop shell is Azalea and I intend to use
+          <a href="https://www.rust-lang.org/">Rust</a> as main programming
+          language. The core library developed will be based on
+          <a href="https://gtk-rs.org/">gtk4</a> and will be open source to
+          allow other developers to create their own desktop shells as well. And
+          since the main target audience of Azalea are developers, not general
+          users, all the settings and configurations will be done through
+          dotfiles, which are better for versioning and easier to share.
+        </p>
 
-<p>
-As a personal goal, I'll also use this project to learn and explore <a
-            href="https://nixos.org/">Nix</a> as a tool for development,
+        <p>
+          As a personal goal, I'll also use this project to learn and explore
+          <a href="https://nixos.org/">Nix</a> as a tool for development,
           building, and packaging. As well as creating a reproducible NixOS
-          virtual machine to run the project under multiple wayland
-          compositors, since it's supposed to be compositor agnostic.
-</p>
+          virtual machine to run the project under multiple wayland compositors,
+          since it's supposed to be compositor agnostic.
+        </p>
 
-<p>
-As extra objectives I also hope to develop a basic greeter using 
-<a href="https://git.sr.ht/~kennylevinsen/greetd">greetd</a> and a
-lock screen using the wayland <a
-href="https://wayland.app/protocols/ext-session-lock-v1">session lock</a>
-protocol.
-</p>
+        <p>
+          As extra objectives I also hope to develop a basic greeter using
+          <a href="https://git.sr.ht/~kennylevinsen/greetd">greetd</a> and a
+          lock screen using the wayland
+          <a href="https://wayland.app/protocols/ext-session-lock-v1"
+            >session lock</a
+          >
+          protocol.
+        </p>
 
-<h2>
-  Schedule
-</h2>
+        <h2>Schedule</h2>
 
-<table>
-  <tr>
-    <th>Task</th>
-    <th>May</th>
-    <th>June</th>
-    <th>July</th>
-    <th>August</th>
-    <th>September</th>
-    <th>October</th>
-  </tr>
-  <tr>
-    <th>Core library</th>
-    <td>x</td>
-    <td>x</td>
-    <td>x</td>
-    <td>x</td>
-    <td>x</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <th>Clock, Date, Calendar<br>(taskbar)</th>
-    <td>x</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>MPRIS<br>(DBus, taskbar)</th>
-    <td>x</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>Network<br>(taskbar + menu)</th>
-    <td>x</td>
-    <td>x</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>Bluetooth<br>(taskbar + menu)</th>
-    <td>x</td>
-    <td>x</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>NixOS VM</th>
-    <td>x</td>
-    <td>x</td>
-    <td>x</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>System tray<br>(DBus, taskbar)</th>
-    <td></td>
-    <td>x</td>
-    <td>x</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>Wallpaper selector</th>
-    <td></td>
-    <td>x</td>
-    <td>x</td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>Dynamic theme based on wallpaper</th>
-    <td></td>
-    <td>x</td>
-    <td>x</td>
-    <td>x</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>Dotfile parser</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>x</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>App launcher</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>x</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>Notifications<br>(DBus, taskbar + menu)</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>x</td>
-    <td>x</td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>Workspace selector (extra)</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>x</td>
-    <td>x</td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>Audio visualizer (extra)</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>x</td>
-    <td>x</td>
-    <td></td>
-  </tr>
-  <tr>
-    <th>Greeter (extra)</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>x</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <th>Session lock (extra)</th>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td>x</td>
-    <td>x</td>
-  </tr>
-  <tr>
-    <th>Monograph</th>
-    <td></td>
-    <td></td>
-    <td>x</td>
-    <td>x</td>
-    <td>x</td>
-    <td>x</td>
-  </tr>
-</table> 
+        <table>
+          <tr>
+            <th>Task</th>
+            <th>May</th>
+            <th>June</th>
+            <th>July</th>
+            <th>August</th>
+            <th>September</th>
+            <th>October</th>
+          </tr>
+          <tr>
+            <th>Core library</th>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+          <tr>
+            <th>Clock, Date, Calendar<br />(taskbar)</th>
+            <td>x</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>MPRIS<br />(DBus, taskbar)</th>
+            <td>x</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Network<br />(taskbar + menu)</th>
+            <td>x</td>
+            <td>x</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Bluetooth<br />(taskbar + menu)</th>
+            <td>x</td>
+            <td>x</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>NixOS VM</th>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>System tray<br />(DBus, taskbar)</th>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Wallpaper selector</th>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Dynamic theme based on wallpaper</th>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Dotfile parser</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>x</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>App launcher</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>x</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Notifications<br />(DBus, taskbar + menu)</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Workspace selector (extra)</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Audio visualizer (extra)</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>Greeter (extra)</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+          <tr>
+            <th>Session lock (extra)</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+          <tr>
+            <th>Monograph</th>
+            <td></td>
+            <td></td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+            <td>x</td>
+          </tr>
+        </table>
 
-<h2>
-  References
-</h2>
+        <h2>References</h2>
 
-<ul>
-  <li>Drew DeVault's blog post about layer shell; <a
-      href="https://drewdevault.com/2018/07/29/Wayland-shells.html">https://drewdevault.com/2018/07/29/Wayland-shells.html</a></li>
-</ul>
-</div>
+        <ul>
+          <li>
+            Drew DeVault's blog post about layer shell;
+            <a href="https://drewdevault.com/2018/07/29/Wayland-shells.html"
+              >https://drewdevault.com/2018/07/29/Wayland-shells.html</a
+            >
+          </li>
+        </ul>
+      </div>
 
-<div id="progress">
-<h1>WIP</h1>
-</div>
+      <div id="progress">
+        <h1>WIP</h1>
+      </div>
 
-<div id="monograph">
-<h1>WIP</h1>
-</div>
+      <div id="monograph">
+        <h1>WIP</h1>
+      </div>
+    </div>
 
-</div>
-
-<script src="./stack.js" defer></script>
-
-</body>
-
+    <script src="./stack.js" defer></script>
+  </body>
 </html>
