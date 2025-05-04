@@ -45,7 +45,12 @@ const monthOrder = [
             ${log.stats.file_stats
               .map(
                 (stat) => `
-                <div>└ ${stat.name}: ~${stat.lines_changed}</div>
+                <div>
+                  └ ${stat.name}:
+                  <span style="color: orange">
+                    ~${stat.lines_changed}
+                  </span>
+                </div>
               `,
               )
               .join("")}
