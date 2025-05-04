@@ -44,11 +44,15 @@ class Selector {
   }
 }
 
+const searchParams = new URL(window.location.href).searchParams;
+const defaultTab = searchParams.get("tab") || "proposal";
+console.log(defaultTab);
+
 // TODO: Remove stack in favour of Selector
-const stack = new Stack(document.getElementById("stack"), "proposal");
+const stack = new Stack(document.getElementById("stack"), defaultTab);
 const selector = new Selector(
   document.querySelectorAll("nav > button"),
-  "tab-proposal",
+  `tab-${defaultTab}`,
   "tab-selected",
 );
 
