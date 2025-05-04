@@ -58,7 +58,7 @@ const monthOrder = [
   }
 
   const element = document.getElementById("azalea-history");
-  if (element && 'innerHTML' in element) {
+  if (element && "innerHTML" in element) {
     element.innerHTML = history_html;
   }
 })();

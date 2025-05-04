@@ -47,36 +47,9 @@
 
   <body>
     <nav>
-      <button
-        onclick="
-    stack.view('proposal');
-    selector.select('tab-proposal');
-  "
-        id="tab-proposal"
-        class="tab"
-      >
-        Proposal
-      </button>
-      <button
-        onclick="
-    stack.view('progress');
-    selector.select('tab-progress');
-  "
-        id="tab-progress"
-        class="tab"
-      >
-        Progress
-      </button>
-      <button
-        onclick="
-    stack.view('monograph')
-    selector.select('tab-monograph');
-  "
-        id="tab-monograph"
-        class="tab"
-      >
-        Monograph
-      </button>
+      <button id="tab-proposal" class="tab">Proposal</button>
+      <button id="tab-progress" class="tab">Progress</button>
+      <button id="tab-monograph" class="tab">Monograph</button>
     </nav>
 
     <div id="stack">
@@ -370,6 +343,6 @@
       </div>
     </div>
 
-    <script src="./stack.js" defer></script>
+    <script type="module" src="./stack.js" defer></script>
   </body>
 </html>

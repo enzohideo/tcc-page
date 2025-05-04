@@ -51,3 +51,18 @@ const selector = new Selector(
   "tab-proposal",
   "tab-selected",
 );
+
+document.getElementById("tab-proposal").onclick = () => {
+  stack.view("proposal");
+  selector.select("tab-proposal");
+};
+
+document.getElementById("tab-progress").onclick = () => {
+  stack.view("progress");
+  selector.select("tab-progress");
+};
+
+document.getElementById("tab-monograph").onclick = () => {
+  stack.view("monograph");
+  selector.select("tab-monograph");
+};
