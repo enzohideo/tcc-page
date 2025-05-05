@@ -45,14 +45,13 @@ class Selector {
 }
 
 const searchParams = new URL(window.location.href).searchParams;
-const defaultTab = searchParams.get("tab") || "proposal";
-console.log(defaultTab);
+const startingTab = searchParams.get("tab") || "proposal";
 
 // TODO: Remove stack in favour of Selector
-const stack = new Stack(document.getElementById("stack"), defaultTab);
+const stack = new Stack(document.getElementById("stack"), startingTab);
 const selector = new Selector(
   document.querySelectorAll("nav > button"),
-  `tab-${defaultTab}`,
+  `tab-proposal`,
   "tab-selected",
 );
 
@@ -78,3 +77,6 @@ document.getElementById("tab-monograph").onclick = () => {
   stack.view("monograph");
   selector.select("tab-monograph");
 };
+
+const startingTabElm = document.getElementById(`tab-${startingTab}`);
+window.addEventListener("load", startingTabElm.onclick);
