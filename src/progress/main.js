@@ -46,10 +46,12 @@ const monthOrder = [
               .map(
                 (stat) => `
                 <div>
-                  └ ${stat.name}:
-                  <span style="color: orange">
-                    ~${stat.lines_changed}
-                  </span>
+                  └ ${stat.name}
+                  ${
+                    stat.lines_changed > 0
+                      ? `<span style="color: orange">~${stat.lines_changed}</span>`
+                      : ""
+                  }
                 </div>
               `,
               )
