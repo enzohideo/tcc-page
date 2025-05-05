@@ -57,7 +57,7 @@ const monthOrder = [
       .join("");
 
     history_html = `${history_html}
-      <h3>${month}</h3>
+      <h3 id="commits-${month}">${month}</h3>
       <div style="font-size: 0.75em;">
         ${commits}
       </div>
