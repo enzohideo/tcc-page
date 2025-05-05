@@ -68,9 +68,9 @@ document.getElementById("tab-schedule").onclick = () => {
   iframe.style.height = `${iframe.contentWindow.document.documentElement.scrollHeight}px`;
 };
 
-document.getElementById("tab-progress").onclick = () => {
-  stack.view("progress");
-  selector.select("tab-progress");
+document.getElementById("tab-commits").onclick = () => {
+  stack.view("commits");
+  selector.select("tab-commits");
 };
 
 document.getElementById("tab-monograph").onclick = () => {
