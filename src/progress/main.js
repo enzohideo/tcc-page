@@ -27,20 +27,15 @@ const monthOrder = [
       continue;
     }
 
-    const history = history_per_month[month];
-
-    history_html = `${history_html}
-      <h3>${month}</h3>
-      <div style="font-size: 0.75em;">
-        ${history
-          .map(
-            (log) => `
-          ${log.commit.slice(0, 7)}:
+    const commits = history_per_month[month]
+      .map(
+        (log) => `
+          <b>${log.commit.slice(0, 7)}:</b>
+          ${log.message}
           [
             <span style="color: green;">+${log.stats.insertions}</span>
             <span style="color:red;">-${log.stats.deletions}</span>
-          ]:
-          ${log.message}
+          ]
           <div style="color: gray; padding-bottom: 10px;">
             ${log.stats.file_stats
               .map(
@@ -58,8 +53,13 @@ const monthOrder = [
               .join("")}
           </div>
         `,
-          )
-          .join("")}
+      )
+      .join("");
+
+    history_html = `${history_html}
+      <h3>${month}</h3>
+      <div style="font-size: 0.75em;">
+        ${commits}
       </div>
     `;
   }
