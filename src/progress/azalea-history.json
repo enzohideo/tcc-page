@@ -1,5 +1,145 @@
 [
   {
+    "commit": "b4b9f0a926af5d58040f7cca6163aab3225cc364",
+    "author": "enzohideo",
+    "date": "Sun May 4 23:42:25 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 23,
+      "deletions": 10,
+      "files": [
+        "azalea-service/src/service.rs",
+        "azalea-service/src/services/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/service.rs",
+          "lines_changed": 19
+        },
+        {
+          "name": "azalea-service/src/services/time.rs",
+          "lines_changed": 14
+        }
+      ]
+    },
+    "message": "azalea-service: Add crate::Input to start/stop services",
+    "epoch": 1746412945,
+    "epoch_utc": null
+  },
+  {
+    "commit": "c5f9e0c5d1dd7165d6272443d0364d7b9cfed755",
+    "author": "enzohideo",
+    "date": "Sun May 4 23:19:11 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 13,
+      "deletions": 0,
+      "files": [
+        "azalea-service/src/lib.rs",
+        "azalea-service/src/trait.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea-service/src/trait.rs",
+          "lines_changed": 10
+        }
+      ]
+    },
+    "message": "azalea-service: Add basic HasService trait",
+    "epoch": 1746411551,
+    "epoch_utc": null
+  },
+  {
+    "commit": "d6a5ad45f8323a716b8ebb041d107ee7a441ca45",
+    "author": "enzohideo",
+    "date": "Sun May 4 23:04:44 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 3,
+      "deletions": 1,
+      "files": [
+        "azalea-service/src/lib.rs",
+        "azalea-service/src/services/mod.rs",
+        "azalea-service/src/{ => services}/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea-service/src/services/mod.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/{ => services}/time.rs",
+          "lines_changed": 0
+        }
+      ]
+    },
+    "message": "azalea-service: Move time to services/ folder",
+    "epoch": 1746410684,
+    "epoch_utc": null
+  },
+  {
+    "commit": "585b1bf9ea3fea7c81e5b4fead3f0129862805a3",
+    "author": "enzohideo",
+    "date": "Sun May 4 23:02:47 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 57,
+      "deletions": 55,
+      "files": [
+        "azalea-service/src/lib.rs",
+        "azalea-service/src/service.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 57
+        },
+        {
+          "name": "azalea-service/src/service.rs",
+          "lines_changed": 55
+        }
+      ]
+    },
+    "message": "azalea-service: Move Service to separate file",
+    "epoch": 1746410567,
+    "epoch_utc": null
+  },
+  {
+    "commit": "47caf00420de37d32b99cb12e17199e7def82eac",
+    "author": "enzohideo",
+    "date": "Sun May 4 23:00:35 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 3,
+      "deletions": 3,
+      "files": [
+        "azalea-window/src/lib.rs",
+        "azalea-window/src/taskbar/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-window: Require Config to impl Default",
+    "epoch": 1746410435,
+    "epoch_utc": null
+  },
+  {
     "commit": "3b55327f5b89a9643ae945d8dce684a62f127960",
     "author": "enzohideo",
     "date": "Sat May 3 23:23:48 2025 -0300",
@@ -7,7 +147,9 @@
       "files_changed": 1,
       "insertions": 2,
       "deletions": 0,
-      "files": ["flake.nix"],
+      "files": [
+        "flake.nix"
+      ],
       "file_stats": [
         {
           "name": "flake.nix",
@@ -27,7 +169,9 @@
       "files_changed": 1,
       "insertions": 1,
       "deletions": 1,
-      "files": ["azalea-core/src/app.rs"],
+      "files": [
+        "azalea-core/src/app.rs"
+      ],
       "file_stats": [
         {
           "name": "azalea-core/src/app.rs",
@@ -84,7 +228,10 @@
       "files_changed": 2,
       "insertions": 22,
       "deletions": 8,
-      "files": ["azalea-core/src/app.rs", "azalea-core/src/cli.rs"],
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs"
+      ],
       "file_stats": [
         {
           "name": "azalea-core/src/app.rs",
@@ -108,7 +255,9 @@
       "files_changed": 1,
       "insertions": 1,
       "deletions": 0,
-      "files": ["azalea-core/src/config.rs"],
+      "files": [
+        "azalea-core/src/config.rs"
+      ],
       "file_stats": [
         {
           "name": "azalea-core/src/config.rs",
@@ -207,7 +356,9 @@
       "files_changed": 1,
       "insertions": 11,
       "deletions": 2,
-      "files": ["azalea-service/src/lib.rs"],
+      "files": [
+        "azalea-service/src/lib.rs"
+      ],
       "file_stats": [
         {
           "name": "azalea-service/src/lib.rs",
@@ -462,7 +613,9 @@
       "files_changed": 1,
       "insertions": 1,
       "deletions": 0,
-      "files": ["azalea-core/src/app.rs"],
+      "files": [
+        "azalea-core/src/app.rs"
+      ],
       "file_stats": [
         {
           "name": "azalea-core/src/app.rs",
@@ -482,7 +635,10 @@
       "files_changed": 2,
       "insertions": 31,
       "deletions": 22,
-      "files": ["azalea-core/src/app.rs", "azalea/src/main.rs"],
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea/src/main.rs"
+      ],
       "file_stats": [
         {
           "name": "azalea-core/src/app.rs",
@@ -506,7 +662,9 @@
       "files_changed": 1,
       "insertions": 3,
       "deletions": 1,
-      "files": ["azalea/src/main.rs"],
+      "files": [
+        "azalea/src/main.rs"
+      ],
       "file_stats": [
         {
           "name": "azalea/src/main.rs",
@@ -568,7 +726,10 @@
       "files_changed": 2,
       "insertions": 17,
       "deletions": 14,
-      "files": ["azalea-core/src/app.rs", "azalea/src/main.rs"],
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea/src/main.rs"
+      ],
       "file_stats": [
         {
           "name": "azalea-core/src/app.rs",
@@ -592,7 +753,10 @@
       "files_changed": 2,
       "insertions": 0,
       "deletions": 2,
-      "files": ["Cargo.lock", "azalea-core/Cargo.toml"],
+      "files": [
+        "Cargo.lock",
+        "azalea-core/Cargo.toml"
+      ],
       "file_stats": [
         {
           "name": "Cargo.lock",
@@ -658,7 +822,10 @@
       "files_changed": 2,
       "insertions": 16,
       "deletions": 9,
-      "files": ["azalea-core/src/app.rs", "azalea/src/main.rs"],
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea/src/main.rs"
+      ],
       "file_stats": [
         {
           "name": "azalea-core/src/app.rs",
@@ -1073,7 +1240,9 @@
       "files_changed": 1,
       "insertions": 1,
       "deletions": 0,
-      "files": ["flake.nix"],
+      "files": [
+        "flake.nix"
+      ],
       "file_stats": [
         {
           "name": "flake.nix",
@@ -1093,7 +1262,10 @@
       "files_changed": 2,
       "insertions": 393,
       "deletions": 2,
-      "files": ["Cargo.lock", "azalea/Cargo.toml"],
+      "files": [
+        "Cargo.lock",
+        "azalea/Cargo.toml"
+      ],
       "file_stats": [
         {
           "name": "Cargo.lock",
@@ -1164,7 +1336,9 @@
       "files_changed": 1,
       "insertions": 5,
       "deletions": 3,
-      "files": ["azalea/src/lib/app.rs"],
+      "files": [
+        "azalea/src/lib/app.rs"
+      ],
       "file_stats": [
         {
           "name": "azalea/src/lib/app.rs",
@@ -1184,7 +1358,10 @@
       "files_changed": 2,
       "insertions": 22,
       "deletions": 12,
-      "files": ["azalea/src/lib/app.rs", "azalea/src/lib/cli.rs"],
+      "files": [
+        "azalea/src/lib/app.rs",
+        "azalea/src/lib/cli.rs"
+      ],
       "file_stats": [
         {
           "name": "azalea/src/lib/app.rs",
@@ -1208,7 +1385,9 @@
       "files_changed": 1,
       "insertions": 21,
       "deletions": 23,
-      "files": ["azalea/src/lib/app.rs"],
+      "files": [
+        "azalea/src/lib/app.rs"
+      ],
       "file_stats": [
         {
           "name": "azalea/src/lib/app.rs",
@@ -1327,7 +1506,10 @@
       "files_changed": 2,
       "insertions": 12,
       "deletions": 3,
-      "files": ["src/lib/app.rs", "src/lib/socket.rs"],
+      "files": [
+        "src/lib/app.rs",
+        "src/lib/socket.rs"
+      ],
       "file_stats": [
         {
           "name": "src/lib/app.rs",
@@ -1351,7 +1533,10 @@
       "files_changed": 2,
       "insertions": 3,
       "deletions": 4,
-      "files": ["src/lib/app.rs", "src/lib/socket.rs"],
+      "files": [
+        "src/lib/app.rs",
+        "src/lib/socket.rs"
+      ],
       "file_stats": [
         {
           "name": "src/lib/app.rs",
@@ -1375,7 +1560,10 @@
       "files_changed": 2,
       "insertions": 31,
       "deletions": 34,
-      "files": ["src/lib/app.rs", "src/lib/socket.rs"],
+      "files": [
+        "src/lib/app.rs",
+        "src/lib/socket.rs"
+      ],
       "file_stats": [
         {
           "name": "src/lib/app.rs",
@@ -1399,7 +1587,9 @@
       "files_changed": 1,
       "insertions": 5,
       "deletions": 9,
-      "files": ["src/lib/app.rs"],
+      "files": [
+        "src/lib/app.rs"
+      ],
       "file_stats": [
         {
           "name": "src/lib/app.rs",
@@ -1456,7 +1646,11 @@
       "files_changed": 3,
       "insertions": 26,
       "deletions": 9,
-      "files": ["src/lib/app.rs", "src/lib/cli.rs", "src/lib/socket.rs"],
+      "files": [
+        "src/lib/app.rs",
+        "src/lib/cli.rs",
+        "src/lib/socket.rs"
+      ],
       "file_stats": [
         {
           "name": "src/lib/app.rs",
@@ -1484,7 +1678,9 @@
       "files_changed": 1,
       "insertions": 24,
       "deletions": 18,
-      "files": ["src/lib/app.rs"],
+      "files": [
+        "src/lib/app.rs"
+      ],
       "file_stats": [
         {
           "name": "src/lib/app.rs",
@@ -1504,7 +1700,10 @@
       "files_changed": 2,
       "insertions": 60,
       "deletions": 36,
-      "files": ["src/lib/app.rs", "src/lib/socket.rs"],
+      "files": [
+        "src/lib/app.rs",
+        "src/lib/socket.rs"
+      ],
       "file_stats": [
         {
           "name": "src/lib/app.rs",
@@ -1528,7 +1727,11 @@
       "files_changed": 3,
       "insertions": 70,
       "deletions": 43,
-      "files": ["src/lib/app.rs", "src/lib/mod.rs", "src/lib/socket.rs"],
+      "files": [
+        "src/lib/app.rs",
+        "src/lib/mod.rs",
+        "src/lib/socket.rs"
+      ],
       "file_stats": [
         {
           "name": "src/lib/app.rs",
@@ -1556,7 +1759,9 @@
       "files_changed": 1,
       "insertions": 26,
       "deletions": 1,
-      "files": ["src/lib/app.rs"],
+      "files": [
+        "src/lib/app.rs"
+      ],
       "file_stats": [
         {
           "name": "src/lib/app.rs",
@@ -1576,7 +1781,10 @@
       "files_changed": 2,
       "insertions": 62,
       "deletions": 67,
-      "files": ["src/lib/app.rs", "src/lib/cli.rs"],
+      "files": [
+        "src/lib/app.rs",
+        "src/lib/cli.rs"
+      ],
       "file_stats": [
         {
           "name": "src/lib/app.rs",
@@ -1600,7 +1808,12 @@
       "files_changed": 4,
       "insertions": 59,
       "deletions": 10,
-      "files": ["Cargo.lock", "Cargo.toml", "src/lib/app.rs", "src/lib/cli.rs"],
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "src/lib/app.rs",
+        "src/lib/cli.rs"
+      ],
       "file_stats": [
         {
           "name": "Cargo.lock",
@@ -1632,7 +1845,9 @@
       "files_changed": 1,
       "insertions": 68,
       "deletions": 19,
-      "files": ["src/lib/app.rs"],
+      "files": [
+        "src/lib/app.rs"
+      ],
       "file_stats": [
         {
           "name": "src/lib/app.rs",
@@ -1652,7 +1867,10 @@
       "files_changed": 2,
       "insertions": 23,
       "deletions": 5,
-      "files": ["src/lib/app.rs", "src/lib/cli.rs"],
+      "files": [
+        "src/lib/app.rs",
+        "src/lib/cli.rs"
+      ],
       "file_stats": [
         {
           "name": "src/lib/app.rs",
@@ -1802,7 +2020,11 @@
       "files_changed": 3,
       "insertions": 10,
       "deletions": 0,
-      "files": [".gitignore", "Cargo.toml", "src/main.rs"],
+      "files": [
+        ".gitignore",
+        "Cargo.toml",
+        "src/main.rs"
+      ],
       "file_stats": [
         {
           "name": ".gitignore",
@@ -1830,7 +2052,10 @@
       "files_changed": 2,
       "insertions": 81,
       "deletions": 0,
-      "files": ["flake.lock", "flake.nix"],
+      "files": [
+        "flake.lock",
+        "flake.nix"
+      ],
       "file_stats": [
         {
           "name": "flake.lock",
@@ -1847,3 +2072,4 @@
     "epoch_utc": null
   }
 ]
+
