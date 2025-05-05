@@ -5,9 +5,6 @@
     <title>Azalea Desktop Shell - TCC</title>
     <link rel="stylesheet" href="./simple.min.css" />
     <style>
-      td {
-        text-align: center;
-      }
       nav {
         background-color: var(--fg);
       }
@@ -42,12 +39,17 @@
         margin: 32px 0 !important;
         background-color: var(--disabled) !important;
       }
+      iframe[seamless] {
+        border: none;
+        width: 100%;
+      }
     </style>
   </head>
 
   <body>
     <nav>
       <button id="tab-proposal" class="tab">Proposal</button>
+      <button id="tab-schedule" class="tab">Schedule</button>
       <button id="tab-progress" class="tab">Progress</button>
       <button id="tab-monograph" class="tab">Monograph</button>
     </nav>
@@ -153,173 +155,6 @@
           protocol.
         </p>
 
-        <h2>Schedule</h2>
-
-        <table>
-          <tr>
-            <th>Task</th>
-            <th>May</th>
-            <th>June</th>
-            <th>July</th>
-            <th>August</th>
-            <th>September</th>
-            <th>October</th>
-          </tr>
-          <tr>
-            <th>Core library</th>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-          </tr>
-          <tr>
-            <th>Clock, Date, Calendar<br />(taskbar)</th>
-            <td>x</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>MPRIS<br />(DBus, taskbar)</th>
-            <td>x</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>Network<br />(taskbar + menu)</th>
-            <td>x</td>
-            <td>x</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>Bluetooth<br />(taskbar + menu)</th>
-            <td>x</td>
-            <td>x</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>NixOS VM</th>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>System tray<br />(DBus, taskbar)</th>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>Wallpaper selector</th>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>Dynamic theme based on wallpaper</th>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>Dotfile parser</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>x</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>App launcher</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>x</td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>Notifications<br />(DBus, taskbar + menu)</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>Workspace selector (extra)</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>Audio visualizer (extra)</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-            <td></td>
-          </tr>
-          <tr>
-            <th>Greeter (extra)</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-          </tr>
-          <tr>
-            <th>Session lock (extra)</th>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-          </tr>
-          <tr>
-            <th>Monograph</th>
-            <td></td>
-            <td></td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-          </tr>
-        </table>
-
         <h2>References</h2>
 
         <ul>
@@ -330,6 +165,11 @@
             >
           </li>
         </ul>
+      </div>
+
+      <div id="schedule">
+        <h1>Schedule</h1>
+        <iframe src="./schedule/index.html" seamless></iframe>
       </div>
 
       <div id="progress">

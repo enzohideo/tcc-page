@@ -61,6 +61,14 @@ document.getElementById("tab-proposal").onclick = () => {
   selector.select("tab-proposal");
 };
 
+document.getElementById("tab-schedule").onclick = () => {
+  stack.view("schedule");
+  selector.select("tab-schedule");
+
+  const iframe = document.querySelector("#schedule iframe");
+  iframe.style.height = `${iframe.contentWindow.document.documentElement.scrollHeight}px`;
+};
+
 document.getElementById("tab-progress").onclick = () => {
   stack.view("progress");
   selector.select("tab-progress");
