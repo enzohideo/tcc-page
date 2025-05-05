@@ -64,8 +64,9 @@ document.getElementById("tab-schedule").onclick = () => {
   stack.view("schedule");
   selector.select("tab-schedule");
 
-  const iframe = document.querySelector("#schedule iframe");
-  iframe.style.height = `${iframe.contentWindow.document.documentElement.scrollHeight}px`;
+  document.querySelectorAll("#schedule iframe").forEach((iframe) => {
+    iframe.style.height = `${iframe.contentWindow.document.documentElement.scrollHeight}px`;
+  });
 };
 
 document.getElementById("tab-commits").onclick = () => {
