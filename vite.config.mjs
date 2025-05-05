@@ -1,10 +1,10 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  root: 'src',
-  base: '/tcc-page/',
+  root: "src",
+  base: "/tcc-page/",
   build: {
-    outDir: '../dist',
-    emptyOutDir: true
-  }
-})
+    outDir: "../dist",
+    emptyOutDir: true,
+  },
+});
