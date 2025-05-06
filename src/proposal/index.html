@@ -1,0 +1,109 @@
+<h1>Azalea</h1>
+<h4>A compositor agnostic desktop shell for Wayland</h4>
+
+<ul>
+  <li><b>Author</b>: Enzo Hideo Kobayashi</li>
+  <li><b>Advisors</b>: Alfredo Goldman and Nelson Posse Lago</li>
+</ul>
+
+<h2>Introduction</h2>
+
+<p>
+  Desktop shells, also called graphical shells, are a set of widgets and
+  graphical interfaces that allow an user to interact with an Operating System,
+  similar to a command-line shell but graphically, hence the name. A few
+  examples of graphical shell components include: taskbars, app launchers,
+  wallpaper selectors, systray, notification menu, etc.
+</p>
+
+<p>
+  On Linux, the most popular graphical shells are oftentimes tied to a desktop
+  environment, like KDE's plasmashell and GNOME Shell. However, it's also
+  possible to use window managers (X11) or wayland compositors directly without
+  a full-fledged graphical shell, like i3, AwesomeWM, Sway, Hyprland, etc. In
+  the latter case, the user has more freedom to choose or create their own
+  widgets, or "graphical shell components", which is part of a hobby informally
+  referred to as
+  <a href="https://wiki.installgentoo.com/index.php/GNU/Linux_ricing"
+    >"ricing"</a
+  >.
+</p>
+
+<p>
+  In that context of developing graphical shell components, it's common the
+  usage of libraries to create <b>specific</b> widgets, like
+  <a href="https://github.com/Alexays/Waybar">waybar</a> and
+  <a href="https://github.com/polybar/polybar">polybar</a> to create a basic
+  status bar, and libraries that offer a bit more freedom, like
+  <a href="https://github.com/elkowar/eww">eww</a> and
+  <a href="https://github.com/Aylur/astal">astal</a> to create
+  <b>generic and complex</b> widgets.
+</p>
+
+<p>
+  Recently, many of these graphical shells libraries are made for Wayland
+  instead of X11 because of the recent
+  <a href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1"
+    >layer shell
+  </a>
+  protocol, which allows the creation of graphical shell components that work on
+  any Wayland compositor that implements it. And despite being a
+  <a href="https://gitlab.freedesktop.org/wlroots/wlr-protocols"
+    >wlroots extension</a
+  >, it's already
+  <a
+    href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#compositor-support"
+  >
+    supported on many compositors.
+  </a>
+  This allows the creation of desktop shells that are not tied to a specific
+  wayland compositor or desktop environment.
+</p>
+
+<h2>Objectives</h2>
+
+<p>
+  The main objective is to develop a compositor agnostic desktop shell for
+  wayland while exploring the limits of the layer shell protocol. It's expected
+  to find a few widgets that are difficult to develop without breaking the
+  compositor agnostic rule, so a part of the project is also to find ways to
+  work around it.
+</p>
+
+<p>
+  The name of the desktop shell is Azalea and I intend to use
+  <a href="https://www.rust-lang.org/">Rust</a> as main programming language.
+  The core library developed will be based on
+  <a href="https://gtk-rs.org/">gtk4</a> and will be open source to allow other
+  developers to create their own desktop shells as well. And since the main
+  target audience of Azalea are developers, not general users, all the settings
+  and configurations will be done through dotfiles, which are better for
+  versioning and easier to share.
+</p>
+
+<p>
+  As a personal goal, I'll also use this project to learn and explore
+  <a href="https://nixos.org/">Nix</a> as a tool for development, building, and
+  packaging. As well as creating a reproducible NixOS virtual machine to run the
+  project under multiple wayland compositors, since it's supposed to be
+  compositor agnostic.
+</p>
+
+<p>
+  As extra objectives I also hope to develop a basic greeter using
+  <a href="https://git.sr.ht/~kennylevinsen/greetd">greetd</a> and a lock screen
+  using the wayland
+  <a href="https://wayland.app/protocols/ext-session-lock-v1">session lock</a>
+  protocol.
+</p>
+
+<h2>References</h2>
+
+<ul>
+  <li>
+    Drew DeVault's blog post about layer shell;
+    <a href="https://drewdevault.com/2018/07/29/Wayland-shells.html"
+      >https://drewdevault.com/2018/07/29/Wayland-shells.html</a
+    >
+  </li>
+</ul>
