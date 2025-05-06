@@ -51,6 +51,14 @@
       blockquote {
         margin: 0 !important;
       }
+
+      .last-modified {
+        display: inline-block;
+        margin: 10px 0 0 0;
+        float: right;
+        font-size: 0.8em;
+        color: var(--text-light);
+      }
     </style>
   </head>
 
@@ -60,7 +68,15 @@
       <button id="tab-schedule" class="tab">Schedule</button>
       <button id="tab-commits" class="tab">Commits</button>
       <button id="tab-monograph" class="tab">Monograph</button>
+      <div class="last-modified">
+        <span>Last Modified: </span><span id="last-modified"></span>
+      </div>
     </nav>
+
+    <script type="module">
+      import inject from "./lib/inject";
+      inject("#last-modified", new Date(__LAST_MODIFIED__).toDateString());
+    </script>
 
     <div id="stack">
       <div id="proposal">

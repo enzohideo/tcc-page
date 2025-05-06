@@ -7,4 +7,7 @@ export default defineConfig({
     outDir: "../dist",
   },
   assetsInclude: ["src/*/*.html"],
+  define: {
+    __LAST_MODIFIED__: Date.now(),
+  },
 });
