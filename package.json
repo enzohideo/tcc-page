@@ -4,6 +4,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "prod": "vite build && vite preview",
     "format": "prettier src ./vite.config.mjs --write"
   },
   "dependencies": {
