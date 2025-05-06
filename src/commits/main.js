@@ -1,4 +1,5 @@
 import history from "./azalea-history.json" with { type: "json" };
+import inject from "../lib/inject";
 
 const monthOrder = [
   "Jan",
@@ -64,8 +65,5 @@ const monthOrder = [
     `;
   }
 
-  const element = document.getElementById("azalea-history");
-  if (element && "innerHTML" in element) {
-    element.innerHTML = history_html;
-  }
+  inject("#azalea-history", history_html);
 })();

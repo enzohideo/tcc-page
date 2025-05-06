@@ -1,4 +1,4 @@
-import inject from "../inject";
+import inject from "../lib/inject";
 import shortTermHTML from "./short-term.html?raw";
 import longTermHTML from "./long-term.html?raw";
 

@@ -1,4 +1,4 @@
-import { Stack, Selector } from "./stack";
+import { Stack, Selector } from "./lib/stack";
 
 const searchParams = new URL(window.location.href).searchParams;
 const startingTab = searchParams.get("tab") || "proposal";
