@@ -1,5 +1,537 @@
 [
   {
+    "commit": "68612dfdb72bba9575be718445bb417d56081567",
+    "author": "enzohideo",
+    "date": "Sun May 11 19:37:06 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 51,
+      "deletions": 16,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs",
+        "azalea-core/src/dbus.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 45
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 6
+        },
+        {
+          "name": "azalea-core/src/dbus.rs",
+          "lines_changed": 16
+        }
+      ]
+    },
+    "message": "azalea-core: Allow remote instance to wait for daemon to start",
+    "epoch": 1747003026,
+    "epoch_utc": null
+  },
+  {
+    "commit": "d0a28d8e575838302cb1d454e36cff31d527fc61",
+    "author": "enzohideo",
+    "date": "Sun May 11 19:22:32 2025 -0300",
+    "stats": {
+      "files_changed": 7,
+      "insertions": 115,
+      "deletions": 37,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-core/Cargo.toml",
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs",
+        "azalea-core/src/dbus.rs",
+        "azalea-core/src/lib.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 68
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea-core/Cargo.toml",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 58
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-core/src/dbus.rs",
+          "lines_changed": 17
+        },
+        {
+          "name": "azalea-core/src/lib.rs",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-core: Use DBus to check if daemon is running",
+    "epoch": 1747002152,
+    "epoch_utc": null
+  },
+  {
+    "commit": "8c37a4b677803526c43daa5159b07528b2147745",
+    "author": "enzohideo",
+    "date": "Sun May 11 18:52:36 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 31,
+      "deletions": 4,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 15
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 20
+        }
+      ]
+    },
+    "message": "azalea-core: Show possible window IDs",
+    "epoch": 1747000356,
+    "epoch_utc": null
+  },
+  {
+    "commit": "5260560f04bb0bad8e5c10ae55ed62f1fcc7f3a6",
+    "author": "enzohideo",
+    "date": "Sun May 11 18:04:56 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 76,
+      "deletions": 68,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs",
+        "azalea-core/src/config.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 74
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 22
+        },
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 14
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 34
+        }
+      ]
+    },
+    "message": "azalea-core: Separate cli and config",
+    "epoch": 1746997496,
+    "epoch_utc": null
+  },
+  {
+    "commit": "0131a457809201ec4721a48bf59741d38d2666df",
+    "author": "enzohideo",
+    "date": "Sun May 11 17:44:41 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 8,
+      "deletions": 1,
+      "files": [
+        "azalea-core/src/app.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 9
+        }
+      ]
+    },
+    "message": "azalea-core: Add warning if it fails to parse config file",
+    "epoch": 1746996281,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e15dc9743bb2aaa92936f821daea790f252bfd90",
+    "author": "enzohideo",
+    "date": "Sat May 10 22:32:53 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 105,
+      "deletions": 97,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 113
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 89
+        }
+      ]
+    },
+    "message": "azalea-core: Separate Application and WindowManager",
+    "epoch": 1746927173,
+    "epoch_utc": null
+  },
+  {
+    "commit": "04021d0fb53b2bbaf9f3a0c1a72d41b28e697fc8",
+    "author": "enzohideo",
+    "date": "Sat May 10 01:45:25 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 22,
+      "deletions": 8,
+      "files": [
+        "Cargo.lock",
+        "azalea-service/Cargo.toml",
+        "azalea-service/src/service.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/service.rs",
+          "lines_changed": 28
+        }
+      ]
+    },
+    "message": "azalea-service: Use tokio to broadcast messages",
+    "epoch": 1746852325,
+    "epoch_utc": null
+  },
+  {
+    "commit": "3ee36a37ea77cdf7ede14b998d10f8dd0a8e418b",
+    "author": "enzohideo",
+    "date": "Sat May 10 03:40:41 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 65,
+      "deletions": 41,
+      "files": [
+        "azalea-window/src/lib.rs",
+        "azalea-window/src/taskbar/mod.rs",
+        "azalea-window/src/taskbar/widget/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 41
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 38
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/time.rs",
+          "lines_changed": 27
+        }
+      ]
+    },
+    "message": "azalea-window: Add init! to initialize Model, Config, and Service",
+    "epoch": 1746859241,
+    "epoch_utc": null
+  },
+  {
+    "commit": "c6c3f419f14a7788c7ccbc441e19150f14142d78",
+    "author": "enzohideo",
+    "date": "Sat May 10 03:09:36 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 51,
+      "deletions": 49,
+      "files": [
+        "azalea-service/src/lib.rs",
+        "azalea-service/src/macro.rs",
+        "azalea-window/src/taskbar/mod.rs",
+        "azalea-window/src/taskbar/widget/time.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/macro.rs",
+          "lines_changed": 42
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 25
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/time.rs",
+          "lines_changed": 16
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 15
+        }
+      ]
+    },
+    "message": "azalea-service: Add macro to create Services",
+    "epoch": 1746857376,
+    "epoch_utc": null
+  },
+  {
+    "commit": "eafd47f021f15bb19d26d8e6b013501ea57882ee",
+    "author": "enzohideo",
+    "date": "Wed May 7 13:47:25 2025 -0300",
+    "stats": {
+      "files_changed": 7,
+      "insertions": 107,
+      "deletions": 30,
+      "files": [
+        "Cargo.lock",
+        "azalea-window/Cargo.toml",
+        "azalea-window/src/lib.rs",
+        "azalea-window/src/taskbar/mod.rs",
+        "azalea-window/src/taskbar/widget/mod.rs",
+        "azalea-window/src/taskbar/widget/time.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-window/Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 18
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 34
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/mod.rs",
+          "lines_changed": 7
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/time.rs",
+          "lines_changed": 49
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 26
+        }
+      ]
+    },
+    "message": "azalea-window: Receive Services from Init",
+    "epoch": 1746636445,
+    "epoch_utc": null
+  },
+  {
+    "commit": "a098fd3771be459c185959b738c85724c3593d11",
+    "author": "enzohideo",
+    "date": "Wed May 7 13:44:29 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 17,
+      "deletions": 0,
+      "files": [
+        "azalea-service/src/trait.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/trait.rs",
+          "lines_changed": 17
+        }
+      ]
+    },
+    "message": "azalea-service/trait: Add FromServices and IntoServices",
+    "epoch": 1746636269,
+    "epoch_utc": null
+  },
+  {
+    "commit": "183aeaa4eea6a9f6cee76eee59c410dff272b8af",
+    "author": "enzohideo",
+    "date": "Wed May 7 13:44:10 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 4,
+      "deletions": 1,
+      "files": [
+        "azalea-service/src/service.rs",
+        "azalea-service/src/trait.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/service.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/trait.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea-service/trait: Return Option from HasService::get_service()",
+    "epoch": 1746636250,
+    "epoch_utc": null
+  },
+  {
+    "commit": "509ce43a6cfaf8b4f6c568e36b3510eea8bea405",
+    "author": "enzohideo",
+    "date": "Wed May 7 08:48:17 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 39,
+      "deletions": 9,
+      "files": [
+        "azalea-window/src/lib.rs",
+        "azalea-window/src/taskbar/mod.rs",
+        "azalea-window/src/taskbar/widget/mod.rs",
+        "azalea-window/src/taskbar/widget/time.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 14
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 13
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/mod.rs",
+          "lines_changed": 10
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/time.rs",
+          "lines_changed": 9
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-window: Separate time::Init and time::Config",
+    "epoch": 1746618497,
+    "epoch_utc": null
+  },
+  {
+    "commit": "d60d022a9c667646e4ff76bfe1d503d7b6ac9531",
+    "author": "enzohideo",
+    "date": "Tue May 6 15:31:19 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 383,
+      "deletions": 5,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-service/Cargo.toml"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 386
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/Cargo.toml",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "chore: Add zbus as dependency",
+    "epoch": 1746556279,
+    "epoch_utc": null
+  },
+  {
+    "commit": "6a163e55799f78c22c3d022da7f1e1706d1eb96f",
+    "author": "enzohideo",
+    "date": "Tue May 6 15:29:03 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 29,
+      "deletions": 4,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs",
+        "azalea-core/src/config.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 26
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 5
+        },
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-core: Read from JSON config file",
+    "epoch": 1746556143,
+    "epoch_utc": null
+  },
+  {
+    "commit": "f409f81ae34bacd567555e6a7e81716f865f9c7b",
+    "author": "enzohideo",
+    "date": "Mon May 5 11:05:21 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 0,
+      "files": [
+        "azalea-core/src/config.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-core: Derive Serialize and Deserialize for Config",
+    "epoch": 1746453921,
+    "epoch_utc": null
+  },
+  {
     "commit": "b4b9f0a926af5d58040f7cca6163aab3225cc364",
     "author": "enzohideo",
     "date": "Sun May 4 23:42:25 2025 -0300",
