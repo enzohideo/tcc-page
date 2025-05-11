@@ -47,6 +47,11 @@ table {
   font-size: 0.8em;
 }
 
+tfoot {
+  border-top: solid var(--border) 3px;
+  font-weight: bold;
+}
+
 blockquote {
   margin: 0 !important;
 }
