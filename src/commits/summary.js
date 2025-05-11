@@ -16,7 +16,6 @@ export default () => {
   const summary = new Summary(raw_summary);
 
   const header_html = `
-    <h3>Summary</h3>
     <div>
       commits: ${history.length}, files: ${summary.header.n_files}, lines: ${summary.header.n_lines}
     </div>
