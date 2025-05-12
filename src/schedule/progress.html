@@ -14,15 +14,40 @@
 
     <pre><code>azalea window toggle "id"</code></pre>
 
-    <li>Add <code>Create</code> command to dynamically create windows (WIP)</li>
+    <li>Add <code>Create</code> command to dynamically create windows</li>
 
-    <pre><code>azalea window create "id" \
-    --layer top \
-    --anchors top \
-    --anchors left \
-    --anchors right \
-    taskbar \
-    --start time</code></pre>
+    <pre><code>azalea window create "id"</code></pre>
+
+    <li>Parse configuration from JSON file</li>
+
+    <pre><code class="language-json">{
+  "windows": {
+    "bottom-taskbar": {
+      "config": {
+        "Taskbar": {
+          "start": [],
+          "center": [],
+          "end": [
+            {
+              "Time": {}
+            }
+          ]
+        }
+      },
+      "layer_shell": {
+        "namespace": "taskbar",
+        "layer": "Bottom",
+        "anchors": [
+          "Left",
+          "Right",
+          "Bottom"
+        ],
+        "auto_exclusive_zone": true
+      },
+      "lazy": false
+    }
+  }
+}</code></pre>
   </ul>
 </details>
 
