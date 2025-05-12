@@ -1,4 +1,5 @@
 import { Stack, Selector } from "./lib/stack";
+import "prismjs";
 
 const searchParams = new URL(window.location.href).searchParams;
 const startingTab = searchParams.get("tab") || "proposal";
