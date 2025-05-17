@@ -1,7 +1,69 @@
+<style>
+  .notice-sm {
+    border: var(--border-width) solid var(--border);
+    border-radius: var(--standard-border-radius);
+    padding: 1px 5px;
+  }
+</style>
+
 <details>
-  <summary>May (1/2) - WIP</summary>
+  <summary>
+    May (2/2) <code class="notice-sm" style="float: right">wip</code>
+  </summary>
 
   <ul>
+    <li>Fully automated <code>integration test</code></li>
+
+    <pre><code class="language-shell">$ nix build .#test
+$ ls ./result
+  hyprland-default.png  sway-default.png</code></pre>
+
+    <details>
+      <summary>hyprland-default.png</summary>
+      <img alt="date/clock widget" src="progress/may/hyprland-default.png" />
+    </details>
+
+    <details>
+      <summary>sway-default.png</summary>
+      <img alt="date/clock widget" src="progress/may/sway-default.png" />
+    </details>
+
+    <li>
+      Basic <code>integration test</code> on
+      <a target="_blank" href="https://swaywm.org/">Sway</a>
+    </li>
+  </ul>
+</details>
+
+<details>
+  <summary>May (1/2)</summary>
+
+  <ul>
+    <li>
+      Basic interactive <code>integration test</code> on
+      <a target="_blank" href="https://hyprland.org/">Hyprland</a> using
+      <a target="_blank" href="https://wiki.nixos.org/wiki/NixOS_VM_tests"
+        >NixOS VM tests</a
+      >
+    </li>
+
+    <pre><code class="language-shell">$ nix run .#test.driverInteractive
+>>> start_all()
+>>> test_script()
+</code></pre>
+
+    <li>
+      <code>Build</code> azalea using nix (pre-requisite for the integration
+      tests)
+    </li>
+
+    <pre><code>nix build</code></pre>
+
+    <li>
+      Initial implementation of the <code>MPRIS</code> interface (not functional
+      yet)
+    </li>
+
     <li>Add <code>Time/Clock</code> widget to the taskbar</li>
 
     <figure class="notice">
@@ -18,7 +80,7 @@
 
     <pre><code>azalea window create "id"</code></pre>
 
-    <li>Parse configuration from JSON file</li>
+    <li>Parse JSON <code>configuration file</code> (dotfile)</li>
 
     <pre><code class="language-json">{
   "windows": {
@@ -55,11 +117,12 @@
   <summary>Mar + Apr</summary>
 
   <ul>
-    <li>Client-server architecture using unix sockets</li>
+    <li><code>Client-server</code> architecture using unix sockets</li>
 
     <pre><code>azalea daemon start</code></pre>
     <pre><code>azalea daemon stop</code></pre>
 
-    <li>Basic PoC taskbar using relm4 (gtk4)</li>
+    <li>Basic PoC taskbar using <code>relm4 (gtk4)</code></li>
+    <li>Basic nix <code>devshell</code></li>
   </ul>
 </details>
