@@ -1,5 +1,761 @@
 [
   {
+    "commit": "d7b06ef642b5e594a8d99461b24cc0c15348604d",
+    "author": "enzohideo",
+    "date": "Sat May 17 18:24:50 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 2,
+      "deletions": 2,
+      "files": [
+        "nix/test/default.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/test/default.nix",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "nix/test: Use nodes instead of interactive.nodes",
+    "epoch": 1747517090,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e7285d616fd407bd4b5fad9d0a429a402886e796",
+    "author": "enzohideo",
+    "date": "Sat May 17 18:09:16 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 4,
+      "deletions": 5,
+      "files": [
+        "nix/test/nodes/sway.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/test/nodes/sway.nix",
+          "lines_changed": 9
+        }
+      ]
+    },
+    "message": "nix/test: Add background to sway",
+    "epoch": 1747516156,
+    "epoch_utc": null
+  },
+  {
+    "commit": "d9c6160bb8250a46e01ef0c416f61e6a515e481a",
+    "author": "enzohideo",
+    "date": "Sat May 17 18:07:36 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 7,
+      "deletions": 1,
+      "files": [
+        "nix/test/default.nix",
+        "nix/test/nodes/sway.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/test/default.nix",
+          "lines_changed": 4
+        },
+        {
+          "name": "nix/test/nodes/sway.nix",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "nix/test: Fix sway not starting azalea",
+    "epoch": 1747516056,
+    "epoch_utc": null
+  },
+  {
+    "commit": "a581adf237b6cb63589ba5f8160dd51a10e006fa",
+    "author": "enzohideo",
+    "date": "Sat May 17 18:00:13 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 0,
+      "deletions": 5,
+      "files": [
+        "nix/test/default.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/test/default.nix",
+          "lines_changed": 5
+        }
+      ]
+    },
+    "message": "nix/test: Fix screenshot\n\nApparently it can't screenshot when using virtio",
+    "epoch": 1747515613,
+    "epoch_utc": null
+  },
+  {
+    "commit": "5b111c3fa5f45c10f11d661169c4d95fa8703137",
+    "author": "enzohideo",
+    "date": "Sat May 17 17:59:56 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 21,
+      "deletions": 12,
+      "files": [
+        "nix/test/default.nix",
+        "nix/test/nodes/sway.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/test/default.nix",
+          "lines_changed": 14
+        },
+        {
+          "name": "nix/test/nodes/sway.nix",
+          "lines_changed": 19
+        }
+      ]
+    },
+    "message": "nix/test: Fix backdoor.service fail in the sway test",
+    "epoch": 1747515596,
+    "epoch_utc": null
+  },
+  {
+    "commit": "3ee490849d7355db983aed3890d017f3c5affb99",
+    "author": "enzohideo",
+    "date": "Sat May 17 17:53:05 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 21,
+      "deletions": 7,
+      "files": [
+        "nix/test/nodes/hyprland.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/test/nodes/hyprland.nix",
+          "lines_changed": 28
+        }
+      ]
+    },
+    "message": "nix/test: Set Hyprland config and remove uwsm",
+    "epoch": 1747515185,
+    "epoch_utc": null
+  },
+  {
+    "commit": "99f032cb0692d87044c1ad0abd5ccbaf6052fb30",
+    "author": "enzohideo",
+    "date": "Sat May 17 16:11:54 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 5,
+      "deletions": 0,
+      "files": [
+        "nix/test/default.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/test/default.nix",
+          "lines_changed": 5
+        }
+      ]
+    },
+    "message": "nix/test: Use virtio for better performance",
+    "epoch": 1747509114,
+    "epoch_utc": null
+  },
+  {
+    "commit": "03f8600dc2a4133489a1e37d029c2b534982643b",
+    "author": "enzohideo",
+    "date": "Sat May 17 15:25:24 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 21,
+      "deletions": 7,
+      "files": [
+        "nix/test/default.nix",
+        "nix/test/nodes/hyprland.nix",
+        "nix/test/nodes/sway.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/test/default.nix",
+          "lines_changed": 10
+        },
+        {
+          "name": "nix/test/nodes/hyprland.nix",
+          "lines_changed": 8
+        },
+        {
+          "name": "nix/test/nodes/sway.nix",
+          "lines_changed": 10
+        }
+      ]
+    },
+    "message": "nix/test: Add incomplete sway test\n\nFor some reason there's a random backdoor.service failure, not sure why.",
+    "epoch": 1747506324,
+    "epoch_utc": null
+  },
+  {
+    "commit": "b2a001b944a6574b0ca4acd082d6ff4823bd6d71",
+    "author": "enzohideo",
+    "date": "Sat May 17 04:56:35 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 15,
+      "deletions": 7,
+      "files": [
+        "nix/test/default.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/test/default.nix",
+          "lines_changed": 22
+        }
+      ]
+    },
+    "message": "nix/test: Test all machines and separate them with subtests",
+    "epoch": 1747468595,
+    "epoch_utc": null
+  },
+  {
+    "commit": "dadaee602ab63675bfeaf77d80f810b145525038",
+    "author": "enzohideo",
+    "date": "Sat May 17 04:20:28 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 66,
+      "deletions": 65,
+      "files": [
+        "flake.nix",
+        "nix/test/default.nix",
+        "nix/test/nodes/hyprland.nix",
+        "nix/tests/hyprland.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "flake.nix",
+          "lines_changed": 6
+        },
+        {
+          "name": "nix/test/default.nix",
+          "lines_changed": 47
+        },
+        {
+          "name": "nix/test/nodes/hyprland.nix",
+          "lines_changed": 17
+        },
+        {
+          "name": "nix/tests/hyprland.nix",
+          "lines_changed": 61
+        }
+      ]
+    },
+    "message": "nix/test: Refactor test to allow more nodes",
+    "epoch": 1747466428,
+    "epoch_utc": null
+  },
+  {
+    "commit": "3f0a77d9b2a895164875236a87ad9b9612b0ef90",
+    "author": "enzohideo",
+    "date": "Thu May 15 12:41:31 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 72,
+      "deletions": 1,
+      "files": [
+        ".gitignore",
+        "flake.nix",
+        "nix/tests/hyprland.nix"
+      ],
+      "file_stats": [
+        {
+          "name": ".gitignore",
+          "lines_changed": 2
+        },
+        {
+          "name": "flake.nix",
+          "lines_changed": 10
+        },
+        {
+          "name": "nix/tests/hyprland.nix",
+          "lines_changed": 61
+        }
+      ]
+    },
+    "message": "nix/test: Add Hyprland integration test",
+    "epoch": 1747323691,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e6d2854589eeb36fdfde0ec2c07514beb1d44262",
+    "author": "enzohideo",
+    "date": "Sat May 17 00:48:54 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 77,
+      "deletions": 38,
+      "files": [
+        "Cargo.toml",
+        "flake.lock",
+        "flake.nix",
+        "nix/package.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 10
+        },
+        {
+          "name": "flake.lock",
+          "lines_changed": 16
+        },
+        {
+          "name": "flake.nix",
+          "lines_changed": 12
+        },
+        {
+          "name": "nix/package.nix",
+          "lines_changed": 77
+        }
+      ]
+    },
+    "message": "nix/package: Use crane to build azalea",
+    "epoch": 1747453734,
+    "epoch_utc": null
+  },
+  {
+    "commit": "dc30fbad646a5990f34d6e4bcffc41f2b369ca61",
+    "author": "enzohideo",
+    "date": "Thu May 15 16:04:51 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 2,
+      "deletions": 0,
+      "files": [
+        "nix/package.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/package.nix",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "nix: Set NIX_OUTPATH_USED_AS_RANDOM_SEED to avoid rebuild",
+    "epoch": 1747335891,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e86b1147ac0eabe164764f3501b8d78f856c1d07",
+    "author": "enzohideo",
+    "date": "Wed May 14 17:58:31 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 17,
+      "deletions": 4,
+      "files": [
+        "flake.nix",
+        "nix/package.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "flake.nix",
+          "lines_changed": 15
+        },
+        {
+          "name": "nix/package.nix",
+          "lines_changed": 6
+        }
+      ]
+    },
+    "message": "nix: Use nix-gitignore to avoid rebuilds",
+    "epoch": 1747256311,
+    "epoch_utc": null
+  },
+  {
+    "commit": "bd7878879cc88255386368fbdb03890938816246",
+    "author": "enzohideo",
+    "date": "Tue May 13 14:38:09 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 44,
+      "deletions": 1,
+      "files": [
+        ".gitignore",
+        "flake.nix",
+        "nix/package.nix"
+      ],
+      "file_stats": [
+        {
+          "name": ".gitignore",
+          "lines_changed": 3
+        },
+        {
+          "name": "flake.nix",
+          "lines_changed": 4
+        },
+        {
+          "name": "nix/package.nix",
+          "lines_changed": 38
+        }
+      ]
+    },
+    "message": "chore: Build azalea using nix",
+    "epoch": 1747157889,
+    "epoch_utc": null
+  },
+  {
+    "commit": "41d547028cac5438e9131651481620b7f2cd26cb",
+    "author": "enzohideo",
+    "date": "Tue May 13 14:24:54 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 6,
+      "deletions": 0,
+      "files": [
+        ".cargo/config.toml",
+        "flake.nix"
+      ],
+      "file_stats": [
+        {
+          "name": ".cargo/config.toml",
+          "lines_changed": 3
+        },
+        {
+          "name": "flake.nix",
+          "lines_changed": 3
+        }
+      ]
+    },
+    "message": "chore: Use clang and mold as linker",
+    "epoch": 1747157094,
+    "epoch_utc": null
+  },
+  {
+    "commit": "18cec43638700939f6d08bcb64fd6bf51f19b8c5",
+    "author": "enzohideo",
+    "date": "Tue May 13 14:22:15 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 6,
+      "deletions": 6,
+      "files": [
+        "azalea-core/src/app.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 12
+        }
+      ]
+    },
+    "message": "azalea-core: Use PathBuf to represent socket_path",
+    "epoch": 1747156935,
+    "epoch_utc": null
+  },
+  {
+    "commit": "03139d00445e511e067b3d86f5853c6551c0ab45",
+    "author": "enzohideo",
+    "date": "Mon May 12 11:45:30 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 11,
+      "deletions": 0,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 10
+        }
+      ]
+    },
+    "message": "azalea-core: cli: Add Config subcommand",
+    "epoch": 1747061130,
+    "epoch_utc": null
+  },
+  {
+    "commit": "631bbe47ea582573779c3b660dcf14bd950d94bc",
+    "author": "enzohideo",
+    "date": "Mon May 12 11:32:17 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 36,
+      "deletions": 29,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 35
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 30
+        }
+      ]
+    },
+    "message": "azalea-core: Impl cli::layer_shell::Argument::cmp(&gtk::Window)",
+    "epoch": 1747060337,
+    "epoch_utc": null
+  },
+  {
+    "commit": "bfec8a12bf8bfc888dcfa805f743eefef867250e",
+    "author": "enzohideo",
+    "date": "Mon May 12 11:21:22 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 34,
+      "deletions": 19,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 38
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 15
+        }
+      ]
+    },
+    "message": "azalea-core: Handle cli::layer_shell::Command::Toggle",
+    "epoch": 1747059682,
+    "epoch_utc": null
+  },
+  {
+    "commit": "ee15d1b42a7156c46d534465c9b7b119334152b5",
+    "author": "enzohideo",
+    "date": "Mon May 12 11:00:40 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 18,
+      "deletions": 1,
+      "files": [
+        "azalea-core/src/cli.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 19
+        }
+      ]
+    },
+    "message": "azalea-core: cli/layer: Add options to specify layer and anchors",
+    "epoch": 1747058440,
+    "epoch_utc": null
+  },
+  {
+    "commit": "744135ed59490fa34b160317a9034c4d9d91cbc3",
+    "author": "enzohideo",
+    "date": "Mon May 12 10:37:30 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 43,
+      "deletions": 32,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs",
+        "azalea-core/src/config.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 16
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 52
+        },
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 7
+        }
+      ]
+    },
+    "message": "azalea-core: cli: Move subcommands to modules",
+    "epoch": 1747057050,
+    "epoch_utc": null
+  },
+  {
+    "commit": "f1af79b8c71ff7e49824911c7b2a03d64d404674",
+    "author": "enzohideo",
+    "date": "Mon May 12 10:13:30 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 16,
+      "deletions": 4,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs",
+        "azalea-core/src/config.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 7
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 8
+        },
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-core: cli: Add Layer subcommands",
+    "epoch": 1747055610,
+    "epoch_utc": null
+  },
+  {
+    "commit": "52fbc016fbc67a69af691b1a5ee8e66b213f0403",
+    "author": "enzohideo",
+    "date": "Mon May 12 02:36:56 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 83,
+      "deletions": 32,
+      "files": [
+        "azalea-service/src/services/mod.rs",
+        "azalea-service/src/services/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/mod.rs",
+          "lines_changed": 69
+        },
+        {
+          "name": "azalea-service/src/services/time.rs",
+          "lines_changed": 46
+        }
+      ]
+    },
+    "message": "azalea-service: Add generic Model struct and WorkerExt trait",
+    "epoch": 1747028216,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e4205d55ecc56e00455d307f87c5117e7ed84aac",
+    "author": "enzohideo",
+    "date": "Sun May 11 23:59:53 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 29,
+      "deletions": 13,
+      "files": [
+        "azalea-service/src/services/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/time.rs",
+          "lines_changed": 42
+        }
+      ]
+    },
+    "message": "azalea-service: Handle Input::Stop to remotely stop Service",
+    "epoch": 1747018793,
+    "epoch_utc": null
+  },
+  {
+    "commit": "b552416453ce24cf3670cf2adb53e6c807926fb3",
+    "author": "enzohideo",
+    "date": "Sun May 11 23:27:42 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 7,
+      "deletions": 21,
+      "files": [
+        "azalea-core/src/app.rs",
+        "azalea-core/src/config.rs",
+        "azalea-window/src/lib.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 18
+        },
+        {
+          "name": "azalea-core/src/config.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "chore: Remove clap restriction on Config",
+    "epoch": 1747016862,
+    "epoch_utc": null
+  },
+  {
+    "commit": "26e6e837a13cbfbe831095e7869373abf2e725f7",
+    "author": "enzohideo",
+    "date": "Sun May 11 23:10:57 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 4,
+      "deletions": 4,
+      "files": [
+        "azalea-core/src/app.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 8
+        }
+      ]
+    },
+    "message": "azalea-core: Only wait for daemon if daemon hasn't started",
+    "epoch": 1747015857,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e722dddabc7c1f4cf178d255a9d3ff0ccfdc018c",
+    "author": "enzohideo",
+    "date": "Sun May 11 23:06:37 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 6,
+      "deletions": 1,
+      "files": [
+        "azalea-core/src/app.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 7
+        }
+      ]
+    },
+    "message": "azalea-core: Check if window already exists",
+    "epoch": 1747015597,
+    "epoch_utc": null
+  },
+  {
     "commit": "68612dfdb72bba9575be718445bb417d56081567",
     "author": "enzohideo",
     "date": "Sun May 11 19:37:06 2025 -0300",
