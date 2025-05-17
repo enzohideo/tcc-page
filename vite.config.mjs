@@ -13,7 +13,7 @@ export default defineConfig({
   },
   plugins: [
     prism({
-      languages: ["javascript", "json"],
+      languages: ["javascript", "json", "shell"],
       plugins: ["line-numbers"],
       theme: "tomorrow",
       css: true,
