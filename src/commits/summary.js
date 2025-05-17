@@ -16,9 +16,13 @@ export default () => {
   const summary = new Summary(raw_summary);
 
   const header_html = `
-    <div>
-      commits: ${history.length}, files: ${summary.header.n_files}, lines: ${summary.header.n_lines}
-    </div>
+    <aside>
+      <ul>
+        <li>commits: ${history.length}</li>
+        <li>files: ${summary.header.n_files}</li>
+        <li>lines: ${summary.header.n_lines}</li>
+      </ul>
+    </aside>
   `;
 
   const table_html = `
