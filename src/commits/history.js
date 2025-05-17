@@ -32,7 +32,7 @@ export default () => {
       .map(
         (log) => `
           <b>${log.commit.slice(0, 7)}:</b>
-          ${log.message}
+          ${log.message.split("\n\n")[0]}
           [
             <span style="color: green;">+${log.stats.insertions}</span>
             <span style="color:red;">-${log.stats.deletions}</span>
