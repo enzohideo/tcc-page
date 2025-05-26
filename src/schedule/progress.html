@@ -12,6 +12,48 @@
   </summary>
 
   <ul>
+    <li>
+      Parse <a href="https://docs.rs/ron/latest/ron/" target="_blank">RON</a>
+      <code>configuration file</code>
+    </li>
+
+    <details>
+      <summary>config.ron</summary>
+      <pre><code class="language-rust">#![enable(implicit_some)]
+#![enable(unwrap_variant_newtypes)]
+(
+    windows: {
+        "bottom-taskbar": (
+            config: Taskbar(
+                start: [],
+                center: [],
+                end: [
+                    Time(
+                        format: "%d/%m/%y",
+                    ),
+                    Time(
+                        format: "%H:%M:%S",
+                    ),
+                ],
+            ),
+            layer_shell: (
+                namespace: "taskbar",
+                layer: Bottom,
+                anchors: [
+                    Left,
+                    Right,
+                    Bottom,
+                ],
+                auto_exclusive_zone: true,
+            ),
+            lazy: false,
+        ),
+    },
+)</code></pre>
+    </details>
+
+    <li>Refactor <code>azalea-service</code></li>
+
     <li>Fully automated <code>integration test</code></li>
 
     <pre><code class="language-shell">$ nix build .#test
@@ -82,7 +124,9 @@ $ ls ./result
 
     <li>Parse JSON <code>configuration file</code> (dotfile)</li>
 
-    <pre><code class="language-json">{
+    <details>
+      <summary>config.json</summary>
+      <pre><code class="language-json">{
   "windows": {
     "bottom-taskbar": {
       "config": {
@@ -110,6 +154,7 @@ $ ls ./result
     }
   }
 }</code></pre>
+    </details>
   </ul>
 </details>
 
