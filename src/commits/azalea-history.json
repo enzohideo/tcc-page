@@ -1,5 +1,482 @@
 [
   {
+    "commit": "5b75bca101f0f75fc678efc6ed676534013ed02a",
+    "author": "enzohideo",
+    "date": "Mon May 26 01:49:47 2025 -0300",
+    "stats": {
+      "files_changed": 12,
+      "insertions": 79,
+      "deletions": 52,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-core/Cargo.toml",
+        "azalea-core/src/lib.rs",
+        "azalea-core/src/log.rs",
+        "azalea-log/Cargo.toml",
+        "azalea-log/src/lib.rs",
+        "azalea-service/Cargo.toml",
+        "azalea-service/src/service/handler.rs",
+        "azalea/Cargo.toml",
+        "azalea/src/lib.rs",
+        "nix/package.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 16
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-core/Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-core/src/lib.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-core/src/log.rs",
+          "lines_changed": 46
+        },
+        {
+          "name": "azalea-log/Cargo.toml",
+          "lines_changed": 11
+        },
+        {
+          "name": "azalea-log/src/lib.rs",
+          "lines_changed": 42
+        },
+        {
+          "name": "azalea-service/Cargo.toml",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea/Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea/src/lib.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "nix/package.nix",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-core: Move log to separate crate azalea-log",
+    "epoch": 1748234987,
+    "epoch_utc": null
+  },
+  {
+    "commit": "73184e1218dab3f2b9da27f9aaf3395fb4be1b7b",
+    "author": "enzohideo",
+    "date": "Mon May 26 01:17:53 2025 -0300",
+    "stats": {
+      "files_changed": 8,
+      "insertions": 106,
+      "deletions": 28,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-core/Cargo.toml",
+        "azalea-core/src/app.rs",
+        "azalea-core/src/cli.rs",
+        "azalea-core/src/error.rs",
+        "azalea-core/src/lib.rs",
+        "azalea-service/src/service/handler.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 24
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-core/Cargo.toml",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 89
+        },
+        {
+          "name": "azalea-core/src/cli.rs",
+          "lines_changed": 5
+        },
+        {
+          "name": "azalea-core/src/error.rs",
+          "lines_changed": 9
+        },
+        {
+          "name": "azalea-core/src/lib.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-core: config: Use RON and impl View config command",
+    "epoch": 1748233073,
+    "epoch_utc": null
+  },
+  {
+    "commit": "1c50e4de2e733aa7e641e0f4de1a46d6ae4e404c",
+    "author": "enzohideo",
+    "date": "Sun May 25 23:50:25 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 50,
+      "deletions": 37,
+      "files": [
+        "azalea-service/src/service/handler.rs",
+        "azalea-service/src/service/status.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 75
+        },
+        {
+          "name": "azalea-service/src/service/status.rs",
+          "lines_changed": 12
+        }
+      ]
+    },
+    "message": "azalea-service: Stop services automatically on drop",
+    "epoch": 1748227825,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e3ad902e613c0db565acde1213b41f7405e760b7",
+    "author": "enzohideo",
+    "date": "Sun May 25 22:59:20 2025 -0300",
+    "stats": {
+      "files_changed": 7,
+      "insertions": 74,
+      "deletions": 40,
+      "files": [
+        "Cargo.lock",
+        "azalea-service/Cargo.toml",
+        "azalea-service/src/macro.rs",
+        "azalea-service/src/service/handler.rs",
+        "azalea-service/src/trait.rs",
+        "azalea-window/src/taskbar/widget/time.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/macro.rs",
+          "lines_changed": 10
+        },
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 60
+        },
+        {
+          "name": "azalea-service/src/trait.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/time.rs",
+          "lines_changed": 31
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 7
+        }
+      ]
+    },
+    "message": "azalea-service: Start services automatically with ref count",
+    "epoch": 1748224760,
+    "epoch_utc": null
+  },
+  {
+    "commit": "18e63bdbd0fb2f0864b42197df1c7ef368316f0a",
+    "author": "enzohideo",
+    "date": "Sun May 25 22:17:11 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 4,
+      "deletions": 4,
+      "files": [
+        "azalea-service/src/macro.rs",
+        "azalea-window/src/lib.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/macro.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-service: Rename prefix in services macro",
+    "epoch": 1748222231,
+    "epoch_utc": null
+  },
+  {
+    "commit": "858d09f8514dcb40d65ee57c3a855208852189e2",
+    "author": "enzohideo",
+    "date": "Sun May 25 21:45:03 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 30,
+      "deletions": 20,
+      "files": [
+        "azalea-window/src/taskbar/widget/time.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/time.rs",
+          "lines_changed": 41
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 9
+        }
+      ]
+    },
+    "message": "azalea-window: time: Receive format from Config",
+    "epoch": 1748220303,
+    "epoch_utc": null
+  },
+  {
+    "commit": "8ba7737f2fada1f4d9a1e4488486dcd9bf4bec88",
+    "author": "enzohideo",
+    "date": "Sun May 25 21:44:33 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 12,
+      "deletions": 1,
+      "files": [
+        "azalea-service/src/service/handler.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 13
+        }
+      ]
+    },
+    "message": "azalea-service: Impl Handler::filtered_forward()",
+    "epoch": 1748220273,
+    "epoch_utc": null
+  },
+  {
+    "commit": "8ebcfaaf5958186a5f2fdd8f62991a74d2e11993",
+    "author": "enzohideo",
+    "date": "Sun May 25 21:39:09 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 5,
+      "deletions": 5,
+      "files": [
+        "azalea-window/src/lib.rs",
+        "azalea-window/src/taskbar/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 6
+        }
+      ]
+    },
+    "message": "azalea-window: Set Config member public by default",
+    "epoch": 1748219949,
+    "epoch_utc": null
+  },
+  {
+    "commit": "31f33e009ba18241c4d7bc8f2daa444ee8764774",
+    "author": "enzohideo",
+    "date": "Sun May 25 20:48:24 2025 -0300",
+    "stats": {
+      "files_changed": 14,
+      "insertions": 142,
+      "deletions": 311,
+      "files": [
+        "azalea-service/src/bin/time.rs",
+        "azalea-service/src/lib.rs",
+        "azalea-service/src/macro.rs",
+        "azalea-service/src/service.rs",
+        "azalea-service/src/service/error.rs",
+        ".../src/{service2/mod.rs => service/handler.rs}",
+        "azalea-service/src/service/mod.rs",
+        "azalea-service/src/service/status.rs",
+        "azalea-service/src/services/mod.rs",
+        "azalea-service/src/services/time.rs",
+        "azalea-service/src/trait.rs",
+        "azalea-window/src/taskbar/mod.rs",
+        "azalea-window/src/taskbar/widget/time.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/bin/time.rs",
+          "lines_changed": 85
+        },
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 5
+        },
+        {
+          "name": "azalea-service/src/macro.rs",
+          "lines_changed": 8
+        },
+        {
+          "name": "azalea-service/src/service.rs",
+          "lines_changed": 77
+        },
+        {
+          "name": "azalea-service/src/service/error.rs",
+          "lines_changed": 21
+        },
+        {
+          "name": ".../src/{service2/mod.rs => service/handler.rs}",
+          "lines_changed": 49
+        },
+        {
+          "name": "azalea-service/src/service/mod.rs",
+          "lines_changed": 26
+        },
+        {
+          "name": "azalea-service/src/service/status.rs",
+          "lines_changed": 11
+        },
+        {
+          "name": "azalea-service/src/services/mod.rs",
+          "lines_changed": 69
+        },
+        {
+          "name": "azalea-service/src/services/time.rs",
+          "lines_changed": 64
+        },
+        {
+          "name": "azalea-service/src/trait.rs",
+          "lines_changed": 8
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/time.rs",
+          "lines_changed": 19
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 9
+        }
+      ]
+    },
+    "message": "azalea-service: refactor: Replace Service with Service v2",
+    "epoch": 1748216904,
+    "epoch_utc": null
+  },
+  {
+    "commit": "7ca83e422304699ce499a91ecbe35836f19a9185",
+    "author": "enzohideo",
+    "date": "Tue May 20 15:43:12 2025 -0300",
+    "stats": {
+      "files_changed": 6,
+      "insertions": 263,
+      "deletions": 1,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-service/Cargo.toml",
+        "azalea-service/src/bin/time.rs",
+        "azalea-service/src/lib.rs",
+        "azalea-service/src/service2/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 33
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-service/Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/bin/time.rs",
+          "lines_changed": 85
+        },
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/service2/mod.rs",
+          "lines_changed": 138
+        }
+      ]
+    },
+    "message": "azalea-service: Implement Service v2 trait",
+    "epoch": 1747766592,
+    "epoch_utc": null
+  },
+  {
+    "commit": "9888c425d3a5732913bb192eda54cd9a6b0df2f0",
+    "author": "enzohideo",
+    "date": "Sun May 18 03:20:22 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 3,
+      "deletions": 1,
+      "files": [
+        "nix/test/default.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/test/default.nix",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "nix/test: Increase memory to 8G and set store as +w",
+    "epoch": 1747549222,
+    "epoch_utc": null
+  },
+  {
     "commit": "d7b06ef642b5e594a8d99461b24cc0c15348604d",
     "author": "enzohideo",
     "date": "Sat May 17 18:24:50 2025 -0300",
