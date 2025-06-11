@@ -2,35 +2,35 @@
   "header": {
     "cloc_url": "github.com/AlDanial/cloc",
     "cloc_version": "2.04",
-    "elapsed_seconds": 0.0157029628753662,
-    "n_files": 35,
-    "n_lines": 2009,
-    "files_per_second": 2228.87873312786,
-    "lines_per_second": 127937.639281539
+    "elapsed_seconds": 0.0398430824279785,
+    "n_files": 53,
+    "n_lines": 3721,
+    "files_per_second": 1330.21836590591,
+    "lines_per_second": 93391.3686704884
   },
   "Rust": {
-    "nFiles": 23,
-    "blank": 220,
-    "comment": 8,
-    "code": 1375
+    "nFiles": 40,
+    "blank": 439,
+    "comment": 30,
+    "code": 2808
   },
   "Nix": {
     "nFiles": 5,
-    "blank": 36,
+    "blank": 38,
     "comment": 0,
-    "code": 214
+    "code": 227
   },
   "TOML": {
-    "nFiles": 7,
-    "blank": 36,
+    "nFiles": 8,
+    "blank": 37,
     "comment": 0,
-    "code": 120
+    "code": 142
   },
   "SUM": {
-    "blank": 292,
-    "comment": 8,
-    "code": 1709,
-    "nFiles": 35
+    "blank": 514,
+    "comment": 30,
+    "code": 3177,
+    "nFiles": 53
   }
 }
 
