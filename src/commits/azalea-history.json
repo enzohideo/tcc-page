@@ -1,5 +1,3284 @@
 [
   {
+    "commit": "062a62ff038bf22fad3ca13361d9d89907fb80b1",
+    "author": "enzohideo",
+    "date": "Sun Jun 8 17:22:58 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 9,
+      "deletions": 0,
+      "files": [
+        "azalea-shell/src/service/dbus/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-shell/src/service/dbus/mpris/mod.rs",
+          "lines_changed": 9
+        }
+      ]
+    },
+    "message": "azalea-shell: service: mpris: Listen for Seeked signal",
+    "epoch": 1749414178,
+    "epoch_utc": null
+  },
+  {
+    "commit": "665bef9a30e04a85aa9abb162a5bceedaa4b3a1e",
+    "author": "enzohideo",
+    "date": "Sun Jun 8 00:35:00 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 237,
+      "deletions": 1,
+      "files": [
+        "Cargo.lock",
+        "azalea-shell/Cargo.toml",
+        "flake.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 236
+        },
+        {
+          "name": "azalea-shell/Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "flake.nix",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-shell: Add bluer crate",
+    "epoch": 1749353700,
+    "epoch_utc": null
+  },
+  {
+    "commit": "255515e3bd21bd8299fccf0760da88a463f45a2b",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 17:13:59 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 110,
+      "deletions": 0,
+      "files": [
+        "azalea-shell/src/bin/bluez.rs",
+        "azalea-shell/src/service/dbus/bluez/mod.rs",
+        "azalea-shell/src/service/dbus/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-shell/src/bin/bluez.rs",
+          "lines_changed": 18
+        },
+        {
+          "name": "azalea-shell/src/service/dbus/bluez/mod.rs",
+          "lines_changed": 91
+        },
+        {
+          "name": "azalea-shell/src/service/dbus/mod.rs",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-shell: service: Add basic bluez service",
+    "epoch": 1749154439,
+    "epoch_utc": null
+  },
+  {
+    "commit": "99a48ff45bedf10d4ab4bccd0ec3430617ffe19e",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 11:52:47 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 89,
+      "deletions": 1,
+      "files": [
+        ".../src/service/dbus/network_manager/mod.rs",
+        "azalea-shell/src/window/taskbar/widget/mod.rs",
+        ".../src/window/taskbar/widget/network/mod.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": ".../src/service/dbus/network_manager/mod.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-shell/src/window/taskbar/widget/mod.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": ".../src/window/taskbar/widget/network/mod.rs",
+          "lines_changed": 85
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-shell: taskbar: Add basic Network widget",
+    "epoch": 1749135167,
+    "epoch_utc": null
+  },
+  {
+    "commit": "75900bdc742a4d0f282a1dd8af44aab9d5e24c9a",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 11:46:28 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 20,
+      "deletions": 8,
+      "files": [
+        "azalea-shell/src/service/dbus/network_manager/mod.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-shell/src/service/dbus/network_manager/mod.rs",
+          "lines_changed": 20
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 8
+        }
+      ]
+    },
+    "message": "azalea-shell: service/dbus/network: Add Input::Update to broadcast State/Connectivity",
+    "epoch": 1749134788,
+    "epoch_utc": null
+  },
+  {
+    "commit": "38c2fc91711c7217de748870df7aab9fb807e0e5",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 11:20:21 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 6,
+      "deletions": 1,
+      "files": [
+        "azalea-shell/src/service/dbus/network_manager/proxy.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-shell/src/service/dbus/network_manager/proxy.rs",
+          "lines_changed": 7
+        }
+      ]
+    },
+    "message": "azalea-shell: service/dbus/network: Derive Default for NMState, NMConnectivityState",
+    "epoch": 1749133221,
+    "epoch_utc": null
+  },
+  {
+    "commit": "80c91bc1309540c298ee5699fb4013950c34435f",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 11:07:16 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 3,
+      "deletions": 8,
+      "files": [
+        "azalea-shell/src/window/taskbar/widget/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-shell/src/window/taskbar/widget/time.rs",
+          "lines_changed": 11
+        }
+      ]
+    },
+    "message": "azalea-shell: taskbar/time: Remove leftover Box",
+    "epoch": 1749132436,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e905e0a537a1c41951b3a91ceb2ad393c925a1c2",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 11:02:15 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 3,
+      "deletions": 3,
+      "files": [
+        "azalea-shell/src/window/taskbar/widget/{mpris => media}/menu.rs",
+        "azalea-shell/src/window/taskbar/widget/{mpris => media}/mod.rs",
+        "azalea-shell/src/window/taskbar/widget/mod.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-shell/src/window/taskbar/widget/{mpris => media}/menu.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea-shell/src/window/taskbar/widget/{mpris => media}/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea-shell/src/window/taskbar/widget/mod.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-shell: Rename mpris mod to media",
+    "epoch": 1749132135,
+    "epoch_utc": null
+  },
+  {
+    "commit": "3992f8637fb0ce0c2469892528136e646f6d1a6f",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 02:20:01 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 7,
+      "deletions": 8,
+      "files": [
+        "azalea-core/src/app.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 15
+        }
+      ]
+    },
+    "message": "azalea-core: Return cli::Response from handle_command()",
+    "epoch": 1749100801,
+    "epoch_utc": null
+  },
+  {
+    "commit": "233d86996e82664a7259fdda65693ba64bd09dca",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 02:16:11 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 19,
+      "deletions": 16,
+      "files": [
+        "azalea-core/src/app.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 35
+        }
+      ]
+    },
+    "message": "azalea-core: Handle Command::Config when daemon is runnning",
+    "epoch": 1749100571,
+    "epoch_utc": null
+  },
+  {
+    "commit": "bac20aa1cb4104d2d7345b22f1e5eac97f584d35",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 02:04:43 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 16,
+      "deletions": 14,
+      "files": [
+        ".../src/service/dbus/network_manager/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": ".../src/service/dbus/network_manager/mod.rs",
+          "lines_changed": 30
+        }
+      ]
+    },
+    "message": "azalea-shell: service/network: Use Event to send PropertyChanged",
+    "epoch": 1749099883,
+    "epoch_utc": null
+  },
+  {
+    "commit": "80746be6deb34ee4e1d6d3f48b06778e6be7a57d",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 02:03:14 2025 -0300",
+    "stats": {
+      "files_changed": 7,
+      "insertions": 16,
+      "deletions": 10,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-service/Cargo.toml",
+        "azalea-service/src/lib.rs",
+        "azalea-shell/src/service/dbus/discovery.rs",
+        "azalea-shell/src/service/dbus/network_manager/mod.rs",
+        "azalea-shell/src/service/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 7
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-shell/src/service/dbus/discovery.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-shell/src/service/dbus/network_manager/mod.rs",
+          "lines_changed": 5
+        },
+        {
+          "name": "azalea-shell/src/service/time.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea-service: Return anyhow::Result from event_handler",
+    "epoch": 1749099794,
+    "epoch_utc": null
+  },
+  {
+    "commit": "23ca3bac4090d79fef12e791cf2e5d40f017a410",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 01:53:06 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 5,
+      "deletions": 11,
+      "files": [
+        "azalea-shell/src/service/dbus/network_manager/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-shell/src/service/dbus/network_manager/mod.rs",
+          "lines_changed": 16
+        }
+      ]
+    },
+    "message": "azalea-shell: service/network: Use 1 struct for both Event and Output",
+    "epoch": 1749099186,
+    "epoch_utc": null
+  },
+  {
+    "commit": "810e75d4ff6439b3269c265da962a3ac55e2d350",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 01:52:43 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 5,
+      "deletions": 0,
+      "files": [
+        "azalea-shell/src/service/dbus/network_manager/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-shell/src/service/dbus/network_manager/mod.rs",
+          "lines_changed": 5
+        }
+      ]
+    },
+    "message": "azalea-shell: service/network: Log version number",
+    "epoch": 1749099163,
+    "epoch_utc": null
+  },
+  {
+    "commit": "be3e97b5c1f11d5d752d2e5b15fdee570ddb5fae",
+    "author": "enzohideo",
+    "date": "Thu Jun 5 01:40:34 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 3,
+      "deletions": 5,
+      "files": [
+        "azalea-service/src/handler.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/handler.rs",
+          "lines_changed": 8
+        }
+      ]
+    },
+    "message": "azalea-service: Use log::info::<Self>",
+    "epoch": 1749098434,
+    "epoch_utc": null
+  },
+  {
+    "commit": "264de13d94ba2c3107b102b0285001ce29e105fd",
+    "author": "enzohideo",
+    "date": "Wed Jun 4 15:08:19 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 20,
+      "deletions": 14,
+      "files": [
+        ".../src/service/dbus/network_manager/mod.rs",
+        ".../src/service/dbus/network_manager/proxy.rs"
+      ],
+      "file_stats": [
+        {
+          "name": ".../src/service/dbus/network_manager/mod.rs",
+          "lines_changed": 30
+        },
+        {
+          "name": ".../src/service/dbus/network_manager/proxy.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea-shell: service/network: Listen for Connectivity changes",
+    "epoch": 1749060499,
+    "epoch_utc": null
+  },
+  {
+    "commit": "f3d68cba8674565d9d6bac33d359d0cdfb39ecdc",
+    "author": "enzohideo",
+    "date": "Wed Jun 4 14:49:14 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 40,
+      "deletions": 5,
+      "files": [
+        ".../src/service/dbus/network_manager/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": ".../src/service/dbus/network_manager/mod.rs",
+          "lines_changed": 45
+        }
+      ]
+    },
+    "message": "azalea-shell: service/network: Listen for State changes",
+    "epoch": 1749059354,
+    "epoch_utc": null
+  },
+  {
+    "commit": "7ff0ea0d50ce89f36172103626d096ac99aa38cd",
+    "author": "enzohideo",
+    "date": "Wed Jun 4 14:46:52 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 5,
+      "deletions": 3,
+      "files": [
+        "azalea-service/src/lib.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 8
+        }
+      ]
+    },
+    "message": "azalea-service: Add default message() implementation",
+    "epoch": 1749059212,
+    "epoch_utc": null
+  },
+  {
+    "commit": "3abec661bdd338b5590fcff82c198cb530064b86",
+    "author": "enzohideo",
+    "date": "Wed Jun 4 14:26:38 2025 -0300",
+    "stats": {
+      "files_changed": 6,
+      "insertions": 163,
+      "deletions": 0,
+      "files": [
+        "Cargo.lock",
+        "azalea-shell/Cargo.toml",
+        "azalea-shell/src/bin/network.rs",
+        "azalea-shell/src/service/dbus/mod.rs",
+        ".../src/service/dbus/network_manager/mod.rs",
+        ".../src/service/dbus/network_manager/proxy.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-shell/Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-shell/src/bin/network.rs",
+          "lines_changed": 18
+        },
+        {
+          "name": "azalea-shell/src/service/dbus/mod.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": ".../src/service/dbus/network_manager/mod.rs",
+          "lines_changed": 54
+        },
+        {
+          "name": ".../src/service/dbus/network_manager/proxy.rs",
+          "lines_changed": 88
+        }
+      ]
+    },
+    "message": "azalea-shell: service: Add basic network manager service",
+    "epoch": 1749057998,
+    "epoch_utc": null
+  },
+  {
+    "commit": "56ea491bd52d98e0acc59858a8c461b0ef8b6359",
+    "author": "enzohideo",
+    "date": "Wed Jun 4 08:41:15 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 5,
+      "deletions": 5,
+      "files": [
+        "azalea-shell/src/window/mod.rs",
+        "azalea-shell/src/window/taskbar/widget/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-shell/src/window/mod.rs",
+          "lines_changed": 8
+        },
+        {
+          "name": "azalea-shell/src/window/taskbar/widget/mod.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-shell: window: Rename InitExt to ModelExt",
+    "epoch": 1749037275,
+    "epoch_utc": null
+  },
+  {
+    "commit": "b7156f71e1afd342062d8232b98992777b11416c",
+    "author": "enzohideo",
+    "date": "Wed Jun 4 08:28:06 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 2,
+      "deletions": 1,
+      "files": [
+        "nix/package.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/package.nix",
+          "lines_changed": 3
+        }
+      ]
+    },
+    "message": "nix: Update crate names",
+    "epoch": 1749036486,
+    "epoch_utc": null
+  },
+  {
+    "commit": "9b28b1389278f01373f9df4cea9a7ba3c02d6ae0",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 18:43:23 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 8,
+      "deletions": 11,
+      "files": [
+        "azalea-service/src/handler.rs",
+        "azalea-shell/src/window/taskbar/mod.rs",
+        "azalea-shell/src/window/taskbar/widget/mod.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/handler.rs",
+          "lines_changed": 5
+        },
+        {
+          "name": "azalea-shell/src/window/taskbar/mod.rs",
+          "lines_changed": 6
+        },
+        {
+          "name": "azalea-shell/src/window/taskbar/widget/mod.rs",
+          "lines_changed": 6
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-shell: window/taskbar/widget: Rename Kind to ConfigWrapper",
+    "epoch": 1748900603,
+    "epoch_utc": null
+  },
+  {
+    "commit": "720ba5e0d25758ba3cde4ce04cab777727b784fb",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 18:11:34 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 3,
+      "deletions": 3,
+      "files": [
+        "Cargo.lock",
+        "azalea-service/Cargo.toml",
+        "azalea-service/src/handler.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/handler.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-service: Use glib instead of gtk as dependency",
+    "epoch": 1748898694,
+    "epoch_utc": null
+  },
+  {
+    "commit": "865f00b70129d6cb54601d046e754167ef437e2d",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 18:08:38 2025 -0300",
+    "stats": {
+      "files_changed": 25,
+      "insertions": 12,
+      "deletions": 12,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "{azalea-window => azalea-shell}/Cargo.toml",
+        "{azalea-window => azalea-shell}/build.rs",
+        "{azalea-window => azalea-shell}/src/bin/mpris.rs",
+        "{azalea-window => azalea-shell}/src/bin/time.rs",
+        "{azalea-window => azalea-shell}/src/component/image.rs",
+        "{azalea-window => azalea-shell}/src/component/mod.rs",
+        "{azalea-window => azalea-shell}/src/icon.rs",
+        "{azalea-window => azalea-shell}/src/lib.rs",
+        "{azalea-window => azalea-shell}/src/service/dbus/discovery.rs",
+        "{azalea-window => azalea-shell}/src/service/dbus/mod.rs",
+        "{azalea-window => azalea-shell}/src/service/dbus/mpris/mod.rs",
+        "{azalea-window => azalea-shell}/src/service/dbus/mpris/proxy.rs",
+        "{azalea-window => azalea-shell}/src/service/mod.rs",
+        "{azalea-window => azalea-shell}/src/service/time.rs",
+        "{azalea-window => azalea-shell}/src/window/mod.rs",
+        "{azalea-window => azalea-shell}/src/window/taskbar/mod.rs",
+        "{azalea-window => azalea-shell}/src/window/taskbar/widget/mod.rs",
+        ".../src/window/taskbar/widget/mpris/menu.rs",
+        ".../src/window/taskbar/widget/mpris/mod.rs",
+        "{azalea-window => azalea-shell}/src/window/taskbar/widget/time.rs",
+        "azalea/Cargo.toml",
+        "azalea/src/lib.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 4
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/build.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/bin/mpris.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/bin/time.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/component/image.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/component/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/icon.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/lib.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/service/dbus/discovery.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/service/dbus/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/service/dbus/mpris/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/service/dbus/mpris/proxy.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/service/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/service/time.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/window/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/window/taskbar/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/window/taskbar/widget/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": ".../src/window/taskbar/widget/mpris/menu.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": ".../src/window/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "{azalea-window => azalea-shell}/src/window/taskbar/widget/time.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea/Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea/src/lib.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 6
+        }
+      ]
+    },
+    "message": "azalea-window: Rename crate to azalea-shell",
+    "epoch": 1748898518,
+    "epoch_utc": null
+  },
+  {
+    "commit": "b8114109df7944b3cec0172a7ab5b80125743e21",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 18:04:06 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 1,
+      "deletions": 1,
+      "files": [
+        "azalea-log/Cargo.toml",
+        "azalea-log/{src => }/lib.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-log/Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-log/{src => }/lib.rs",
+          "lines_changed": 0
+        }
+      ]
+    },
+    "message": "azalea-log: Move lib.rs to crate's root",
+    "epoch": 1748898246,
+    "epoch_utc": null
+  },
+  {
+    "commit": "129846366e3b596e6352277db9bdd2af4b97efd2",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 18:03:09 2025 -0300",
+    "stats": {
+      "files_changed": 11,
+      "insertions": 11,
+      "deletions": 11,
+      "files": [
+        "azalea-window/src/bin/mpris.rs",
+        "azalea-window/src/bin/time.rs",
+        "azalea-window/src/lib.rs",
+        "azalea-window/src/{services => service}/dbus/discovery.rs",
+        "azalea-window/src/{services => service}/dbus/mod.rs",
+        "azalea-window/src/{services => service}/dbus/mpris/mod.rs",
+        "azalea-window/src/{services => service}/dbus/mpris/proxy.rs",
+        "azalea-window/src/{services => service}/mod.rs",
+        "azalea-window/src/{services => service}/time.rs",
+        "azalea-window/src/window/taskbar/widget/mpris/mod.rs",
+        "azalea-window/src/window/taskbar/widget/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/bin/mpris.rs",
+          "lines_changed": 6
+        },
+        {
+          "name": "azalea-window/src/bin/time.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-window/src/{services => service}/dbus/discovery.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea-window/src/{services => service}/dbus/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea-window/src/{services => service}/dbus/mpris/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea-window/src/{services => service}/dbus/mpris/proxy.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea-window/src/{services => service}/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea-window/src/{services => service}/time.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea-window/src/window/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-window/src/window/taskbar/widget/time.rs",
+          "lines_changed": 6
+        }
+      ]
+    },
+    "message": "azalea-window: Rename services to service for consistency",
+    "epoch": 1748898189,
+    "epoch_utc": null
+  },
+  {
+    "commit": "dcabb4fdf4d17387b2608fa79d45abbc70c92bd5",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 17:59:50 2025 -0300",
+    "stats": {
+      "files_changed": 8,
+      "insertions": 57,
+      "deletions": 56,
+      "files": [
+        "azalea-window/src/lib.rs",
+        "azalea-window/src/window/mod.rs",
+        "azalea-window/src/{ => window}/taskbar/mod.rs",
+        ".../src/{ => window}/taskbar/widget/mod.rs",
+        ".../src/{ => window}/taskbar/widget/mpris/menu.rs",
+        ".../src/{ => window}/taskbar/widget/mpris/mod.rs",
+        ".../src/{ => window}/taskbar/widget/time.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 53
+        },
+        {
+          "name": "azalea-window/src/window/mod.rs",
+          "lines_changed": 52
+        },
+        {
+          "name": "azalea-window/src/{ => window}/taskbar/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": ".../src/{ => window}/taskbar/widget/mod.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": ".../src/{ => window}/taskbar/widget/mpris/menu.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": ".../src/{ => window}/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": ".../src/{ => window}/taskbar/widget/time.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea-window: Move taskbar to window mod",
+    "epoch": 1748897990,
+    "epoch_utc": null
+  },
+  {
+    "commit": "cedc8fa8d7c502706e89454c6b6d30a8c33cbea0",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 17:52:17 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 4,
+      "deletions": 7,
+      "files": [
+        "azalea-window/Cargo.toml",
+        "azalea-window/src/services/dbus/discovery.rs",
+        "azalea-window/src/services/dbus/mpris/mod.rs",
+        "azalea-window/src/services/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-window/src/services/dbus/discovery.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea-window/src/services/dbus/mpris/mod.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea-window/src/services/time.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea-window: Derive StaticHandler instead of impl_static_handler",
+    "epoch": 1748897537,
+    "epoch_utc": null
+  },
+  {
+    "commit": "1f863347dde0f8c5d5b75b915dc5d6b14b5716ef",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 17:51:43 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 40,
+      "deletions": 9,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-derive/Cargo.toml",
+        "azalea-derive/lib.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 19
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-derive/Cargo.toml",
+          "lines_changed": 14
+        },
+        {
+          "name": "azalea-derive/lib.rs",
+          "lines_changed": 15
+        }
+      ]
+    },
+    "message": "feat: Add azalea-derive for proc macros",
+    "epoch": 1748897503,
+    "epoch_utc": null
+  },
+  {
+    "commit": "d83e4566b42a7ce613549106251932dd9bf1589a",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 17:43:07 2025 -0300",
+    "stats": {
+      "files_changed": 17,
+      "insertions": 51,
+      "deletions": 54,
+      "files": [
+        "Cargo.lock",
+        "azalea-service/Cargo.toml",
+        "azalea-service/src/dbus/mod.rs",
+        "azalea-service/src/dbus/mpris/mod.rs",
+        "azalea-service/src/lib.rs",
+        "azalea-window/Cargo.toml",
+        "{azalea-service => azalea-window}/src/bin/mpris.rs",
+        "{azalea-service => azalea-window}/src/bin/time.rs",
+        "azalea-window/src/lib.rs",
+        ".../src/services/dbus/discovery.rs",
+        ".../src/services/dbus/mod.rs",
+        ".../src/services/dbus/mpris/mod.rs",
+        ".../src/services/dbus/mpris/proxy.rs",
+        ".../src/services/mod.rs",
+        ".../src/services/time.rs",
+        "azalea-window/src/taskbar/widget/mpris/mod.rs",
+        "azalea-window/src/taskbar/widget/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 25
+        },
+        {
+          "name": "azalea-service/Cargo.toml",
+          "lines_changed": 10
+        },
+        {
+          "name": "azalea-service/src/dbus/mod.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/dbus/mpris/mod.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-window/Cargo.toml",
+          "lines_changed": 4
+        },
+        {
+          "name": "{azalea-service => azalea-window}/src/bin/mpris.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "{azalea-service => azalea-window}/src/bin/time.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": ".../src/services/dbus/discovery.rs",
+          "lines_changed": 10
+        },
+        {
+          "name": ".../src/services/dbus/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": ".../src/services/dbus/mpris/mod.rs",
+          "lines_changed": 19
+        },
+        {
+          "name": ".../src/services/dbus/mpris/proxy.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": ".../src/services/mod.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": ".../src/services/time.rs",
+          "lines_changed": 6
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 12
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/time.rs",
+          "lines_changed": 6
+        }
+      ]
+    },
+    "message": "azalea-service: Move services to azalea-window",
+    "epoch": 1748896987,
+    "epoch_utc": null
+  },
+  {
+    "commit": "d299f71e5e73267c04a45ed8cda2cfff7b5523a2",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 17:21:47 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 4,
+      "deletions": 4,
+      "files": [
+        "azalea-service/src/handler.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/handler.rs",
+          "lines_changed": 8
+        }
+      ]
+    },
+    "message": "azalea-service: handler: Use $crate in the impl_static_handler macro",
+    "epoch": 1748895707,
+    "epoch_utc": null
+  },
+  {
+    "commit": "b9bd906389b4df6a82804ab31b252ae7b05741c3",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 10:34:21 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 14,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 15
+        }
+      ]
+    },
+    "message": "azalea-server: dbus/mpris: Disable events",
+    "epoch": 1748871261,
+    "epoch_utc": null
+  },
+  {
+    "commit": "0ffde419ffca7e92371a910c07eafb383ae16d32",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 10:34:00 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 10,
+      "deletions": 5,
+      "files": [
+        "azalea-service/src/handler.rs",
+        "azalea-service/src/lib.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/handler.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 13
+        }
+      ]
+    },
+    "message": "azalea-server: Allow services to disable events",
+    "epoch": 1748871240,
+    "epoch_utc": null
+  },
+  {
+    "commit": "953a0e0966077034cc2d614425f6f2a4ee05fc38",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 10:33:10 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 4,
+      "deletions": 1,
+      "files": [
+        "azalea-log/src/lib.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-log/src/lib.rs",
+          "lines_changed": 5
+        }
+      ]
+    },
+    "message": "azalea-log: Never return from error()",
+    "epoch": 1748871190,
+    "epoch_utc": null
+  },
+  {
+    "commit": "d45c61816422dab04712204d1f48c3f9e17bc2a8",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 02:47:16 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 30,
+      "deletions": 50,
+      "files": [
+        "Cargo.lock",
+        "azalea-service/Cargo.toml",
+        "azalea-service/src/services/dbus/discovery.rs",
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/services/dbus/discovery.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 74
+        }
+      ]
+    },
+    "message": "azalea-service: dbus/mpris: Let each player run on a separate task\n\nThe problem with the old design is that player proxies needed to be\nrecreated every time an input message was received. So, if the timing\nwas right, some messages from the proxy would be lost if received during\nthis \"down\" time.",
+    "epoch": 1748843236,
+    "epoch_utc": null
+  },
+  {
+    "commit": "3460990c4f224d29b3250306ed484d5b25f21629",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 01:38:21 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 6,
+      "deletions": 7,
+      "files": [
+        "azalea-service/src/services/dbus/discovery.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/discovery.rs",
+          "lines_changed": 13
+        }
+      ]
+    },
+    "message": "azalea-service: dbus/discovery: Reuse NameOwnerChangedStream",
+    "epoch": 1748839101,
+    "epoch_utc": null
+  },
+  {
+    "commit": "0b9d54b2ebe3111dd886f7bf4b6a67c12510b7cc",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 01:35:37 2025 -0300",
+    "stats": {
+      "files_changed": 7,
+      "insertions": 92,
+      "deletions": 46,
+      "files": [
+        "Cargo.lock",
+        "azalea-service/Cargo.toml",
+        "azalea-service/src/handler.rs",
+        "azalea-service/src/lib.rs",
+        "azalea-service/src/services/dbus/discovery.rs",
+        "azalea-service/src/services/dbus/mpris.rs",
+        "azalea-service/src/services/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/Cargo.toml",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea-service/src/handler.rs",
+          "lines_changed": 7
+        },
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 9
+        },
+        {
+          "name": "azalea-service/src/services/dbus/discovery.rs",
+          "lines_changed": 33
+        },
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 74
+        },
+        {
+          "name": "azalea-service/src/services/time.rs",
+          "lines_changed": 10
+        }
+      ]
+    },
+    "message": "azalea-service: Separate iterator into event_generator and event_handler",
+    "epoch": 1748838937,
+    "epoch_utc": null
+  },
+  {
+    "commit": "40273bc955ac7b89a26759d4157cb6f3e1e096b8",
+    "author": "enzohideo",
+    "date": "Mon Jun 2 01:16:57 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 24,
+      "deletions": 0,
+      "files": [
+        "azalea-log/src/lib.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-log/src/lib.rs",
+          "lines_changed": 24
+        }
+      ]
+    },
+    "message": "azalea-log: Add fns to log objects",
+    "epoch": 1748837817,
+    "epoch_utc": null
+  },
+  {
+    "commit": "c9c6e1feb8303afe15b545ae7e31b274309cf90a",
+    "author": "enzohideo",
+    "date": "Sun Jun 1 23:04:53 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 2,
+      "deletions": 2,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Update timestamp every second instead of 1.5s",
+    "epoch": 1748829893,
+    "epoch_utc": null
+  },
+  {
+    "commit": "659d3047e70c88a78ca53672c4182f4c6831607f",
+    "author": "enzohideo",
+    "date": "Sun Jun 1 20:50:57 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 8,
+      "deletions": 1,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 9
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Change play/pause button according to playback state",
+    "epoch": 1748821857,
+    "epoch_utc": null
+  },
+  {
+    "commit": "903061d972e009991942a9b7942d41352adce6cb",
+    "author": "enzohideo",
+    "date": "Sun Jun 1 19:16:50 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 4,
+      "deletions": 4,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 8
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Use icons in the player buttons",
+    "epoch": 1748816210,
+    "epoch_utc": null
+  },
+  {
+    "commit": "2c0b0dd1ff6788e6cb5a9c5221ac62961f4f6423",
+    "author": "enzohideo",
+    "date": "Sun Jun 1 19:15:44 2025 -0300",
+    "stats": {
+      "files_changed": 6,
+      "insertions": 192,
+      "deletions": 8,
+      "files": [
+        "Cargo.lock",
+        "azalea-window/Cargo.toml",
+        "azalea-window/build.rs",
+        "azalea-window/src/icon.rs",
+        "azalea-window/src/lib.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 171
+        },
+        {
+          "name": "azalea-window/Cargo.toml",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-window/build.rs",
+          "lines_changed": 9
+        },
+        {
+          "name": "azalea-window/src/icon.rs",
+          "lines_changed": 12
+        },
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-window: Add icon support",
+    "epoch": 1748816144,
+    "epoch_utc": null
+  },
+  {
+    "commit": "ee0f14dd37c529c10172276eb0369363b475bcb2",
+    "author": "enzohideo",
+    "date": "Sun Jun 1 19:14:34 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 6,
+      "deletions": 1,
+      "files": [
+        "flake.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "flake.nix",
+          "lines_changed": 7
+        }
+      ]
+    },
+    "message": "nix: devshell: Add librsvg",
+    "epoch": 1748816074,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e0965f9d803fbc36036fc1e82658bbfa204a88f9",
+    "author": "enzohideo",
+    "date": "Sat May 31 07:19:49 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 21,
+      "deletions": 10,
+      "files": [
+        "azalea-window/src/component/image.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/component/image.rs",
+          "lines_changed": 31
+        }
+      ]
+    },
+    "message": "azalea-window: component/image: Safely truncate image url",
+    "epoch": 1748686789,
+    "epoch_utc": null
+  },
+  {
+    "commit": "4ce818c9274a182a783231beba5533b5c1e98a82",
+    "author": "enzohideo",
+    "date": "Sat May 31 07:10:23 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 18,
+      "deletions": 3,
+      "files": [
+        "Cargo.lock",
+        "azalea-service/src/services/dbus/mpris.rs",
+        "azalea-window/Cargo.toml",
+        "azalea-window/src/component/image.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 6
+        },
+        {
+          "name": "azalea-window/Cargo.toml",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-window/src/component/image.rs",
+          "lines_changed": 13
+        }
+      ]
+    },
+    "message": "azalea-window: component/image: Add support for base64 images",
+    "epoch": 1748686223,
+    "epoch_utc": null
+  },
+  {
+    "commit": "6471074eaeccc1b5af4ab1713216272c476ee40a",
+    "author": "enzohideo",
+    "date": "Sat May 31 06:33:01 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 0,
+      "deletions": 2,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Remove delay, listen to player ASAP",
+    "epoch": 1748683981,
+    "epoch_utc": null
+  },
+  {
+    "commit": "b3c1dc3af49887d26e504789185b46ea90c5fa66",
+    "author": "enzohideo",
+    "date": "Sat May 31 06:27:30 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 23,
+      "deletions": 6,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs",
+        "azalea-window/src/taskbar/widget/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 25
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Add UpdateMetadata input",
+    "epoch": 1748683650,
+    "epoch_utc": null
+  },
+  {
+    "commit": "00f2c4fa076da0d94de8c6b890a796a94f251774",
+    "author": "enzohideo",
+    "date": "Sat May 31 06:27:21 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 1,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Select if no players were selected yet",
+    "epoch": 1748683641,
+    "epoch_utc": null
+  },
+  {
+    "commit": "de7e4572b6f8c6ee98c233dfba82204d6b1b63f4",
+    "author": "enzohideo",
+    "date": "Sat May 31 05:56:10 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 1,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Increase input channel size 1->8",
+    "epoch": 1748681770,
+    "epoch_utc": null
+  },
+  {
+    "commit": "a52e70a3c368de1c8b992413e389dea58685f64c",
+    "author": "enzohideo",
+    "date": "Sat May 31 05:53:19 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 16,
+      "deletions": 3,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 19
+        }
+      ]
+    },
+    "message": "azalea-service: fix(mpris): Await actions",
+    "epoch": 1748681599,
+    "epoch_utc": null
+  },
+  {
+    "commit": "09e801031f7d37ba05955f1ef35aa722ebe7daf7",
+    "author": "enzohideo",
+    "date": "Sat May 31 05:43:35 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 35,
+      "deletions": 2,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 37
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Add Previous, PlayPause, and Next buttons",
+    "epoch": 1748681015,
+    "epoch_utc": null
+  },
+  {
+    "commit": "786acf8a3be3e1027fca03e266c63745af01a446",
+    "author": "enzohideo",
+    "date": "Sat May 31 05:31:30 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 22,
+      "deletions": 0,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 22
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Receive PlayPause, Previous, Next as Input",
+    "epoch": 1748680290,
+    "epoch_utc": null
+  },
+  {
+    "commit": "f968c0e655efa38495dd9a42f436bce37570b083",
+    "author": "enzohideo",
+    "date": "Sat May 31 05:27:52 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 7,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 8
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Only hide if no players available",
+    "epoch": 1748680072,
+    "epoch_utc": null
+  },
+  {
+    "commit": "22437077b49149371dba3a0042d24c3d3664530f",
+    "author": "enzohideo",
+    "date": "Sat May 31 05:24:32 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 1,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris/menu.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/menu.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Strip org.mpris.MediaPlayer2 prefix in the menu",
+    "epoch": 1748679872,
+    "epoch_utc": null
+  },
+  {
+    "commit": "7d65ed8f4ae15bc328602ae2510d920524c3e8c5",
+    "author": "enzohideo",
+    "date": "Sat May 31 05:17:22 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 21,
+      "deletions": 5,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs",
+        "azalea-window/src/taskbar/widget/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 13
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 13
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Query service for updated Position",
+    "epoch": 1748679442,
+    "epoch_utc": null
+  },
+  {
+    "commit": "66c13ae8ef600805afac30d8f841c247fa81dc3d",
+    "author": "enzohideo",
+    "date": "Sat May 31 05:06:16 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 9,
+      "deletions": 9,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs",
+        "azalea-window/src/taskbar/widget/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 14
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Revert Output.name to OwnedBusName",
+    "epoch": 1748678776,
+    "epoch_utc": null
+  },
+  {
+    "commit": "a19d2c5ddf0006bc5bca23bc797dae805ad444c1",
+    "author": "enzohideo",
+    "date": "Sat May 31 05:02:22 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 0,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/mod.rs",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Update position received by service",
+    "epoch": 1748678542,
+    "epoch_utc": null
+  },
+  {
+    "commit": "9393f35099385212cdfa2ef7e269a858d060edd3",
+    "author": "enzohideo",
+    "date": "Sat May 31 05:02:03 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 6,
+      "deletions": 0,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 6
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Send Position event when PlaybackStatus changes",
+    "epoch": 1748678523,
+    "epoch_utc": null
+  },
+  {
+    "commit": "67696a23c777145ebeae7bb5e27c081e8ed37dad",
+    "author": "enzohideo",
+    "date": "Sat May 31 04:48:07 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 97,
+      "deletions": 15,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris/menu.rs",
+        ".../src/taskbar/widget/{mpris.rs => mpris/mod.rs}"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris/menu.rs",
+          "lines_changed": 49
+        },
+        {
+          "name": ".../src/taskbar/widget/{mpris.rs => mpris/mod.rs}",
+          "lines_changed": 63
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Impl Menu to select player",
+    "epoch": 1748677687,
+    "epoch_utc": null
+  },
+  {
+    "commit": "c9ea1b1fa0d0c920e5bc35150ed8cf0dec5221b9",
+    "author": "enzohideo",
+    "date": "Sat May 31 04:10:47 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 23,
+      "deletions": 2,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris.rs",
+          "lines_changed": 25
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Add basic popover",
+    "epoch": 1748675447,
+    "epoch_utc": null
+  },
+  {
+    "commit": "14597b0496f7b3c9d4e91173df8f6b58bda33e5a",
+    "author": "enzohideo",
+    "date": "Sat May 31 03:50:03 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 81,
+      "deletions": 26,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris.rs",
+          "lines_changed": 107
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Use HashMap to store players",
+    "epoch": 1748674203,
+    "epoch_utc": null
+  },
+  {
+    "commit": "8e234a5bf01f2963a9d7b2b5be1b0837f3bb66a6",
+    "author": "enzohideo",
+    "date": "Sat May 31 03:28:39 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 5,
+      "deletions": 5,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 10
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Set Output.name to String instead of OwnedBusName",
+    "epoch": 1748672919,
+    "epoch_utc": null
+  },
+  {
+    "commit": "a113fa17a0804d3d055b2146d5b26b274a7f5488",
+    "author": "enzohideo",
+    "date": "Sat May 31 03:27:48 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 2,
+      "deletions": 1,
+      "files": [
+        "azalea-service/src/dbus/mpris/media_player2.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/dbus/mpris/media_player2.rs",
+          "lines_changed": 3
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Impl Default for PlaybackStatus",
+    "epoch": 1748672868,
+    "epoch_utc": null
+  },
+  {
+    "commit": "aac1d08a87ba645f67d9107cd83aa606ad455ce9",
+    "author": "enzohideo",
+    "date": "Fri May 30 03:48:59 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 34,
+      "deletions": 18,
+      "files": [
+        "azalea-window/src/component/image.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/component/image.rs",
+          "lines_changed": 52
+        }
+      ]
+    },
+    "message": "azalea-window: image: Use lazy static cache",
+    "epoch": 1748587739,
+    "epoch_utc": null
+  },
+  {
+    "commit": "96d17b988f5c3318f1eaa7c56b275b4a8367fed1",
+    "author": "enzohideo",
+    "date": "Fri May 30 03:33:15 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 2,
+      "deletions": 0,
+      "files": [
+        "Cargo.lock",
+        "azalea-window/Cargo.toml"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-window/Cargo.toml",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-window: chore: Add azalea-log",
+    "epoch": 1748586795,
+    "epoch_utc": null
+  },
+  {
+    "commit": "f7662949f85607700cabad245bac3823dc1e0833",
+    "author": "enzohideo",
+    "date": "Fri May 30 03:31:39 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 23,
+      "deletions": 3,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris.rs",
+          "lines_changed": 26
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Show art cover",
+    "epoch": 1748586699,
+    "epoch_utc": null
+  },
+  {
+    "commit": "1511b3d5a60febcb5bf27157af4b36cf97d95df3",
+    "author": "enzohideo",
+    "date": "Fri May 30 03:30:03 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 1086,
+      "deletions": 26,
+      "files": [
+        "Cargo.lock",
+        "azalea-window/Cargo.toml",
+        "azalea-window/src/component/image.rs",
+        "azalea-window/src/component/mod.rs",
+        "azalea-window/src/lib.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 976
+        },
+        {
+          "name": "azalea-window/Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-window/src/component/image.rs",
+          "lines_changed": 132
+        },
+        {
+          "name": "azalea-window/src/component/mod.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-window: Add image component",
+    "epoch": 1748586603,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e57f9250e667951f08d0665ea335006c363280cd",
+    "author": "enzohideo",
+    "date": "Fri May 30 03:28:48 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 3,
+      "deletions": 0,
+      "files": [
+        "flake.nix",
+        "nix/package.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "flake.nix",
+          "lines_changed": 1
+        },
+        {
+          "name": "nix/package.nix",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "nix: Add openssl",
+    "epoch": 1748586528,
+    "epoch_utc": null
+  },
+  {
+    "commit": "b30a592beccc44d5ce5143d9790026d9f21f1f5d",
+    "author": "enzohideo",
+    "date": "Fri May 30 03:20:32 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 1,
+      "files": [
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea: Set default config Layer to Top",
+    "epoch": 1748586032,
+    "epoch_utc": null
+  },
+  {
+    "commit": "d05eb012d425fd80a409d36dc5f7e007c59e3f3a",
+    "author": "enzohideo",
+    "date": "Fri May 30 02:40:36 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 15,
+      "deletions": 15,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris.rs",
+          "lines_changed": 30
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Remove firefox filter",
+    "epoch": 1748583636,
+    "epoch_utc": null
+  },
+  {
+    "commit": "ffe47b85f973b03e913a26c00e6d91e2d99f8d4b",
+    "author": "enzohideo",
+    "date": "Fri May 30 02:29:31 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 73,
+      "deletions": 12,
+      "files": [
+        "azalea-window/src/taskbar/widget/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris.rs",
+          "lines_changed": 85
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar/mpris: Keep track of player position",
+    "epoch": 1748582971,
+    "epoch_utc": null
+  },
+  {
+    "commit": "f7d627905445c5c6f25cc238c79adaf0faa8eb2d",
+    "author": "enzohideo",
+    "date": "Fri May 30 02:28:29 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 16,
+      "deletions": 1,
+      "files": [
+        "azalea-service/src/dbus/mpris/media_player2.rs",
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/dbus/mpris/media_player2.rs",
+          "lines_changed": 5
+        },
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 12
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Add PlaybackRate property and listen for changes",
+    "epoch": 1748582909,
+    "epoch_utc": null
+  },
+  {
+    "commit": "98659364c6636febe79f536ef7805f3fb3d51933",
+    "author": "enzohideo",
+    "date": "Fri May 30 02:27:48 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 0,
+      "deletions": 19,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 19
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Remove Event::Position",
+    "epoch": 1748582868,
+    "epoch_utc": null
+  },
+  {
+    "commit": "434a13d24fcde67736ba85f3aa2056a15af4a922",
+    "author": "enzohideo",
+    "date": "Fri May 30 01:31:57 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 109,
+      "deletions": 2,
+      "files": [
+        "azalea-service/src/dbus/mpris/media_player2.rs",
+        "azalea-window/src/taskbar/widget/mod.rs",
+        "azalea-window/src/taskbar/widget/mpris.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/dbus/mpris/media_player2.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/mod.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/mpris.rs",
+          "lines_changed": 103
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar: Add basic MPRIS widget",
+    "epoch": 1748579517,
+    "epoch_utc": null
+  },
+  {
+    "commit": "b04b5607cbc10db3b88eab9e1b9c60e414cdc128",
+    "author": "enzohideo",
+    "date": "Fri May 30 01:31:23 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 2,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 3
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Fix debug message grammar",
+    "epoch": 1748579483,
+    "epoch_utc": null
+  },
+  {
+    "commit": "4c29cfb82ab8946100fbc6a766dd8b4613792695",
+    "author": "enzohideo",
+    "date": "Fri May 30 01:28:08 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 71,
+      "deletions": 1,
+      "files": [
+        "azalea-service/src/dbus/mpris/media_player2.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/dbus/mpris/media_player2.rs",
+          "lines_changed": 72
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Impl TryFrom<OwnedValue> for Metadata manually",
+    "epoch": 1748579288,
+    "epoch_utc": null
+  },
+  {
+    "commit": "a185f1429a49aeae7ef2892b8af2f7f40fd05897",
+    "author": "enzohideo",
+    "date": "Fri May 30 00:50:09 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 17,
+      "deletions": 7,
+      "files": [
+        "azalea-service/src/dbus/mpris/media_player2.rs",
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/dbus/mpris/media_player2.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 22
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Listen for PlaybackStatus changes",
+    "epoch": 1748577009,
+    "epoch_utc": null
+  },
+  {
+    "commit": "bfb9a9d8dd347ba46f7b2544400004df9461d1b5",
+    "author": "enzohideo",
+    "date": "Fri May 30 00:45:36 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 71,
+      "deletions": 46,
+      "files": [
+        "azalea-service/src/handler.rs",
+        "azalea-service/src/lib.rs",
+        "azalea-service/src/services/dbus/discovery.rs",
+        "azalea-service/src/services/dbus/mpris.rs",
+        "azalea-service/src/services/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/handler.rs",
+          "lines_changed": 33
+        },
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-service/src/services/dbus/discovery.rs",
+          "lines_changed": 23
+        },
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 55
+        },
+        {
+          "name": "azalea-service/src/services/time.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-service: Use flume instead of tokio::broadcast for input channel",
+    "epoch": 1748576736,
+    "epoch_utc": null
+  },
+  {
+    "commit": "c8622a94273ad5d6d4f563286f8b89d4be1e31f8",
+    "author": "enzohideo",
+    "date": "Thu May 29 21:20:03 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 3,
+      "deletions": 0,
+      "files": [
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 3
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Avoid recreating player proxies",
+    "epoch": 1748564403,
+    "epoch_utc": null
+  },
+  {
+    "commit": "6b74b3c87cd6278473cbe1ec5e0c4c1dd5691d30",
+    "author": "enzohideo",
+    "date": "Thu May 29 16:40:36 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 12,
+      "deletions": 5,
+      "files": [
+        "azalea-service/src/handler.rs",
+        "azalea-service/src/lib.rs",
+        "azalea-service/src/services/dbus/discovery.rs",
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/handler.rs",
+          "lines_changed": 7
+        },
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/services/dbus/discovery.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea-service: Allow Service to determine how many channels it needs",
+    "epoch": 1748547636,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e749764332ca7ade4d374806c9ea48e0ea7f505e",
+    "author": "enzohideo",
+    "date": "Thu May 29 16:29:18 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 36,
+      "deletions": 36,
+      "files": [
+        "azalea-service/src/{service => }/error.rs",
+        "azalea-service/src/{service => }/handler.rs",
+        "azalea-service/src/lib.rs",
+        "azalea-service/src/service/mod.rs",
+        "azalea-service/src/{service => }/status.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/{service => }/error.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea-service/src/{service => }/handler.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 38
+        },
+        {
+          "name": "azalea-service/src/service/mod.rs",
+          "lines_changed": 34
+        },
+        {
+          "name": "azalea-service/src/{service => }/status.rs",
+          "lines_changed": 0
+        }
+      ]
+    },
+    "message": "azalea-service: Move service mod to lib.rs",
+    "epoch": 1748546958,
+    "epoch_utc": null
+  },
+  {
+    "commit": "656d10ab81893362fed7fefe293b8a0cf3266c2e",
+    "author": "enzohideo",
+    "date": "Thu May 29 16:26:32 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 0,
+      "deletions": 78,
+      "files": [
+        "azalea-service/src/lib.rs",
+        "azalea-service/src/macro.rs",
+        "azalea-service/src/trait.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 5
+        },
+        {
+          "name": "azalea-service/src/macro.rs",
+          "lines_changed": 44
+        },
+        {
+          "name": "azalea-service/src/trait.rs",
+          "lines_changed": 29
+        }
+      ]
+    },
+    "message": "azalea-service: Remove services macro and HasService trait",
+    "epoch": 1748546792,
+    "epoch_utc": null
+  },
+  {
+    "commit": "6c132519ae2419cee27bcd78e63bda1a24249fe2",
+    "author": "enzohideo",
+    "date": "Thu May 29 16:21:19 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 17,
+      "deletions": 4,
+      "files": [
+        "azalea-service/src/service/handler.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 21
+        }
+      ]
+    },
+    "message": "azalea-service: Allow LocalListenerHandle to be awaited",
+    "epoch": 1748546479,
+    "epoch_utc": null
+  },
+  {
+    "commit": "538c2e074f5f1ee6ec05c003541feaeb12e8e331",
+    "author": "enzohideo",
+    "date": "Thu May 29 16:19:39 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 34,
+      "deletions": 41,
+      "files": [
+        "azalea-service/src/bin/mpris.rs",
+        "azalea-service/src/bin/time.rs",
+        "azalea-service/src/service/handler.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/bin/mpris.rs",
+          "lines_changed": 38
+        },
+        {
+          "name": "azalea-service/src/bin/time.rs",
+          "lines_changed": 16
+        },
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 21
+        }
+      ]
+    },
+    "message": "azalea-service: Allow ListenerHandle to be awaited",
+    "epoch": 1748546379,
+    "epoch_utc": null
+  },
+  {
+    "commit": "08a508121bdc3649c2a19ddf0d966dbd49d7929d",
+    "author": "enzohideo",
+    "date": "Thu May 29 15:41:29 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 22,
+      "deletions": 78,
+      "files": [
+        "azalea-window/src/lib.rs",
+        "azalea-window/src/taskbar/mod.rs",
+        "azalea-window/src/taskbar/widget/mod.rs",
+        "azalea-window/src/taskbar/widget/time.rs",
+        "azalea/src/main.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-window/src/lib.rs",
+          "lines_changed": 15
+        },
+        {
+          "name": "azalea-window/src/taskbar/mod.rs",
+          "lines_changed": 12
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/mod.rs",
+          "lines_changed": 7
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/time.rs",
+          "lines_changed": 41
+        },
+        {
+          "name": "azalea/src/main.rs",
+          "lines_changed": 25
+        }
+      ]
+    },
+    "message": "azalea-window: Use StaticHandler instead of Services mess",
+    "epoch": 1748544089,
+    "epoch_utc": null
+  },
+  {
+    "commit": "4fe7e06ea061e56af5e9f7d7effcd056c67224ed",
+    "author": "enzohideo",
+    "date": "Thu May 29 15:27:32 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 3,
+      "deletions": 2,
+      "files": [
+        "azalea-service/src/dbus/mod.rs",
+        "azalea-service/src/dbus/{ => mpris}/media_player2.rs",
+        "azalea-service/src/dbus/mpris/mod.rs",
+        "azalea-service/src/services/dbus/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/dbus/mod.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/dbus/{ => mpris}/media_player2.rs",
+          "lines_changed": 0
+        },
+        {
+          "name": "azalea-service/src/dbus/mpris/mod.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/services/dbus/mpris.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-service: Move media_player2 to dbus mod",
+    "epoch": 1748543252,
+    "epoch_utc": null
+  },
+  {
+    "commit": "c77d088cc6c1aa43a929005961fc76379838b58e",
+    "author": "enzohideo",
+    "date": "Thu May 29 15:23:25 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 18,
+      "deletions": 8,
+      "files": [
+        "azalea-service/src/bin/time.rs",
+        "azalea-service/src/services/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/bin/time.rs",
+          "lines_changed": 3
+        },
+        {
+          "name": "azalea-service/src/services/time.rs",
+          "lines_changed": 23
+        }
+      ]
+    },
+    "message": "azalea-service: time: Use separate Init struct",
+    "epoch": 1748543005,
+    "epoch_utc": null
+  },
+  {
+    "commit": "7509c5520f39679f9e4487bc6338e5f163ec0dfc",
+    "author": "enzohideo",
+    "date": "Thu May 29 15:20:29 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 5,
+      "deletions": 5,
+      "files": [
+        "azalea-service/src/bin/mpris.rs",
+        "azalea-service/src/services/dbus/mod.rs",
+        "azalea-service/src/services/{ => dbus}/mpris.rs",
+        "azalea-service/src/services/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/bin/mpris.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-service/src/services/dbus/mod.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/services/{ => dbus}/mpris.rs",
+          "lines_changed": 4
+        },
+        {
+          "name": "azalea-service/src/services/mod.rs",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-service: Move mpris to dbus mod",
+    "epoch": 1748542829,
+    "epoch_utc": null
+  },
+  {
+    "commit": "3e7e21bdd651c2448ea172bb7637ce49e78903c7",
+    "author": "enzohideo",
+    "date": "Thu May 29 15:17:40 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 28,
+      "deletions": 29,
+      "files": [
+        "azalea-service/src/bin/mpris.rs",
+        "azalea-service/src/service/handler.rs",
+        "azalea-service/src/services/dbus/discovery.rs",
+        "azalea-service/src/services/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/bin/mpris.rs",
+          "lines_changed": 8
+        },
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 5
+        },
+        {
+          "name": "azalea-service/src/services/dbus/discovery.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/services/mpris.rs",
+          "lines_changed": 42
+        }
+      ]
+    },
+    "message": "azalea-service: Impl StaticHandler for dbus::discovery and mpris",
+    "epoch": 1748542660,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e3ac937140f369a198ea0cec89d5b8e88046a249",
+    "author": "enzohideo",
+    "date": "Thu May 29 14:58:57 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 11,
+      "deletions": 4,
+      "files": [
+        "azalea-service/src/bin/time.rs",
+        "azalea-service/src/service/handler.rs",
+        "azalea-service/src/services/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/bin/time.rs",
+          "lines_changed": 8
+        },
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 5
+        },
+        {
+          "name": "azalea-service/src/services/time.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-service: Impl StaticHandler for time service",
+    "epoch": 1748541537,
+    "epoch_utc": null
+  },
+  {
+    "commit": "6f2095769ded48f20f9791cead9fec66446c26ea",
+    "author": "enzohideo",
+    "date": "Thu May 29 14:57:03 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 102,
+      "deletions": 1,
+      "files": [
+        "azalea-service/src/service/handler.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 103
+        }
+      ]
+    },
+    "message": "azalea-service: Add StaticHandler trait",
+    "epoch": 1748541423,
+    "epoch_utc": null
+  },
+  {
+    "commit": "33a99f377097fff75841dbb865bfc52de615f021",
+    "author": "enzohideo",
+    "date": "Tue May 27 02:26:50 2025 -0300",
+    "stats": {
+      "files_changed": 3,
+      "insertions": 4,
+      "deletions": 4,
+      "files": [
+        "nix/test/default.nix",
+        "nix/test/nodes/hyprland.nix",
+        "nix/test/nodes/sway.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "nix/test/default.nix",
+          "lines_changed": 4
+        },
+        {
+          "name": "nix/test/nodes/hyprland.nix",
+          "lines_changed": 2
+        },
+        {
+          "name": "nix/test/nodes/sway.nix",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "nix/test: Use foot instead of kitty",
+    "epoch": 1748323610,
+    "epoch_utc": null
+  },
+  {
+    "commit": "4ea4b8fd14ad2a3abae7aae28e61c9c35d6948c2",
+    "author": "enzohideo",
+    "date": "Tue May 27 02:14:20 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 5,
+      "deletions": 5,
+      "files": [
+        "flake.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "flake.nix",
+          "lines_changed": 10
+        }
+      ]
+    },
+    "message": "nix: Rename forAllSystems",
+    "epoch": 1748322860,
+    "epoch_utc": null
+  },
+  {
+    "commit": "b911333a243a8f5749fd95a50ab78de11ec81b01",
+    "author": "enzohideo",
+    "date": "Tue May 27 02:13:14 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 4,
+      "deletions": 0,
+      "files": [
+        "flake.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "flake.nix",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "nix: Add nixfmt-tree formatter",
+    "epoch": 1748322794,
+    "epoch_utc": null
+  },
+  {
+    "commit": "c68b33b5ce348a75c998de2890ba7aa9930c4cb8",
+    "author": "enzohideo",
+    "date": "Tue May 27 00:11:03 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 81,
+      "deletions": 76,
+      "files": [
+        "azalea-service/src/bin/mpris.rs",
+        "azalea-service/src/services/dbus/discovery.rs",
+        "azalea-service/src/services/dbus/mod.rs",
+        "azalea-service/src/services/mpris.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/bin/mpris.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/services/dbus/discovery.rs",
+          "lines_changed": 76
+        },
+        {
+          "name": "azalea-service/src/services/dbus/mod.rs",
+          "lines_changed": 74
+        },
+        {
+          "name": "azalea-service/src/services/mpris.rs",
+          "lines_changed": 5
+        }
+      ]
+    },
+    "message": "azalea-service: Move dbus service to discovery mod",
+    "epoch": 1748315463,
+    "epoch_utc": null
+  },
+  {
+    "commit": "e48f6079a3679ecac0bd2266699c0cf7e4d06625",
+    "author": "enzohideo",
+    "date": "Tue May 27 00:06:25 2025 -0300",
+    "stats": {
+      "files_changed": 5,
+      "insertions": 54,
+      "deletions": 55,
+      "files": [
+        "azalea-service/src/dbus/media_player2.rs",
+        "azalea-service/src/dbus/mod.rs",
+        "azalea-service/src/lib.rs",
+        ".../src/services/{mpris/mod.rs => mpris.rs}",
+        "azalea-service/src/services/mpris/dbus.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/dbus/media_player2.rs",
+          "lines_changed": 44
+        },
+        {
+          "name": "azalea-service/src/dbus/mod.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/lib.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": ".../src/services/{mpris/mod.rs => mpris.rs}",
+          "lines_changed": 15
+        },
+        {
+          "name": "azalea-service/src/services/mpris/dbus.rs",
+          "lines_changed": 47
+        }
+      ]
+    },
+    "message": "azalea-service: Move media_player2 to dbus mod",
+    "epoch": 1748315185,
+    "epoch_utc": null
+  },
+  {
+    "commit": "8bc67dcfecd39ae32a3ea3c6cedc4e4ab6aa5e5d",
+    "author": "enzohideo",
+    "date": "Tue May 27 00:03:33 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 156,
+      "deletions": 37,
+      "files": [
+        "azalea-service/src/bin/mpris.rs",
+        "azalea-service/src/services/dbus/mod.rs",
+        "azalea-service/src/services/mod.rs",
+        "azalea-service/src/services/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/bin/mpris.rs",
+          "lines_changed": 18
+        },
+        {
+          "name": "azalea-service/src/services/dbus/mod.rs",
+          "lines_changed": 73
+        },
+        {
+          "name": "azalea-service/src/services/mod.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/services/mpris/mod.rs",
+          "lines_changed": 101
+        }
+      ]
+    },
+    "message": "azalea-service: Separate mpris and dbus discovery into 2 services",
+    "epoch": 1748315013,
+    "epoch_utc": null
+  },
+  {
+    "commit": "4d24b012fb9834b1038a40c4d4324492682658d7",
+    "author": "enzohideo",
+    "date": "Mon May 26 23:55:08 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 9,
+      "deletions": 1,
+      "files": [
+        "azalea-service/src/services/mpris/dbus.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/services/mpris/dbus.rs",
+          "lines_changed": 10
+        }
+      ]
+    },
+    "message": "azalea-service: mpris: Represent PlaybackStatus as Enum",
+    "epoch": 1748314508,
+    "epoch_utc": null
+  },
+  {
+    "commit": "504a7ec029c5c26e87da04ad76ea7c5c8b10f912",
+    "author": "enzohideo",
+    "date": "Mon May 26 23:36:19 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 8,
+      "deletions": 9,
+      "files": [
+        "azalea-service/src/service/handler.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 17
+        }
+      ]
+    },
+    "message": "azalea-service: fix: Use status to determine if service should start",
+    "epoch": 1748313379,
+    "epoch_utc": null
+  },
+  {
+    "commit": "81f273cf0a7b64fdf2c0cb0dfb43546a6e33143a",
+    "author": "enzohideo",
+    "date": "Mon May 26 23:31:33 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 0,
+      "files": [
+        "flake.nix"
+      ],
+      "file_stats": [
+        {
+          "name": "flake.nix",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "nix: Set G_MESSAGES_DEBUG to Azalea",
+    "epoch": 1748313093,
+    "epoch_utc": null
+  },
+  {
+    "commit": "4a0e9551ec5de99831bb8ed7429d4449b359b205",
+    "author": "enzohideo",
+    "date": "Mon May 26 23:06:49 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 1,
+      "deletions": 1,
+      "files": [
+        "azalea-service/src/service/handler.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 2
+        }
+      ]
+    },
+    "message": "azalea-service: Reword 'Service stopped' message",
+    "epoch": 1748311609,
+    "epoch_utc": null
+  },
+  {
+    "commit": "47af744fbe6f8b9314dd79cf2b6a8b938e33e775",
+    "author": "enzohideo",
+    "date": "Mon May 26 22:22:36 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 4,
+      "deletions": 4,
+      "files": [
+        "azalea-service/src/service/handler.rs",
+        "azalea-window/src/taskbar/widget/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-window/src/taskbar/widget/time.rs",
+          "lines_changed": 6
+        }
+      ]
+    },
+    "message": "azalea-window: taskbar: Use local listener",
+    "epoch": 1748308956,
+    "epoch_utc": null
+  },
+  {
+    "commit": "30f703e3262a621376c428dc0417f76ad667476a",
+    "author": "enzohideo",
+    "date": "Mon May 26 22:16:30 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 23,
+      "deletions": 3,
+      "files": [
+        "azalea-log/src/lib.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-log/src/lib.rs",
+          "lines_changed": 26
+        }
+      ]
+    },
+    "message": "azalea-log: Add Debug and Critical log levels",
+    "epoch": 1748308590,
+    "epoch_utc": null
+  },
+  {
+    "commit": "5f5224eb14573e9661dd1ed8051b09e47a1bad70",
+    "author": "enzohideo",
+    "date": "Mon May 26 22:03:27 2025 -0300",
+    "stats": {
+      "files_changed": 1,
+      "insertions": 70,
+      "deletions": 5,
+      "files": [
+        "azalea-service/src/service/handler.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 75
+        }
+      ]
+    },
+    "message": "azalea-service: Allow Service listeners to be on separate thread",
+    "epoch": 1748307807,
+    "epoch_utc": null
+  },
+  {
+    "commit": "9ebc3f30d1d3f053c2dacd95482d5d2092c07553",
+    "author": "enzohideo",
+    "date": "Mon May 26 21:32:53 2025 -0300",
+    "stats": {
+      "files_changed": 2,
+      "insertions": 7,
+      "deletions": 9,
+      "files": [
+        "azalea-service/src/service/handler.rs",
+        "azalea-service/src/services/mpris/mod.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 15
+        },
+        {
+          "name": "azalea-service/src/services/mpris/mod.rs",
+          "lines_changed": 1
+        }
+      ]
+    },
+    "message": "azalea-service: Allow Service and Handler to impl Send + Clone",
+    "epoch": 1748305973,
+    "epoch_utc": null
+  },
+  {
+    "commit": "4790649dd9ba9fb912638c701544e2c9581f2275",
+    "author": "enzohideo",
+    "date": "Mon May 26 15:04:00 2025 -0300",
+    "stats": {
+      "files_changed": 4,
+      "insertions": 32,
+      "deletions": 15,
+      "files": [
+        "azalea-service/src/service/handler.rs",
+        "azalea-service/src/service/mod.rs",
+        "azalea-service/src/services/mpris/mod.rs",
+        "azalea-service/src/services/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 8
+        },
+        {
+          "name": "azalea-service/src/service/mod.rs",
+          "lines_changed": 5
+        },
+        {
+          "name": "azalea-service/src/services/mpris/mod.rs",
+          "lines_changed": 14
+        },
+        {
+          "name": "azalea-service/src/services/time.rs",
+          "lines_changed": 20
+        }
+      ]
+    },
+    "message": "azalea-service: Send output_sender to new()",
+    "epoch": 1748282640,
+    "epoch_utc": null
+  },
+  {
+    "commit": "dc76599d85f67745a7295868151b190e56c3d517",
+    "author": "enzohideo",
+    "date": "Mon May 26 05:53:43 2025 -0300",
+    "stats": {
+      "files_changed": 12,
+      "insertions": 254,
+      "deletions": 30,
+      "files": [
+        "Cargo.lock",
+        "Cargo.toml",
+        "azalea-core/src/app.rs",
+        "azalea-service/Cargo.toml",
+        "azalea-service/src/bin/mpris.rs",
+        "azalea-service/src/bin/time.rs",
+        "azalea-service/src/service/handler.rs",
+        "azalea-service/src/service/mod.rs",
+        "azalea-service/src/services/mod.rs",
+        "azalea-service/src/services/mpris/dbus.rs",
+        "azalea-service/src/services/mpris/mod.rs",
+        "azalea-service/src/services/time.rs"
+      ],
+      "file_stats": [
+        {
+          "name": "Cargo.lock",
+          "lines_changed": 22
+        },
+        {
+          "name": "Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-core/src/app.rs",
+          "lines_changed": 23
+        },
+        {
+          "name": "azalea-service/Cargo.toml",
+          "lines_changed": 2
+        },
+        {
+          "name": "azalea-service/src/bin/mpris.rs",
+          "lines_changed": 29
+        },
+        {
+          "name": "azalea-service/src/bin/time.rs",
+          "lines_changed": 16
+        },
+        {
+          "name": "azalea-service/src/service/handler.rs",
+          "lines_changed": 10
+        },
+        {
+          "name": "azalea-service/src/service/mod.rs",
+          "lines_changed": 11
+        },
+        {
+          "name": "azalea-service/src/services/mod.rs",
+          "lines_changed": 1
+        },
+        {
+          "name": "azalea-service/src/services/mpris/dbus.rs",
+          "lines_changed": 39
+        },
+        {
+          "name": "azalea-service/src/services/mpris/mod.rs",
+          "lines_changed": 125
+        },
+        {
+          "name": "azalea-service/src/services/time.rs",
+          "lines_changed": 4
+        }
+      ]
+    },
+    "message": "azalea-service: Add basic mpris service",
+    "epoch": 1748249623,
+    "epoch_utc": null
+  },
+  {
     "commit": "5b75bca101f0f75fc678efc6ed676534013ed02a",
     "author": "enzohideo",
     "date": "Mon May 26 01:49:47 2025 -0300",
