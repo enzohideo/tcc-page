@@ -7,6 +7,7 @@
       ...
     }:
     let
+      inherit (nixpkgs) lib;
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
     in
@@ -18,6 +19,17 @@
           typescript-language-server
           vscode-langservers-extracted
         ];
+      };
+
+      packages.${system}.default = pkgs.buildNpmPackage {
+        name = "tcc-page-package";
+        src = pkgs.nix-gitignore.gitignoreSourcePure [ ./.gitignore ] (lib.cleanSource ./.);
+        npmDepsHash = "sha256-ijj57Sv3Txr0UfoC/N0TbLEr1qbZ9yDtvHUR9aEsRus=";
+        installPhase = ''
+          runHook preInstall
+          mv dist $out
+          runHook postInstall
+        '';
       };
     };
 }
