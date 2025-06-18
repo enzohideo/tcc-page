@@ -14,11 +14,18 @@
     {
       devShells.${system}.default = pkgs.mkShell {
         name = "tcc-page-devshell";
-        buildInputs = with pkgs; [
+
+        packages = with pkgs; [
+          importNpmLock.hooks.linkNodeModulesHook
           nodejs
           typescript-language-server
           vscode-langservers-extracted
         ];
+
+        npmDeps = pkgs.importNpmLock.buildNodeModules {
+          npmRoot = ./.;
+          nodejs = pkgs.nodejs;
+        };
       };
 
       packages.${system}.default = pkgs.buildNpmPackage {
