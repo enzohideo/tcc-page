@@ -1,0 +1,106 @@
+<h1>Azalea</h1>
+<h4>Shell gráfico multi-compositor para Wayland usando o protocolo Layer Shell</h4>
+
+<ul>
+  <li><b>Autor</b>: Enzo Hideo Kobayashi</li>
+  <li><b>Orientadores</b>: Alfredo Goldman e Nelson Posse Lago</li>
+</ul>
+
+<h2>Introdução</h2>
+
+<p>
+  Shell é um programa que permite ao usuário interagir com o sistema
+  operacional. Existem shells de linha de comando, como bash e powershell,
+  porém também existem os shells gráficos, como o GNOME shell e o plasmashell
+  do KDE. Os componentes, ou widgets, que são responsabilidade do shell gŕafico
+  incluem: barra de tarefas, <i>app launchers</i>, <i>app shortcuts</i>, papél
+  de parede, menu de início, menu de notificações, etc.
+</p>
+
+<p>
+  No Linux, os shells gráficos estão fortemente acoplados a um <i>Desktop
+    Environment</i>, tornando quase inviável usar eles em outro ambiente com
+  outro compositor e/ou gerenciador de janelas. Por exemplo, não é possível, no
+  momento, usar o GNOME shell em outro ambiente que não seja o GNOME.
+
+  Nesse sentido, a ideia deste projeto é criar um shell gŕafico que não dependa
+  do compositor Wayland (gerenciador de janelas) usando o protocolo <a
+    href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1" >layer
+    shell </a>.
+</p>
+
+<p>
+  In that context of developing graphical shell components, it's common the
+  usage of libraries to create <b>specific</b> widgets, like
+  <a href="https://github.com/Alexays/Waybar">waybar</a> and
+  <a href="https://github.com/polybar/polybar">polybar</a> to create a basic
+  status bar, and libraries that offer a bit more freedom, like
+  <a href="https://github.com/elkowar/eww">eww</a> and
+  <a href="https://github.com/Aylur/astal">astal</a> to create
+  <b>generic and complex</b> widgets.
+</p>
+
+<p>
+  Recently, many of these graphical shells libraries are made for Wayland
+  instead of X11 because of the recent
+  protocol, which allows the creation of graphical shell components that work on
+  any Wayland compositor that implements it. And despite being a
+  <a href="https://gitlab.freedesktop.org/wlroots/wlr-protocols"
+    >wlroots extension</a
+  >, it's already
+  <a
+    href="https://wayland.app/protocols/wlr-layer-shell-unstable-v1#compositor-support"
+  >
+    supported on many compositors.
+  </a>
+  This allows the creation of desktop shells that are not tied to a specific
+  wayland compositor or desktop environment.
+</p>
+
+<h2>Objectives</h2>
+
+<p>
+  The main objective is to develop a compositor agnostic desktop shell for
+  wayland while exploring the limits of the layer shell protocol. It's expected
+  to find a few widgets that are difficult to develop without breaking the
+  compositor agnostic rule, so a part of the project is also to find ways to
+  work around it.
+</p>
+
+<p>
+  The name of the desktop shell is Azalea and I intend to use
+  <a href="https://www.rust-lang.org/">Rust</a> as main programming language.
+  The core library developed will be based on
+  <a href="https://gtk-rs.org/">gtk4</a> and will be open source to allow other
+  developers to create their own desktop shells as well. And since the main
+  target audience of Azalea are developers, not general users, all the settings
+  and configurations will be done through dotfiles, which are better for
+  versioning and easier to share.
+</p>
+
+<p>
+  As a personal goal, I'll also use this project to learn and explore
+  <a href="https://nixos.org/">Nix</a> as a tool for development, building, and
+  packaging. As well as creating a reproducible NixOS virtual machine to run the
+  project under multiple wayland compositors, since it's supposed to be
+  compositor agnostic.
+</p>
+
+<p>
+  As extra objectives I also hope to develop a basic greeter using
+  <a href="https://git.sr.ht/~kennylevinsen/greetd">greetd</a> and a lock screen
+  using the wayland
+  <a href="https://wayland.app/protocols/ext-session-lock-v1">session lock</a>
+  protocol.
+</p>
+
+<h2>References</h2>
+
+<ul>
+  <li>
+    Drew DeVault's blog post about layer shell;
+    <a href="https://drewdevault.com/2018/07/29/Wayland-shells.html"
+      >https://drewdevault.com/2018/07/29/Wayland-shells.html</a
+    >
+  </li>
+</ul>

@@ -10,34 +10,14 @@
 
   <body>
     <nav>
-      <button id="tab-proposal" class="tab">Proposal</button>
-      <button id="tab-schedule" class="tab">Schedule</button>
-      <button id="tab-commits" class="tab">Commits</button>
-      <button id="tab-monograph" class="tab">Monograph</button>
-      <div class="last-modified">
-        <span>Last Modified: </span><span id="last-modified"></span>
-      </div>
+      <button id="tab-resumo" class="tab">Resumo</button>
+      <button id="tab-monografia" class="tab">Monografia</button>
     </nav>
-
-    <script type="module">
-      import inject from "./lib/inject";
-      inject("#last-modified", new Date(__LAST_MODIFIED__).toDateString());
-    </script>
-
     <div id="stack">
-      <div id="proposal">
-        <script type="module" src="./proposal/main.js" defer></script>
+      <div id="resumo">
+        <script type="module" src="./resumo/main.js" defer></script>
       </div>
-
-      <div id="schedule">
-        <script type="module" src="./schedule/main.js" defer></script>
-      </div>
-
-      <div id="commits">
-        <script type="module" src="./commits/main.js" defer></script>
-      </div>
-
-      <div id="monograph">
+      <div id="monografia">
         <h1>WIP</h1>
       </div>
     </div>
