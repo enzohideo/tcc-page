@@ -1,4 +1,5 @@
 nav {
+  text-align: right;
   background-color: var(--fg);
 }
 .tab {
@@ -7,6 +8,7 @@ nav {
   color: var(--accent);
   background-color: var(--disabled);
   margin: 0;
+  margin-right: 5px;
 }
 
 .tab:hover:enabled {

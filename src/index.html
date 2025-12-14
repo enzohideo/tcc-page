@@ -5,21 +5,81 @@
     <title>Azalea Desktop Shell - TCC</title>
     <link rel="stylesheet" href="./lib/simple.min.css" />
     <link rel="stylesheet" href="./style.css" />
-    <script type="module" src="./main.js" defer></script>
   </head>
 
   <body>
     <nav>
-      <button id="tab-resumo" class="tab">Resumo</button>
-      <button id="tab-monografia" class="tab">Monografia</button>
+      <a
+        href="https://github.com/enzohideo/azalea-desktop-shell"
+        id="tab-code"
+        class="tab"
+        target="_blank"
+        >Código</a
+      >
+      <a
+        href="https://enzohideo.github.io/azalea-desktop-shell/docs/azalea/"
+        id="tab-docs"
+        class="tab"
+        target="_blank"
+        >Docs</a
+      >
+      <a target="_blank" href="./tese.pdf" id="tab-monografia" class="tab"
+        >Monografia</a
+      >
     </nav>
-    <div id="stack">
-      <div id="resumo">
-        <script type="module" src="./resumo/main.js" defer></script>
-      </div>
-      <div id="monografia">
-        <h1>WIP</h1>
-      </div>
-    </div>
+    <h1>Azalea</h1>
+    <h3>
+      Shell gráfico multicompositor para Wayland usando o protocolo Layer Shell
+    </h3>
+
+    <ul>
+      <li><b>Autor</b>: Enzo Hideo Kobayashi</li>
+      <li><b>Orientadores</b>: Alfredo Goldman e Nelson Posse Lago</li>
+    </ul>
+
+    <h2>Resumo</h2>
+
+    <p>
+      Shell gráfico é um programa responsável pelas interfaces gráficas que
+      permitem um usuário interagir com o sistema operacional. Isso inclui as
+      barras de tarefas, menu de início, papel de parede, barra de busca, menus
+      de configuração, etc. Normalmente, os <i>shells</i> gráficos estão
+      fortemente acoplados a um ambiente de área de trabalho, como o plasmashell
+      do KDE e o GNOME Shell, tornando quase inviável trocar o compositor ou
+      reusar o <i>shell</i> gráfico em outro ambiente. Nesse sentido, o objetivo
+      deste projeto foi desenvolver um <i>shell</i> gráfico que funcione em
+      múltiplos compositores Wayland diferentes por meio do protocolo
+      <i>layer shell</i>.
+    </p>
+
+    <p>
+      O software foi desenvolvido em Rust usando Relm4 (GTK4) como biblioteca
+      gráfica e Nix para criar ambientes de desenvolvimento reprodutíveis,
+      empacotar a aplicação e testar a sua execução em diferentes compositores
+      Wayland por meio de máquinas virtuais NixOS. O projeto também pode ser
+      utilizado como bilioteca, permitindo que o usuário crie seus próprios
+      componentes gráficos.
+    </p>
+
+    <h2>Abstract</h2>
+    <p>
+      Graphical shell is a program responsible for the graphical interfaces that
+      allow a user to interact with the operating system. This includes
+      taskbars, start menu, wallpaper, search bar, settings menus, etc. Usually,
+      graphical shells are strongly coupled with a desktop environment, such as
+      plasmashell from KDE and GNOME Shell, rendering it almost infeasible to
+      replace the compositor or reuse the graphical shell in another
+      environment. In view of that, the objective of this project is to develop
+      a graphical shell that works in multiple different Wayland compositors
+      through the layer shell protocol.
+    </p>
+
+    <p>
+      The software was developed in Rust using Relm4 (GTK4) as a graphical
+      library and Nix to create reproducible development environments, package
+      the application, and test its execution in different Wayland compositors
+      using NixOS virtual machines. The project can be used as a library as
+      well, allowing the user to create their own graphical components.
+    </p>
   </body>
 </html>
